@@ -24,7 +24,7 @@
   <div class="hero-text">
     <p class="kicker">Para marcenarias com router CNC</p>
     <h1>Da lista de peças à router CNC, em segundos.</h1>
-    <p class="lead">Importe o CSV do seu software de projeto ou qualquer lista de peças. O RouterFlow monta as chapas com o melhor aproveitamento, gera o DXF com furos, rasgos e verso, imprime etiquetas e mapa das chapas, e ainda entrega a ficha de produção e o orçamento. Sem plugin pago e sem internet na oficina.</p>
+    <p class="lead">Importe o CSV do seu software de projeto ou qualquer lista de peças. O RouterFlow monta as chapas com o melhor aproveitamento, mostra cada chapa como ela fica na mesa, gera o DXF com furos, rasgos e verso e o programa da router pronto, com etiquetas, mapa das chapas e ficha de produção. Sem plugin pago e sem internet na oficina.</p>
     <div class="actions">
       <a class="btn go" href="https://wa.me/5534991627276?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20RouterFlow" target="_blank" rel="noopener">Quero uma demonstração</a>
       <a class="btn outline" href="#como">Ver como funciona</a>
@@ -36,24 +36,24 @@
 
 <section id="como" class="block">
   <h2>Como funciona</h2>
-  <p class="sub">Quatro passos, do projeto à máquina. Você continua usando o software de projeto e o CAM de sempre.</p>
+  <p class="sub">Quatro passos, do projeto à máquina. Com o CAM de sempre ou direto para a router.</p>
   <div class="steps">
     <div class="step"><span>1</span><h3>Exporte a lista de peças</h3><p>O mesmo CSV do plano de corte, com contorno, fitas, furos e rasgos. Ou uma lista simples do Excel, com nome, medidas, espessura, quantidade, material e veio.</p></div>
-    <div class="step"><span>2</span><h3>Gere as chapas</h3><p>O RouterFlow separa as peças de chapa, agrupa por material e espessura e monta as chapas testando várias estratégias de nesting. Usa antes as sobras que você tem na oficina.</p></div>
-    <div class="step"><span>3</span><h3>Importe no CAM e corte</h3><p>Um DXF por material, com as chapas lado a lado e uma layer para cada operação: contorno, furos por diâmetro e profundidade, rasgos, verso. Aplique os toolpaths e gere o programa.</p></div>
-    <div class="step"><span>4</span><h3>Confira antes de rodar</h3><p>Abra o programa .nc no Tradutor NC e veja, em português, linha por linha, o que a router vai fazer. Avisos de segurança antes de ir para o pendrive.</p></div>
+    <div class="step"><span>2</span><h3>Diga como a chapa fica na máquina</h3><p>Em pé ou deitada, e em qual canto está o zero da máquina. O RouterFlow separa as peças por material, monta as chapas testando doze estratégias de nesting e desenha os eixos X e Y para você conferir.</p></div>
+    <div class="step"><span>3</span><h3>Ajuste se quiser</h3><p>Arraste peças, gire, troque de chapa ou junte tudo numa chapa só. Tudo é regravado: DXF por material, mapa das chapas, etiquetas e programas.</p></div>
+    <div class="step"><span>4</span><h3>Router</h3><p>O programa .nc sai pronto, completo ou separado por furos, rasgos e contornos. Veja o passo a passo operação por operação sobre a mesa antes de copiar para a máquina. Ou importe o DXF no seu CAM, como sempre.</p></div>
   </div>
-  <figure class="shot"><img src="img/app-resultado.png" alt="Resultado da geração de chapas"><figcaption>Resultado de uma geração: chapas por material, aproveitamento, custo direto e os relatórios prontos para imprimir.</figcaption></figure>
+  <figure class="shot"><img src="img/app-projeto.png" alt="Editor de chapas do RouterFlow"><figcaption>Cada chapa como fica na mesa, com os eixos da máquina, os DXF e os programas da router.</figcaption></figure>
 </section>
 
 <section id="saida" class="block alt">
   <h2>O que sai de cada projeto</h2>
   <div class="cards">
-    <div class="card"><h3>DXF por material</h3><p>Todas as chapas do material num arquivo só, já na orientação da mesa. Layers com nomes fixos: salve os toolpaths como modelo e reaplique sempre.</p></div>
+    <div class="card"><h3>DXF por material</h3><p>Todas as chapas do material num arquivo só, já na orientação e na origem da sua mesa. Layers com nomes fixos para quem usa o Aspire.</p></div>
     <div class="card"><h3>Mapa das chapas</h3><p>Uma folha por chapa com as peças numeradas, medidas e sentido do veio. Fica ao lado da máquina para identificar cada peça na saída.</p></div>
     <div class="card"><h3>Etiquetas</h3><p>ID, nome, medidas, material, chapa e os lados que levam fita. Impressas em folha A4, três por linha.</p></div>
     <div class="card"><h3>Ficha de produção</h3><p>Materiais, chapas, aproveitamento, metros de fita por cor, ferragens do projeto e a lista de conferência antes de cortar.</p></div>
-    <div class="card"><h3>Orçamento</h3><p>Custo de material, fita e usinagem com a sua margem, num documento pronto para mandar ao cliente.</p></div>
+    <div class="card"><h3>Programas da router</h3><p>Um .nc por chapa com furos, rasgos e contornos em sequência, com abas e rampa de entrada, mais os separados por operação para quem prefere rodar por etapas.</p></div>
     <div class="card"><h3>Listas em planilha</h3><p>Lista de peças, fitagem por aresta e ferragens em CSV, para abrir no Excel ou no seu sistema.</p></div>
   </div>
   <div class="gallery">
@@ -67,15 +67,15 @@
   <h2>Feito dentro da oficina</h2>
   <div class="features">
     <div><h3>Nesting que aproveita a chapa</h3><p>Doze combinações de estratégia por material, fica a que gasta menos chapa e deixa a maior sobra. Respeita veio, folga e margem. Se não couber, abre a próxima chapa.</p></div>
-    <div><h3>Estoque de sobras</h3><p>Registre os retalhos da oficina. O nesting usa as sobras antes de abrir chapa inteira e sugere quais retalhos guardar depois do corte.</p></div>
+    <div><h3>Editor de chapas</h3><p>Origem em qualquer canto, chapa em pé ou deitada, eixos desenhados. Arraste, gire, troque peças de chapa, junte tudo numa chapa e regrave. O projeto fica salvo para reabrir e alterar.</p></div>
     <div><h3>Furos, rasgos e verso</h3><p>Cada peça sai com contorno, furos com diâmetro e profundidade no nome da layer, rasgos e etiqueta. Usinagem atrás gera o arquivo do verso já espelhado.</p></div>
-    <div><h3>Tradutor NC</h3><p>Percursos desenhados sobre a área da mesa, ferramenta, rotação, avanços, profundidade, tempo estimado e verificações: rápido dentro da chapa, corte sem avanço, spindle desligado, fora da mesa.</p></div>
+    <div><h3>Router passo a passo</h3><p>Operação por operação sobre a mesa da máquina, tradução em português linha por linha, tempo estimado e verificações: rápido dentro da chapa, corte sem avanço, spindle desligado, fora da mesa.</p></div>
     <div><h3>Vários projetos juntos</h3><p>Selecione vários CSV de uma vez e as peças de todos entram nas mesmas chapas, com o nome do projeto no ID.</p></div>
-    <div><h3>Licença sem internet</h3><p>Chave assinada, amarrada ao computador, com validade anual. Renovação automática quando há internet, sem precisar colar chave.</p></div>
+    <div><h3>Sua máquina, configurada uma vez</h3><p>Ferramentas, Z zero, altura segura, abas, sentido de corte, troca de ferramenta e o pós-processador do seu controlador. Modo corte no ar para o primeiro teste.</p></div>
   </div>
   <div class="two">
-    <figure class="shot"><img src="img/app-tradutor.png" alt="Tradutor NC"><figcaption>Tradutor NC: o programa da router explicado linha por linha.</figcaption></figure>
-    <figure class="shot"><img src="img/app-sobras.png" alt="Estoque de sobras"><figcaption>Sobras: os retalhos entram no nesting antes das chapas inteiras.</figcaption></figure>
+    <figure class="shot"><img src="img/app-router.png" alt="Router passo a passo"><figcaption>Router: a operação atual em branco, as feitas em cinza, as próximas ainda escondidas.</figcaption></figure>
+    <figure class="shot"><img src="img/app-config.png" alt="Configuração da router"><figcaption>Ferramentas, abas, rampa e pós-processador: configure uma vez e esqueça.</figcaption></figure>
   </div>
 </section>
 
