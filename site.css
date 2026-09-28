@@ -1,0 +1,92 @@
+/* Site do RouterFlow. Mesmos tokens da interface do programa. */
+:root {
+  --font: "Segoe UI Variable Text", "Segoe UI", Roboto, system-ui, sans-serif;
+  --primary: #1f3a5f; --primary-hover: #2b4f7e; --primary-container: #d6e4fb; --on-primary-container: #0a1f3c;
+  --secondary: #2e7d32; --secondary-hover: #256b29;
+  --surface: #f6f8fb; --surface-bright: #fff; --surface-low: #eef2f6;
+  --on-surface: #1a1c1f; --on-surface-variant: #4a4f57; --outline-variant: #dde1e7;
+  --r-md: 12px; --r-lg: 16px; --r-xl: 28px;
+  --e1: 0 1px 2px rgba(0,0,0,.06), 0 1px 3px rgba(0,0,0,.08);
+  --e2: 0 2px 6px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--font); color: var(--on-surface); background: var(--surface); line-height: 1.55; font-size: 16px; }
+img { max-width: 100%; display: block; }
+h1, h2, h3 { margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: 30px; text-align: center; }
+h3 { font-size: 18px; }
+p { margin: 0 0 12px; }
+a { color: var(--primary); }
+.sub { text-align: center; color: var(--on-surface-variant); max-width: 720px; margin: 8px auto 28px; }
+.fine { color: var(--on-surface-variant); font-size: 14px; }
+
+.top { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; padding: 12px 6vw; background: rgba(246,248,251,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--outline-variant); }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--primary); font-weight: 700; font-size: 20px; }
+.brand img { width: 36px; height: 36px; border-radius: 9px; }
+.top nav { display: flex; gap: 22px; align-items: center; }
+.top nav a { text-decoration: none; color: var(--on-surface-variant); font-weight: 600; font-size: 15px; }
+.top nav a.cta { background: var(--secondary); color: #fff; padding: 8px 16px; border-radius: 999px; }
+
+.btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 700; padding: 12px 24px; border-radius: 999px; border: 1px solid transparent; }
+.btn.go { background: var(--secondary); color: #fff; box-shadow: var(--e1); }
+.btn.go:hover { background: var(--secondary-hover); }
+.btn.outline { color: var(--primary); border-color: #c3c7ce; background: #fff; }
+
+.hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; align-items: center; padding: 56px 6vw 40px; }
+.kicker { color: var(--secondary); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: 13px; }
+.hero h1 { font-size: 42px; line-height: 1.1; color: var(--primary); margin-bottom: 14px; }
+.lead { font-size: 18px; color: var(--on-surface-variant); }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 20px 0 12px; }
+.hero-shot { border-radius: var(--r-lg); box-shadow: var(--e2); border: 1px solid var(--outline-variant); }
+
+.block { padding: 56px 6vw; }
+.block.alt { background: var(--surface-low); }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 32px; }
+.step { background: var(--surface-bright); border-radius: var(--r-lg); padding: 22px; box-shadow: var(--e1); border: 1px solid var(--outline-variant); }
+.step span { display: inline-flex; width: 34px; height: 34px; border-radius: 10px; background: var(--primary); color: #fff; align-items: center; justify-content: center; font-weight: 700; margin-bottom: 12px; }
+.step p { color: var(--on-surface-variant); margin: 6px 0 0; font-size: 15px; }
+.shot { margin: 0 auto; max-width: 980px; }
+.shot img { border-radius: var(--r-lg); box-shadow: var(--e2); border: 1px solid var(--outline-variant); }
+figcaption { text-align: center; color: var(--on-surface-variant); font-size: 14px; margin-top: 10px; }
+
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.card { background: var(--surface-bright); border-radius: var(--r-lg); padding: 22px; border: 1px solid var(--outline-variant); box-shadow: var(--e1); }
+.card p { color: var(--on-surface-variant); margin: 8px 0 0; font-size: 15px; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
+.gallery img { border-radius: var(--r-md); border: 1px solid var(--outline-variant); box-shadow: var(--e1); }
+
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px 32px; margin-bottom: 36px; }
+.features h3 { color: var(--primary); margin-bottom: 6px; }
+.features p { color: var(--on-surface-variant); font-size: 15px; margin: 0; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+.price { display: grid; grid-template-columns: 1fr 1.2fr; gap: 28px; align-items: start; max-width: 1000px; margin: 0 auto; }
+.plan { background: var(--surface-bright); border-radius: var(--r-xl); padding: 28px; box-shadow: var(--e2); border: 2px solid var(--primary-container); }
+.value { font-size: 44px; font-weight: 800; color: var(--primary); margin: 8px 0 12px; }
+.value span { font-size: 18px; font-weight: 600; color: var(--on-surface-variant); }
+.plan ul { padding-left: 20px; color: var(--on-surface-variant); margin: 0 0 20px; }
+.plan li { margin: 4px 0; }
+.compare { color: var(--on-surface-variant); padding-top: 8px; }
+.compare h3 { color: var(--primary); margin-bottom: 8px; }
+
+.contact { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 12px 0 18px; }
+#contato .fine { text-align: center; max-width: 640px; margin: 0 auto; }
+
+footer { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 24px 6vw; color: var(--on-surface-variant); font-size: 13px; border-top: 1px solid var(--outline-variant); }
+footer img { width: 24px; height: 24px; border-radius: 6px; }
+
+@media (max-width: 900px) {
+  .hero, .price, .two { grid-template-columns: 1fr; }
+  .steps, .cards, .gallery, .features { grid-template-columns: 1fr 1fr; }
+  .hero h1 { font-size: 32px; }
+  .top nav a:not(.cta) { display: none; }
+}
+@media (max-width: 560px) {
+  .steps, .cards, .gallery, .features { grid-template-columns: 1fr; }
+  h2 { font-size: 24px; }
+}
+.calc { width: 100%; border-collapse: collapse; margin: 6px 0 18px; font-size: 15px; }
+.calc td { padding: 6px 4px; border-bottom: 1px solid var(--outline-variant); }
+.calc td:last-child { text-align: right; font-weight: 600; white-space: nowrap; }
+.calc .total td { color: var(--secondary); font-weight: 800; border-top: 2px solid var(--secondary); }
