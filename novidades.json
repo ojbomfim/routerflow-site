@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.8.14",
+  "data": "2026-09-29",
+  "titulo": "Padrão de fábrica: corte de uma vez, como na máquina",
+  "itens": [
+   "Máquina nova já nasce cortando como a router faz de verdade: uma passada só até 0,1 mm na mesa (passe 20), rampa curta de 5 mm, sem abas, altura segura 15, fresa de 6 mm a 11000 de avanço e 4000 de mergulho.",
+   "Quem já tem máquina cadastrada não muda nada sozinho: os valores de Ferramentas e Corte continuam os seus. Para adotar os novos, ajuste em Configurações ou use Restaurar padrões."
+  ]
+ },
+ {
   "versao": "3.8.13",
   "data": "2026-09-29",
   "titulo": "Corte passante igual ao do Aspire",
