@@ -1,5 +1,13 @@
 [
  {
+  "versao": "3.8.10",
+  "data": "2026-09-29",
+  "titulo": "Da Router direto para a Produção",
+  "itens": [
+   "Na Router, quando o programa vem de um projeto, o botão grande \"Ir para a Produção\" mostra o próximo passo: a lista das chapas na ordem de corte, o pendrive e a marcação de chapa feita."
+  ]
+ },
+ {
   "versao": "3.8.9",
   "data": "2026-09-29",
   "titulo": "A chapa deitada agora avisa se não cabe na mesa",
