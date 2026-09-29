@@ -10,4 +10,12 @@
     <image:image><image:loc>https://www.routerflow.com.br/img/app-router.png</image:loc><image:title>Programa da router passo a passo</image:title></image:image>
     <image:image><image:loc>https://www.routerflow.com.br/img/rel-etiquetas.png</image:loc><image:title>Etiquetas das peças</image:title></image:image>
   </url>
+  <url>
+    <loc>https://www.routerflow.com.br/manual.html</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.routerflow.com.br/img/manual/config-ferramentas.png</image:loc><image:title>Configuração das ferramentas no RouterFlow</image:title></image:image>
+    <image:image><image:loc>https://www.routerflow.com.br/img/manual/editor.png</image:loc><image:title>Editor de chapas do RouterFlow</image:title></image:image>
+  </url>
 </urlset>

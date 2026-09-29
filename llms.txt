@@ -16,7 +16,7 @@ Idioma: português do Brasil. Público: marcenarias e fábricas de móveis plane
 - Router passo a passo: cada operação desenhada sobre a mesa, resumo, tempo estimado, verificações de segurança e tradução do G-code linha por linha em português.
 - Produção (modo operador): lista das chapas na ordem de corte, programa de cada uma, cópia para o pendrive, marcação de chapa feita, tela grande.
 - Sobras: a router corta a sobra alinhada, sai etiqueta e ela entra no estoque; o próximo projeto usa a sobra antes de abrir chapa inteira.
-- Impressos: etiquetas (cliente, ambiente, módulo, peça, material, IDs, medidas, desenho com fitas de borda e face de alinhamento, 8 por A4), mapa das chapas (uma folha por chapa com as peças numeradas e a sobra), ficha de produção (materiais, chapas, aproveitamento, metros de fita, ferragens, arquivos, avisos) e listas em CSV (peças, fitagem, ferragens).
+- Impressos: etiquetas (cliente, ambiente, módulo, peça, material, IDs, medidas, desenho com fitas de borda e face de alinhamento, 100 x 60 mm para impressora de etiquetas ou 8 por A4), mapa das chapas (uma folha por chapa com as peças numeradas e a sobra), ficha de produção (materiais, chapas, aproveitamento, metros de fita, ferragens, arquivos, avisos) e listas em CSV (peças, fitagem, ferragens).
 - Vários projetos juntos nas mesmas chapas. Nome do cliente e ambiente lidos do CSV viram o nome do projeto, da pasta e dos arquivos.
 - Atualização automática pelo próprio programa. Licença confirmada pela internet de vez em quando; não precisa de internet para cortar.
 
@@ -35,4 +35,5 @@ Idioma: português do Brasil. Público: marcenarias e fábricas de móveis plane
 ## Páginas
 
 - [Página inicial](https://www.routerflow.com.br/): como funciona, o que sai, recursos, preço, novidades de cada versão, download e contato.
+- [Manual de uso e configuração](https://www.routerflow.com.br/manual.html): instalação, licença, cada campo das Configurações (pós-processador, ferramentas com avanço, mergulho e passe recomendados por tipo, corte, mesa e vácuo, chapas e folgas), projeto passo a passo, editor de chapas, Router, Produção, Sobras, impressos e problemas comuns, com imagens de cada tela.
 - [Novidades por versão em JSON](https://www.routerflow.com.br/novidades.json): versão, data, título e itens de cada atualização.

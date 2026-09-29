@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual do RouterFlow: uso e configuração</title>
+<meta name="description" content="Manual completo do RouterFlow: instalação, licença, configuração da máquina, ferramentas (fresas e brocas, avanço, mergulho, passe), projeto, editor de chapas, Router, Produção, Sobras e etiquetas.">
+<link rel="canonical" href="https://www.routerflow.com.br/manual.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="RouterFlow">
+<meta property="og:url" content="https://www.routerflow.com.br/manual.html">
+<meta property="og:title" content="Manual do RouterFlow">
+<meta property="og:description" content="Como usar e configurar o RouterFlow, do CSV ao programa da router, com imagens de cada tela.">
+<meta property="og:image" content="https://www.routerflow.com.br/img/og.png">
+<link rel="icon" href="img/logo.png">
+<link rel="stylesheet" href="site.css">
+<style>
+.man-wrap { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 40px; padding: 32px 6vw 56px; }
+.man-toc { position: sticky; top: 76px; align-self: start; max-height: calc(100vh - 100px); overflow: auto; font-size: 14px; }
+.man-toc ul { list-style: none; padding: 0; margin: 0; }
+.man-toc li { margin: 4px 0; } .man-toc li.l2 a { color: var(--on-surface-variant); text-decoration: none; } .man-toc li.l2 a:hover { color: var(--primary); }
+.man-body { max-width: 860px; }
+.man-body h1 { font-size: 34px; color: var(--primary); margin-bottom: 8px; }
+.man-body h2 { text-align: left; font-size: 26px; margin: 44px 0 12px; color: var(--primary); border-bottom: 2px solid var(--outline-variant); padding-bottom: 6px; }
+.man-body h3 { font-size: 19px; margin: 26px 0 8px; }
+.man-body p, .man-body li { font-size: 16px; line-height: 1.6; }
+.man-body ul, .man-body ol { padding-left: 24px; }
+.man-body .shot { margin: 16px 0 22px; max-width: 860px; }
+.man-body .note { background: #fff4e5; border: 1px solid #f3d7b0; border-radius: var(--r-md); padding: 10px 14px; margin: 12px 0; color: #4a2300; }
+table.man { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 15px; }
+table.man th, table.man td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--outline-variant); vertical-align: top; }
+table.man th { background: var(--surface-low); font-weight: 700; }
+code { background: var(--surface-low); padding: 1px 6px; border-radius: 6px; font-size: 14px; }
+.man-body h2, .man-body h3 { scroll-margin-top: 84px; }
+.man-body img { max-width: 100%; height: auto; }
+.tbl { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+@media (max-width: 900px) { .man-wrap { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 20px 16px 40px; } .man-toc { position: static; max-height: none; } .man-body h1 { font-size: 26px; } .man-body h2 { font-size: 22px; } table.man { font-size: 14px; min-width: 560px; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html" aria-label="RouterFlow, página inicial"><img src="img/logo.png" alt="" width="36" height="36"><span>RouterFlow</span></a>
+  <button class="menu-btn" id="menu-btn" aria-label="Abrir o menu" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" aria-label="Seções do site">
+    <a href="index.html#como">Como funciona</a>
+    <a href="index.html#preco">Preço</a>
+    <a href="index.html#baixar">Baixar</a>
+    <a href="manual.html">Manual</a>
+    <a href="index.html#contato" class="cta">Falar no WhatsApp</a>
+  </nav>
+</header>
+<main class="man-wrap">
+  <aside class="man-toc"><b>Neste manual</b><ul><li class="l2"><a href="#instalar-e-ativar">Instalar e ativar</a></li><li class="l2"><a href="#a-tela-início">A tela Início</a></li><li class="l2"><a href="#antes-do-primeiro-projeto-configurar-a-máquina">Antes do primeiro projeto: configurar a máquina</a></li><li class="l2"><a href="#projeto-da-lista-de-peças-às-chapas">Projeto: da lista de peças às chapas</a></li><li class="l2"><a href="#router-conferir-o-programa-antes-de-cortar">Router: conferir o programa antes de cortar</a></li><li class="l2"><a href="#produção-cortar-chapa-a-chapa">Produção: cortar chapa a chapa</a></li><li class="l2"><a href="#sobras-o-estoque-de-retalhos">Sobras: o estoque de retalhos</a></li><li class="l2"><a href="#impressos">Impressos</a></li><li class="l2"><a href="#licença-e-atualização">Licença e atualização</a></li><li class="l2"><a href="#problemas-comuns-e-avisos">Problemas comuns e avisos</a></li><li class="l2"><a href="#atalhos-e-dicas">Atalhos e dicas</a></li></ul></aside>
+  <article class="man-body">
+<h1 id="manual-do-routerflow-uso-e-configuração">Manual do RouterFlow: uso e configuração</h1>
+<p>Este manual mostra, tela por tela, como usar o RouterFlow desde a instalação até a chapa cortada, e explica cada campo das configurações: o que ele faz, quando mexer e qual valor usar. Ele vale para a versão 3.8.14 em diante.</p>
+<p>O caminho no programa é sempre o mesmo, e o menu da esquerda segue essa ordem: <b>Projeto</b> (escolher os CSV e gerar as chapas), <b>Router</b> (conferir o programa antes de cortar), <b>Produção</b> (cortar chapa a chapa) e <b>Sobras</b> (o que ficou e volta para o estoque). Antes do primeiro projeto, vale gastar dez minutos em <b>Configurações</b> para o programa sair do jeito da sua máquina.</p>
+<p>Em cada tela, o botão da próxima etapa aparece maior, com a marca "PRÓXIMO PASSO" e a borda pulsando. Se estiver em dúvida sobre o que fazer, procure esse botão.</p>
+<h2 id="instalar-e-ativar">Instalar e ativar</h2>
+<ol>
+<li>Baixe o instalador em www.routerflow.com.br, seção "Baixar a última versão". É um arquivo RouterFlow-Setup-versão.exe.</li>
+<li>Execute. Se o Windows mostrar "O Windows protegeu o computador", clique em "Mais informações" e depois em "Executar assim mesmo". O aviso aparece para qualquer programa novo sem reputação no Windows.</li>
+<li>O instalador cuida do componente WebView2 se ele faltar. Ao terminar, o RouterFlow abre sozinho.</li>
+<li>Na primeira abertura, o programa pede a chave de ativação. Vá na tela <b>Licença</b>.</li>
+</ol>
+<figure class="shot"><img class="zoom" src="img/manual/licenca.png" alt="Tela Licença: código da máquina, contato do suporte e campo para colar a chave" loading="lazy"><figcaption>Tela Licença: código da máquina, contato do suporte e campo para colar a chave</figcaption></figure>
+<p>Como ativar:</p>
+<ol>
+<li>Copie o <b>Código desta máquina</b> (formato RF-XXXX-XXXX-XXXX). O botão "Copiar" põe na área de transferência.</li>
+<li>Clique em <b>Falar no WhatsApp</b>: a mensagem já vai montada com o código. Complete com razão social, CNPJ, e-mail e telefone da empresa.</li>
+<li>Você recebe uma chave que começa com RFL1. Cole no campo "Chave de ativação" (ou clique em "Colar da área de transferência") e em <b>Ativar</b>.</li>
+<li>O rodapé do menu lateral passa a mostrar "Licenciado para sua empresa até data".</li>
+</ol>
+<p>A licença é presa a este computador e vale por 12 meses. A partir de 30 dias antes do vencimento, uma faixa no topo avisa; com 7 e 1 dia ela fica vermelha. Vencida, o programa bloqueia Projeto, Router e Produção até a chave nova. Com internet, a renovação chega sozinha na próxima abertura, sem colar nada. "Verificar agora" força a consulta na hora.</p>
+<p>O RouterFlow se atualiza sozinho: quando sai versão nova, ele baixa, instala e abre de novo. Leva cerca de um minuto e a licença continua a mesma. Nenhuma configuração é perdida na atualização.</p>
+<h2 id="a-tela-início">A tela Início</h2>
+<figure class="shot"><img class="zoom" src="img/manual/inicio.png" alt="Início: botões Novo projeto, Router e Site, o passo a passo e as novidades da versão" loading="lazy"><figcaption>Início: botões Novo projeto, Router e Site, o passo a passo e as novidades da versão</figcaption></figure>
+<ul>
+<li><b>Novo projeto</b> leva à tela Projeto. <b>Router</b> abre a conferência de programas. <b>Site</b> abre www.routerflow.com.br no navegador.</li>
+<li>O cartão "Como funciona, passo a passo" resume as sete etapas.</li>
+<li>"Novidades da versão" mostra o que mudou na versão instalada. O histórico completo fica na tela Sobre.</li>
+<li>No menu lateral, embaixo, está a <b>máquina em uso</b>. Clique nela para trocar de máquina ou importar um pós-processador. O botão "Tema escuro" alterna o visual.</li>
+</ul>
+<h2 id="antes-do-primeiro-projeto-configurar-a-máquina">Antes do primeiro projeto: configurar a máquina</h2>
+<p>Abra <b>Configurações</b>. Quase tudo ali pertence à máquina em uso: mesa, vácuo, ferramentas, pós-processador e corte. Os padrões funcionam; mexa só no que a sua router pedir. Todo tópico tem um botão <b>?</b> ao lado do título que explica por que ele existe, o que dá para fazer, como mexer e o que aparece ali.</p>
+<figure class="shot"><img class="zoom" src="img/manual/config.png" alt="Configurações: máquina em uso, linha do tempo &quot;por onde começar&quot; e os tópicos" loading="lazy"><figcaption>Configurações: máquina em uso, linha do tempo "por onde começar" e os tópicos</figcaption></figure>
+<p>Dois botões no alto valem para a tela inteira: <b>Salvar</b> grava tudo o que você mudou (nada é gravado sem ele) e <b>Restaurar padrões</b> volta a máquina em uso aos valores de fábrica, sem mexer no estoque de sobras nem nas outras máquinas.</p>
+<p>A linha do tempo "por onde começar" marca em verde o que já está pronto. A ordem certa é: 1 Pós-processador, 2 Ferramentas, 3 Mesa e vácuo, 4 Chapas e folgas.</p>
+<h3 id="perfis-de-máquina">Perfis de máquina</h3>
+<p>Cada máquina guarda a mesa, o vácuo, as ferramentas e o pós-processador. Clique em <b>Trocar, criar ou importar .pp</b> (ou na máquina do menu lateral).</p>
+<figure class="shot"><img class="zoom" src="img/manual/maquinas.png" alt="Janela de máquinas: escolher a máquina em uso, criar outra copiando, importar .pp ou excluir" loading="lazy"><figcaption>Janela de máquinas: escolher a máquina em uso, criar outra copiando, importar .pp ou excluir</figcaption></figure>
+<ul>
+<li><b>Escolher</b>: a lista mostra as máquinas cadastradas; selecione e confirme. A tela Projeto passa a gerar para ela.</li>
+<li><b>Criar</b>: dê um nome (por exemplo "INMES 25K") e escolha se copia a configuração da máquina atual. Depois ajuste o que for diferente.</li>
+<li><b>Importar .pp do Aspire</b>: se você já tem o arquivo de pós-processador que usa no Aspire, importe. O RouterFlow lê cabeçalho, troca de ferramenta, rodapé, numeração e formato dos números.</li>
+<li><b>Renomear</b> e <b>Excluir</b> ficam na mesma janela. A máquina em uso não pode ser excluída.</li>
+</ul>
+<h3 id="pós-processador">Pós-processador</h3>
+<p>É o tradutor entre o RouterFlow e o controlador da sua router: define como o programa começa, como troca de ferramenta, como termina e como escreve os números.</p>
+<figure class="shot"><img class="zoom" src="img/manual/config-pp.png" alt="Tópico Pós-processador: modelo em uso e botão para importar o .pp do Aspire" loading="lazy"><figcaption>Tópico Pós-processador: modelo em uso e botão para importar o .pp do Aspire</figcaption></figure>
+<div class='tbl'><table class='man'><thead><tr><th>O que fazer</th><th>Quando</th></tr></thead><tbody><tr><td><b>Importar arquivo .pp do Aspire</b></td><td>Você já corta com o Aspire nessa máquina. É o caminho mais seguro: o programa sai exatamente como a máquina já conhece</td></tr><tr><td>Escolher o modelo <b>INMES IR-30K, programa real</b></td><td>Router Inmes sem o .pp em mãos. Copiado de um programa que rodou na máquina: sem numeração de linha</td></tr><tr><td>Modelo <b>INMES IR-30K / IN-50K</b></td><td>Formato do .pp de fábrica da Inmes, com numeração de linha</td></tr><tr><td><b>Mach3</b>, <b>GRBL</b>, <b>Fanuc</b></td><td>Controladores desses tipos. Fanuc serve para Syntec, Weihong e LNC</td></tr><tr><td><b>Genérico</b></td><td>G-code padrão, para testar em qualquer máquina</td></tr></tbody></table></div>
+<p>Depois de escolher, o tópico "Avançado" mostra os textos que o modelo gerou. Não precisa mexer neles.</p>
+<h3 id="ferramentas">Ferramentas</h3>
+<p>É a tabela das fresas e brocas da sua router. O programa .nc usa esses números para compensar o contorno, decidir qual ferramenta cabe em cada furo e rasgo, e escrever a rotação, o avanço e a profundidade de cada passada.</p>
+<figure class="shot"><img class="zoom" src="img/manual/config-ferramentas.png" alt="Tópico Ferramentas: uma linha por ferramenta com número, tipo, diâmetro, rotação, avanço, mergulho, passe e nome" loading="lazy"><figcaption>Tópico Ferramentas: uma linha por ferramenta com número, tipo, diâmetro, rotação, avanço, mergulho, passe e nome</figcaption></figure>
+<p><b>Os dois tipos</b></p>
+<div class='tbl'><table class='man'><thead><tr><th>Tipo</th><th>Para que serve</th><th>Como o programa usa</th></tr></thead><tbody><tr><td><b>Fresa</b></td><td>Contornos das peças, rasgos e furos que não têm broca do diâmetro (fresados em círculo)</td><td>Anda pelo contorno deslocada meio diâmetro para fora da peça; desce em passes até a profundidade</td></tr><tr><td><b>Broca</b></td><td>Furos de face: cavilha, minifix, dobradiça</td><td>Só é usada quando o diâmetro dela é igual ao do furo. Desce reta no centro do furo</td></tr></tbody></table></div>
+<p><b>Cada coluna</b></p>
+<div class='tbl'><table class='man'><thead><tr><th>Coluna</th><th>O que é</th><th>O que vira no programa</th></tr></thead><tbody><tr><td><b>Nº</b></td><td>Número da ferramenta: T1, T2...</td><td>O T da troca. Tem de ser o mesmo número da posição no trocador, ou o que o operador vai montar quando o programa parar na troca manual</td></tr><tr><td><b>Tipo</b></td><td>Fresa ou Broca</td><td>Decide a regra de escolha acima</td></tr><tr><td><b>Ø (mm)</b></td><td>Diâmetro de corte</td><td>Compensação do contorno e teste "cabe no rasgo?" e "cabe no furo?"</td></tr><tr><td><b>Rotação</b></td><td>Rotação do spindle em rpm</td><td>O S do programa (M3 S18000)</td></tr><tr><td><b>Avanço (mm/min)</b></td><td>Velocidade de corte andando em X e Y</td><td>O F dos movimentos no plano</td></tr><tr><td><b>Mergulho (mm/min)</b></td><td>Velocidade descendo em Z ao entrar no material</td><td>O F das descidas: furos, começo de cada passe e a rampa</td></tr><tr><td><b>Passe (mm)</b></td><td>Profundidade máxima de cada passada</td><td>Chapa de 18 com passe 6 sai em três voltas; com passe 20 sai em uma só. Em broca, é quanto desce antes de subir para tirar o cavaco</td></tr><tr><td><b>Nome</b></td><td>Como você chama a ferramenta</td><td>Sai no comentário da troca e nas listas da Router</td></tr></tbody></table></div>
+<p><b>Valores recomendados</b></p>
+<p>Os padrões de fábrica são os de uma router Inmes IR-30K cortando MDF de 15 e 18 mm com fresa de 6 mm, medidos num programa real da máquina. Use como ponto de partida:</p>
+<div class='tbl'><table class='man'><thead><tr><th>Ferramenta</th><th>Rotação</th><th>Avanço</th><th>Mergulho</th><th>Passe</th><th>Observação</th></tr></thead><tbody><tr><td>Fresa 6 mm (contorno, MDF/MDP)</td><td>18000</td><td>11000</td><td>4000</td><td>20</td><td>Padrão. Uma volta só em chapa de 15 ou 18</td></tr><tr><td>Fresa 6 mm, máquina mais leve ou fresa gasta</td><td>18000</td><td>3000 a 5000</td><td>800 a 1200</td><td>6</td><td>Três voltas em 18 mm; passe igual ao diâmetro é a regra segura</td></tr><tr><td>Fresa 8 mm (contorno em chapa grossa)</td><td>18000</td><td>12000</td><td>4000</td><td>20</td><td>Mais robusta, acabamento parecido</td></tr><tr><td>Fresa 4 mm (rasgos de fundo, canais estreitos)</td><td>20000</td><td>5000</td><td>1500</td><td>4</td><td>Rasgo de 4 mm de largura só sai com ela. Passe pequeno: a fresa é fina</td></tr><tr><td>Fresa 3 mm (detalhes)</td><td>20000</td><td>3000</td><td>800</td><td>3</td><td>Só para o que a fresa de 6 não alcança</td></tr><tr><td>Broca 5 mm (cavilha)</td><td>6000</td><td>1500</td><td>600</td><td>20</td><td>Furo de uma descida só</td></tr><tr><td>Broca 8 mm (minifix, parafuso)</td><td>6000</td><td>1500</td><td>600</td><td>20</td><td></td></tr><tr><td>Broca 15 mm (corpo do minifix)</td><td>5000</td><td>1000</td><td>400</td><td>20</td><td></td></tr><tr><td>Broca 35 mm (caneco da dobradiça)</td><td>4000</td><td>800</td><td>300</td><td>20</td><td>Se engasgar ou queimar, volte o passe para 6</td></tr><tr><td>Compensado ou madeira maciça</td><td>igual</td><td>30% menor</td><td>30% menor</td><td>igual</td><td>Fibra longa segura mais</td></tr><tr><td>Acrílico ou PVC expandido</td><td>12000</td><td>1500 a 2500</td><td>500</td><td>igual ao diâmetro</td><td>Rotação alta derrete</td></tr></tbody></table></div>
+<p>Regras que não mudam:</p>
+<ul>
+<li><b>Mergulho sempre menor que o avanço.</b> A ponta da fresa corta pior que o lado.</li>
+<li><b>Para cortar de uma vez até a mesa</b>, o passe tem de ser maior que a espessura mais a entrada na mesa: 16 para chapa de 15, 19 para chapa de 18. O 20 cobre as duas.</li>
+<li><b>Barulho e acabamento mandam.</b> Fresa gritando, lascando a chapa ou peça com marca de queimado: reduza o avanço em 20% e teste de novo. Cheiro de queimado com avanço baixo: aumente o avanço ou reduza a rotação.</li>
+<li><b>Fresa nova, valores novos.</b> Trocou a fresa por outra de diâmetro diferente, mude o Ø aqui, senão o contorno sai com a medida errada.</li>
+</ul>
+<p><b>Como o programa escolhe a ferramenta</b></p>
+<ol>
+<li>Furo com broca do diâmetro exato na tabela: usa a broca.</li>
+<li>Furo sem broca: usa a fresa escolhida em "Ferramenta de cada etapa" (ou a maior que cabe), fresando em círculo.</li>
+<li>Rasgo: fresa escolhida para rasgos, desde que caiba na largura do canal; senão a maior que cabe.</li>
+<li>Contorno: fresa escolhida para contornos, ou a maior cadastrada.</li>
+</ol>
+<p>Se nenhuma ferramenta cabe num furo ou rasgo, a peça sai com aviso na ficha e no resultado ("nenhuma ferramenta cabe nesse furo"), e o botão do aviso abre esta tabela.</p>
+<p><b>Adicionar, editar e remover</b>: "Adicionar ferramenta" cria uma linha nova; o X no fim da linha remove; qualquer campo é editável direto na tabela. Lembre de <b>Salvar</b> no alto da tela.</p>
+<h3 id="ferramenta-de-cada-etapa">Ferramenta de cada etapa</h3>
+<figure class="shot"><img class="zoom" src="img/manual/config-etapas.png" alt="Tópico Ferramenta de cada etapa: contorno, rasgos e furos sem broca" loading="lazy"><figcaption>Tópico Ferramenta de cada etapa: contorno, rasgos e furos sem broca</figcaption></figure>
+<p>Três seleções, cada uma com a lista das fresas cadastradas:</p>
+<div class='tbl'><table class='man'><thead><tr><th>Etapa</th><th>Automático faz</th><th>Quando fixar</th></tr></thead><tbody><tr><td>Contorno das peças</td><td>Usa a maior fresa cadastrada</td><td>Você tem uma fresa de 8 para desbaste e quer o contorno com a de 6</td></tr><tr><td>Rasgos</td><td>Usa a maior fresa que cabe na largura do rasgo</td><td>Quer sempre a fresa de 4 nos rasgos, mesmo em canais largos</td></tr><tr><td>Furos sem broca do diâmetro</td><td>Usa a maior fresa que cabe no furo</td><td>Quer uma fresa específica para fresar furos grandes</td></tr></tbody></table></div>
+<p>Se a fresa fixada não couber no rasgo ou no furo, o programa usa a maior que cabe e avisa. Programa já gerado não muda: gere o projeto de novo depois de salvar.</p>
+<h3 id="corte-alturas-rampa-e-abas">Corte: alturas, rampa e abas</h3>
+<figure class="shot"><img class="zoom" src="img/manual/config-corte.png" alt="Tópico Corte: Z zero, alturas, rampa, abas, troca de ferramenta e as opções de programa" loading="lazy"><figcaption>Tópico Corte: Z zero, alturas, rampa, abas, troca de ferramenta e as opções de programa</figcaption></figure>
+<div class='tbl'><table class='man'><thead><tr><th>Campo</th><th>O que é</th><th>Padrão</th><th>Quando mudar</th></tr></thead><tbody><tr><td><b>Z zero</b></td><td>Onde o operador zera o Z: na mesa de sacrifício ou no topo da chapa</td><td>Na mesa</td><td>Tem de ser igual ao jeito que o operador zera. Se ele zera no topo da chapa, mude aqui, senão todo o corte fica deslocado uma espessura</td></tr><tr><td><b>Altura segura (mm acima da chapa)</b></td><td>Altura dos movimentos rápidos entre operações</td><td>15</td><td>Grampos ou batentes altos na mesa: aumente</td></tr><tr><td><b>Entrada na mesa (mm)</b></td><td>Quanto o corte passante entra na mesa de sacrifício</td><td>0,1</td><td>É o que o Aspire usa (chapa de 15 corta a 15,1). Mesa muito irregular: 0,3</td></tr><tr><td><b>Elevação do corte no ar (mm)</b></td><td>Quanto o programa sobe no modo de teste sem chapa</td><td>50</td><td>Só se 50 mm não der para enxergar o percurso</td></tr><tr><td><b>Sentido do contorno</b></td><td>Concordante (horário, padrão para MDF) ou discordante</td><td>Concordante</td><td>Discordante dá acabamento diferente em alguns materiais; teste numa sobra</td></tr><tr><td><b>Rampa de entrada (mm)</b></td><td>Comprimento em que a fresa desce cortando, em vez de mergulhar reto</td><td>5</td><td>Máquina leve ou fresa fina: 20 a 40 poupa a ponta da fresa. 0 mergulha reto</td></tr><tr><td><b>Abas por peça</b></td><td>Pontes de material deixadas no último passe para a peça não soltar</td><td>0</td><td>Sem vácuo ou com vácuo fraco: 2 a 4. Com abas, o operador quebra e lixa depois</td></tr><tr><td><b>Largura da aba (mm)</b></td><td>Comprimento da ponte</td><td>8</td><td>Peças pesadas: 10 a 12</td></tr><tr><td><b>Altura da aba (mm)</b></td><td>Quanto de material fica, acima do fundo do corte</td><td>3</td><td>Chapa de 6 mm: 2</td></tr><tr><td><b>Perímetro mínimo para todas as abas (mm)</b></td><td>Peças menores que isso levam só 2 abas</td><td>600</td><td>Raramente</td></tr><tr><td><b>Troca de ferramenta</b></td><td>Manual (M0 com aviso, o operador troca) ou Automática (T M6)</td><td>Automática</td><td>Máquina sem trocador: Manual. O programa para, mostra qual ferramenta montar e espera</td></tr><tr><td><b>Rotação padrão (rpm)</b></td><td>Usada quando a ferramenta não tem rotação própria</td><td>18000</td><td>Raramente</td></tr></tbody></table></div>
+<p>As quatro caixas abaixo dos campos:</p>
+<ul>
+<li><b>Corte no ar</b>: eleva o programa inteiro (pela elevação acima) para conferir o percurso na máquina sem chapa. Use na primeira vez em cada máquina. Também dá para ligar por projeto, na tela Projeto, e nunca fica marcado sozinho.</li>
+<li><b>Gerar também um programa separado por operação</b>: além do programa completo de cada chapa, gera um só com furos, um só com rasgos e um só com contornos. Desligado por padrão; na tela do projeto dá para escolher por chapa.</li>
+<li><b>Cortar a sobra da chapa como um retângulo alinhado</b>: a router solta o retalho com cortes retos, sai etiqueta e ele entra no estoque. Também se escolhe por projeto.</li>
+<li><b>Corte de linha comum</b>: peças vizinhas coladas a exatamente um diâmetro de fresa compartilham a aresta; a segunda pula o trecho. Menos tempo e menos pó. Para funcionar, a folga entre peças (em Chapas e folgas) tem de ser igual ao diâmetro da fresa do contorno. Teste numa sobra antes de usar em produção.</li>
+</ul>
+<h3 id="sua-router-mesa-vácuo-e-códigos-m">Sua router: mesa, vácuo e códigos M</h3>
+<figure class="shot"><img class="zoom" src="img/manual/config-maquina.png" alt="Tópico Sua router: área útil, velocidade dos rápidos, Z zero, zonas de vácuo e códigos M" loading="lazy"><figcaption>Tópico Sua router: área útil, velocidade dos rápidos, Z zero, zonas de vácuo e códigos M</figcaption></figure>
+<div class='tbl'><table class='man'><thead><tr><th>Campo</th><th>O que é</th><th>Como preencher</th></tr></thead><tbody><tr><td><b>Área útil X e Y (mm)</b></td><td>O tanto que a fresa alcança na mesa, em X e em Y</td><td>Meça ou pegue no manual da máquina. Exemplo Inmes IR-30K: 1850 no X e 2750 no Y. É isso que decide se a chapa entra em pé ou deitada, e a Router avisa em vermelho o que passa da mesa</td></tr><tr><td><b>Velocidade dos rápidos (mm/min)</b></td><td>Só para estimar o tempo dos movimentos G0</td><td>20000 é comum</td></tr><tr><td><b>Z zero na mesa de sacrifício</b></td><td>O mesmo Z zero do tópico Corte, visto daqui</td><td>Marque se o operador zera na mesa</td></tr><tr><td><b>Zonas ao longo do X e do Y</b></td><td>Quantos registros de vácuo a mesa tem em cada sentido</td><td>Mesa com 6 zonas em 2 colunas e 3 linhas: X 2, Y 3. Sem zonas: 0 e 0</td></tr><tr><td><b>Como a máquina numera</b></td><td>Se a zona 2 é a próxima no X ou no Y</td><td>Confira nos registros da mesa</td></tr><tr><td><b>Códigos M</b></td><td>Códigos próprios da máquina: ligar vácuo, exaustor, refrigeração</td><td>"Adicionar código", escreva o código (M8, por exemplo), o que ele faz e quando entra: início, fim ou troca</td></tr></tbody></table></div>
+<p>Com as zonas cadastradas, a Router desenha a grade sobre a mesa e destaca as zonas que cada chapa usa ("abrir 1, 2 e 4, fechar as outras"), a Produção repete isso por chapa, e o programa .nc leva a lista num comentário.</p>
+<h3 id="chapas-e-folgas">Chapas e folgas</h3>
+<figure class="shot"><img class="zoom" src="img/manual/config-chapas.png" alt="Tópico Chapas e folgas: folga, margem, chapa padrão, sobra mínima, formato da etiqueta e chapa por material" loading="lazy"><figcaption>Tópico Chapas e folgas: folga, margem, chapa padrão, sobra mínima, formato da etiqueta e chapa por material</figcaption></figure>
+<div class='tbl'><table class='man'><thead><tr><th>Campo</th><th>O que é</th><th>Valor</th></tr></thead><tbody><tr><td><b>Folga entre peças (mm)</b></td><td>Espaço que o nesting deixa entre uma peça e outra</td><td>No mínimo o diâmetro da fresa do contorno: 7 para fresa de 6. Para o corte de linha comum, exatamente o diâmetro</td></tr><tr><td><b>Margem da chapa (mm)</b></td><td>Borda da chapa que fica sem peças</td><td>10. Chapa com borda batida: 15 a 20</td></tr><tr><td><b>Chapa padrão, lado maior e menor (mm)</b></td><td>Usada quando o CSV não informa o tamanho (lista simples)</td><td>2750 x 1840 é a chapa de MDF comum; 2750 x 1850 para MDP</td></tr><tr><td><b>Menor lado para valer como sobra (mm)</b></td><td>Retalhos mais estreitos não são cortados nem guardados</td><td>300. Oficina que aproveita tira estreita: 200</td></tr><tr><td><b>Etiquetas das peças</b></td><td>Impressora de etiquetas 100 x 60 mm (uma por etiqueta) ou folha A4 com 8</td><td>Escolha pela impressora que você tem</td></tr><tr><td><b>Chapa por material</b></td><td>Tamanho da chapa de cada material, quando é diferente do padrão</td><td>"Adicionar material" com o nome exatamente como vem no CSV, e as medidas</td></tr></tbody></table></div>
+<p>As caixas: <b>etiqueta com ID, nome e medidas dentro de cada peça no DXF</b> (layer TEXTO, útil no Aspire) e <b>abrir a pasta dos DXF ao terminar</b>.</p>
+<h3 id="leitura-do-arquivo-do-projeto-csv">Leitura do arquivo do projeto (CSV)</h3>
+<figure class="shot"><img class="zoom" src="img/manual/config-csv.png" alt="Tópico Leitura do CSV: face para cima e referência do rasgo" loading="lazy"><figcaption>Tópico Leitura do CSV: face para cima e referência do rasgo</figcaption></figure>
+<ul>
+<li><b>Face que fica para cima</b>: qual face da peça o software de projeto considera a de cima. Só mude se os furos e rasgos saírem espelhados (na face errada).</li>
+<li><b>Referência do rasgo</b>: se a medida do rasgo no CSV é a linha do centro do canal ou a borda. Mude se os rasgos saírem deslocados metade da largura.</li>
+</ul>
+<p>O mapeamento de colunas de um CSV de outro software não fica aqui: ele é feito na tela Projeto, no botão "Colunas" de cada arquivo, e o RouterFlow lembra por tipo de arquivo.</p>
+<h3 id="avançado-como-o-programa-é-escrito">Avançado: como o programa é escrito</h3>
+<figure class="shot"><img class="zoom" src="img/manual/config-avancado.png" alt="Tópico Avançado: cabeçalho, rodapé, troca de ferramenta, numeração e casas decimais" loading="lazy"><figcaption>Tópico Avançado: cabeçalho, rodapé, troca de ferramenta, numeração e casas decimais</figcaption></figure>
+<p>Tudo aqui vem preenchido pelo pós-processador escolhido. Só mexa se a máquina recusar o programa ou se o fabricante pedir algo específico: numeração de linhas (N), fim de linha (CRLF ou LF), escrita modal (repetir ou não o G1 em cada linha), casas decimais, e os textos de cabeçalho, rodapé e troca, que aceitam variáveis como {rpm}, {num} e {z_seguro}. "Restaurar padrões" volta ao modelo escolhido.</p>
+<h3 id="cópia-de-segurança-da-configuração">Cópia de segurança da configuração</h3>
+<figure class="shot"><img class="zoom" src="img/manual/config-backup.png" alt="Tópico Cópia de segurança: exportar, importar e abrir a pasta das cópias automáticas" loading="lazy"><figcaption>Tópico Cópia de segurança: exportar, importar e abrir a pasta das cópias automáticas</figcaption></figure>
+<ul>
+<li><b>Exportar configuração</b> salva um arquivo .json com máquinas, pós-processador, ferramentas, chapas, folgas, estoque de sobras e mapeamentos de CSV.</li>
+<li><b>Importar de um arquivo</b> aplica esse arquivo em outro computador (ou no mesmo, depois de formatar). Antes, uma cópia do que estava lá é guardada.</li>
+<li><b>Abrir a pasta das cópias automáticas</b>: o RouterFlow guarda sozinho uma cópia por dia, das últimas 20 mudanças.</li>
+<li>A licença não vai no arquivo: ela é ativada com a chave em cada computador. Atualizar o RouterFlow nunca apaga a configuração.</li>
+</ul>
+<h2 id="projeto-da-lista-de-peças-às-chapas">Projeto: da lista de peças às chapas</h2>
+<h3 id="etapa-1-arquivos">Etapa 1: arquivos</h3>
+<figure class="shot"><img class="zoom" src="img/manual/projeto-vazio.png" alt="Tela Projeto vazia: linha do tempo, Escolher CSV, área de arrastar e recentes" loading="lazy"><figcaption>Tela Projeto vazia: linha do tempo, Escolher CSV, área de arrastar e recentes</figcaption></figure>
+<ul>
+<li><b>Escolher CSV</b> abre a janela de arquivos. Dá para escolher vários de uma vez: as peças de todos entram nas mesmas chapas, com o nome do projeto no ID de cada peça. Também dá para arrastar os arquivos para a área tracejada.</li>
+<li>O CSV do software de projeto (o mesmo do plano de corte) traz contorno, fitas, furos, rasgos, cliente e ambiente. O nome do cliente vira o nome do projeto, da pasta e dos arquivos.</li>
+<li><b>Lista simples</b>: qualquer CSV com nome, comprimento, largura, espessura, quantidade, material e veio (do Excel, do Corte Certo, de outro programa). Sem furos e rasgos, porque a lista não os traz.</li>
+<li><b>Recentes</b> reabre os últimos projetos com um clique. <b>Abrir projeto.json</b> (no alto, à direita) reabre qualquer projeto gerado antes, para ajustar ou regravar.</li>
+</ul>
+<figure class="shot"><img class="zoom" src="img/manual/projeto-arquivos.png" alt="Etapa 1 com arquivos escolhidos: cada arquivo com o botão Colunas e o X para tirar" loading="lazy"><figcaption>Etapa 1 com arquivos escolhidos: cada arquivo com o botão Colunas e o X para tirar</figcaption></figure>
+<p>Se o RouterFlow não reconhecer as colunas de um arquivo, ele abre a janela de mapeamento. O botão <b>Colunas</b> ao lado de cada arquivo abre a mesma janela quando quiser conferir.</p>
+<figure class="shot"><img class="zoom" src="img/manual/colunas.png" alt="Janela Colunas: amostra do arquivo e uma seleção por campo (nome, comprimento, largura, espessura, quantidade, material, veio)" loading="lazy"><figcaption>Janela Colunas: amostra do arquivo e uma seleção por campo (nome, comprimento, largura, espessura, quantidade, material, veio)</figcaption></figure>
+<p>Diga qual coluna do arquivo é cada campo, olhando a amostra das primeiras linhas. Comprimento e largura são obrigatórios. A escolha fica guardada para os próximos arquivos com o mesmo cabeçalho.</p>
+<h3 id="etapa-2-chapa-e-máquina">Etapa 2: chapa e máquina</h3>
+<ul>
+<li><b>Máquina</b>: a que vai cortar este projeto. "Trocar" abre a janela de máquinas.</li>
+<li><b>Peças na chapa</b>: <b>Em pé</b> (lado maior das peças no Y da máquina) ou <b>Deitadas</b> (no X). Vale para as peças sem veio; peça com veio segue o veio da chapa. O nesting só desobedece se a orientação pedida custar chapa. Logo abaixo, uma linha diz como a chapa entra na mesa (em pé ou deitada, pela área útil cadastrada) e avisa se ela não cabe.</li>
+<li><b>Origem (zero da máquina)</b>: o canto da chapa onde fica o zero. Os quatro botões desenham o canto; o texto embaixo confirma. O encaixe começa por esse canto e os eixos aparecem no editor.</li>
+<li><b>Salvar em</b>: ao lado do CSV (padrão) ou numa pasta fixa.</li>
+</ul>
+<figure class="shot"><img class="zoom" src="img/manual/projeto-opcoes.png" alt="Etapa 2, parte de baixo: caixas de programa, verso, unir, corte no ar e o bloco Sobras neste projeto" loading="lazy"><figcaption>Etapa 2, parte de baixo: caixas de programa, verso, unir, corte no ar e o bloco Sobras neste projeto</figcaption></figure>
+<p>As caixas:</p>
+<div class='tbl'><table class='man'><thead><tr><th>Caixa</th><th>Marcada</th><th>Desmarcada</th></tr></thead><tbody><tr><td><b>Gerar o programa da router (.nc)</b></td><td>Sai um .nc por chapa, além do DXF</td><td>Só DXF, para quem usa o Aspire</td></tr><tr><td><b>Programa do verso (chapa virada)</b></td><td>Quando há furos ou rasgos atrás da peça, sai um programa espelhado para a chapa virada</td><td>Usinagem do verso fica de fora</td></tr><tr><td><b>Unir tudo numa chapa só</b></td><td>Todas as peças juntas, sem separar por material</td><td>Uma chapa por material e espessura (o normal)</td></tr><tr><td><b>Corte no ar (teste sem chapa)</b></td><td>Programa elevado para conferir o percurso. Nunca fica marcado sozinho</td><td>Corte normal</td></tr><tr><td><b>Usar as sobras do estoque</b></td><td>O nesting encaixa nas sobras guardadas antes de abrir chapa inteira</td><td>Só chapa inteira, sem reservar nem guardar nada</td></tr><tr><td><b>Mostrar a sobra de cada chapa</b></td><td>Desenha a sobra no editor e no mapa, imprime a etiqueta dela e permite cortar</td><td>O projeto não calcula, não mostra nem etiqueta sobra</td></tr><tr><td><b>Cortar a sobra da chapa na router</b></td><td>A router solta o retalho alinhado, sai etiqueta e ele vai para o estoque</td><td>O retalho fica na chapa</td></tr></tbody></table></div>
+<p>O RouterFlow lembra as últimas escolhas para o próximo projeto, menos "Corte no ar".</p>
+<h3 id="etapa-3-gerar-chapas">Etapa 3: gerar chapas</h3>
+<p>Com pelo menos um arquivo escolhido, o botão <b>Gerar chapas</b> fica ativo e marcado como próximo passo. Ao clicar, o registro da geração mostra o que está acontecendo: leitura dos arquivos, nesting por material (doze estratégias, fica a melhor), gravação dos arquivos.</p>
+<p>O que sai na pasta do projeto (Cliente - Ambiente_RouterFlow):</p>
+<div class='tbl'><table class='man'><thead><tr><th>Arquivo</th><th>O que é</th></tr></thead><tbody><tr><td>Cliente_Material.dxf</td><td>Todas as chapas do material num DXF só, layers CONTORNO, FURO_D5_P12, RASGO_L6_P6, TEXTO e CHAPA, na orientação e origem da mesa</td></tr><tr><td>Cliente_Material_VERSO.dxf</td><td>Usinagem da face de trás, espelhada, quando existe</td></tr><tr><td>Cliente_Material_chapa1.nc</td><td>Programa da router de cada chapa (e _VERSO.nc quando marcado)</td></tr><tr><td>etiquetas.html, mapa_chapas.html, ficha_producao.html</td><td>Impressos, abrem no navegador para imprimir com Ctrl+P</td></tr><tr><td>lista_pecas.csv, lista_fitagem.csv, ferragens.csv</td><td>Planilhas para Excel ou para o seu sistema</td></tr><tr><td>projeto.json</td><td>O projeto inteiro, para reabrir</td></tr><tr><td>relatorio.txt</td><td>Resumo em texto</td></tr></tbody></table></div>
+<h3 id="etapa-4-ajustar-no-editor-de-chapas">Etapa 4: ajustar no editor de chapas</h3>
+<figure class="shot"><img class="zoom" src="img/manual/editor.png" alt="Editor de chapas: cabeçalho com os impressos, abas por chapa, barra de zoom, o desenho e o painel de ações" loading="lazy"><figcaption>Editor de chapas: cabeçalho com os impressos, abas por chapa, barra de zoom, o desenho e o painel de ações</figcaption></figure>
+<p>No alto: o nome do projeto, quantas peças em quantas chapas, e o botão <b>Ir para a router</b> (próximo passo). Logo abaixo, <b>Etiquetas</b>, <b>Mapa das chapas</b>, <b>Ficha de produção</b> e <b>Pasta do projeto</b>.</p>
+<p>Uma aba por chapa, com material e número. A barra acima do desenho:</p>
+<ul>
+<li><b>- 100% +</b> zoom; <b>Ajustar</b> enquadra a chapa; <b>P, M, G</b> mudam a altura da área do desenho; <b>Tela cheia</b> usa o monitor inteiro (Esc volta); o botão <b>i</b> mostra ou esconde as dicas.</li>
+<li>Roda do mouse: zoom no ponto. Arraste o fundo: move a chapa. Duplo clique no fundo ou tecla 0: ajusta. A barra fina abaixo do desenho estica a área à vontade.</li>
+</ul>
+<p>O painel da direita:</p>
+<div class='tbl'><table class='man'><thead><tr><th>Grupo</th><th>Botão</th><th>O que faz</th></tr></thead><tbody><tr><td>Peça selecionada</td><td><b>Girar 90°</b></td><td>Gira a peça selecionada. Peça com veio avisa se o veio vai sair errado</td></tr><tr><td></td><td><b>Desfazer</b></td><td>Volta o último movimento</td></tr><tr><td></td><td><b>outra chapa</b> e <b>Mover</b></td><td>Leva a peça para a chapa escolhida na lista</td></tr><tr><td>Chapas</td><td><b>Nova chapa</b></td><td>Abre uma chapa vazia do mesmo material</td></tr><tr><td></td><td><b>Excluir chapa</b></td><td>Remove a chapa (só vazia)</td></tr><tr><td></td><td><b>Marcar área com defeito</b></td><td>Cria um retângulo vermelho (nó, lasca, borda batida); arraste até o lugar e ajuste o tamanho. Nenhuma peça entra ali</td></tr><tr><td></td><td><b>Afastar peças na folga</b></td><td>Empurra as peças mais perto que a folga até a folga certa, sem sair da chapa</td></tr><tr><td></td><td><b>Nesting automático</b></td><td>Refaz o encaixe de todas as chapas, desviando das áreas com defeito. Descarta as alterações à mão</td></tr><tr><td>Finalizar</td><td><b>Furos, Rasgos, Contornos</b></td><td>Marque para gerar, além do programa completo, um programa só com aquela operação</td></tr><tr><td></td><td><b>Aplicar e regravar</b></td><td>Regrava DXF, programas, mapa, etiquetas e ficha com as alterações. Fica como próximo passo quando você mexeu</td></tr><tr><td></td><td><b>Abrir .nc na Router</b></td><td>Regrava e já abre o programa desta chapa na Router</td></tr></tbody></table></div>
+<p>Arrastar uma peça: clique nela e arraste. Ao soltar perto de outra, o encaixe mantém a folga sozinho. Peças sobrepostas ficam vermelhas e não deixam regravar; peças mais perto que a folga ficam laranja e são afastadas sozinhas ao regravar.</p>
+<p>Quando "Mostrar a sobra" está marcado, o maior retalho de cada chapa aparece tracejado em verde, com três escolhas no painel: <b>Cortar e guardar</b> (etiqueta e estoque), <b>Cortar e descartar</b> (só corta) ou <b>Deixar na chapa</b>.</p>
+<p>Abaixo do editor, os <b>avisos</b> do projeto: cada um explica o que aconteceu, o que fazer e tem um botão que leva ao lugar certo (uma configuração, o editor ou a ficha).</p>
+<h3 id="histórico">Histórico</h3>
+<p>No fim da tela Projeto, "Histórico de projetos" lista tudo o que já foi gerado neste computador, com data, chapas e peças. Reabra para ajustar ou regravar.</p>
+<h2 id="router-conferir-o-programa-antes-de-cortar">Router: conferir o programa antes de cortar</h2>
+<figure class="shot"><img class="zoom" src="img/manual/router.png" alt="Router: lista de programas, desenho do percurso sobre a mesa com as zonas de vácuo, e o painel Passo a passo" loading="lazy"><figcaption>Router: lista de programas, desenho do percurso sobre a mesa com as zonas de vácuo, e o painel Passo a passo</figcaption></figure>
+<p>A Router abre sozinha no programa completo da primeira chapa quando você vem do projeto. <b>Abrir outro .nc</b> carrega qualquer programa, inclusive de outra origem (Aspire, por exemplo), para conferir. O botão <b>Ir para a Produção</b> é o próximo passo.</p>
+<p>A lista de programas mostra material, chapa, face (frente ou verso) e as zonas de vácuo. A seleção rápida troca de programa sem abrir a lista.</p>
+<p>O desenho: a mesa com a área útil tracejada, a chapa como foi gerada (deitada ou em pé; vermelha se não cabe), a grade de vácuo com as zonas a abrir em verde, e o percurso colorido pela legenda: cinza rápido, vermelho corte passante, laranja rampa ou corte parcial, azul furo, verde início de operação, branco a operação atual. Passe o mouse sobre um traço para ver a linha do programa. <b>Enquadrar</b>, zoom, <b>P M G</b>, <b>Sem painel</b> e <b>Tela cheia</b> funcionam como no editor.</p>
+<p>O painel da direita tem três abas:</p>
+<ul>
+<li><b>Passo a passo</b>: <b>Início</b>, <b>Anterior</b>, <b>Próxima</b> e <b>Reproduzir</b> andam operação por operação; o desenho mostra as feitas em cinza, a atual em branco e as próximas escondidas. A tabela lista cada operação com tipo (furo, rasgo, contorno, sobra), peça, ferramenta T, Z e percurso. "Mostrando o programa completo" volta a mostrar tudo.</li>
+</ul>
+<figure class="shot"><img class="zoom" src="img/manual/router-resumo.png" alt="Aba Resumo e verificações: máquina, ferramentas, rotação, avanços, chapa na mesa, profundidade, área percorrida, tempo e a lista de verificações" loading="lazy"><figcaption>Aba Resumo e verificações: máquina, ferramentas, rotação, avanços, chapa na mesa, profundidade, área percorrida, tempo e a lista de verificações</figcaption></figure>
+<ul>
+<li><b>Resumo e verificações</b>: máquina, ferramentas, rotação, avanços, chapa na mesa (tamanho e sentido), topo da chapa, profundidade mínima, área percorrida, tempo estimado e as verificações de segurança: rápido dentro da chapa, corte sem avanço, spindle desligado, coordenadas fora da mesa, corte entrando demais na mesa. Cada aviso diz o que fazer.</li>
+</ul>
+<figure class="shot"><img class="zoom" src="img/manual/router-linhas.png" alt="Aba Linha por linha: cada linha do G-code traduzida em português" loading="lazy"><figcaption>Aba Linha por linha: cada linha do G-code traduzida em português</figcaption></figure>
+<ul>
+<li><b>Linha por linha</b>: o programa inteiro traduzido, linha a linha, com o que cada comando faz e o aviso na linha, quando houver.</li>
+</ul>
+<div class="note">Primeira vez numa máquina: gere o projeto com "Corte no ar" marcado, rode na router e confira o percurso com a fresa elevada. Depois teste numa sobra de MDF, uma operação por vez (furos, depois rasgos, depois contornos), antes de cortar uma chapa boa.</div>
+<h2 id="produção-cortar-chapa-a-chapa">Produção: cortar chapa a chapa</h2>
+<figure class="shot"><img class="zoom" src="img/manual/producao.png" alt="Produção: barra de progresso, uma linha por chapa com miniatura, programa, Ver na Router, Pendrive e a caixa Feita" loading="lazy"><figcaption>Produção: barra de progresso, uma linha por chapa com miniatura, programa, Ver na Router, Pendrive e a caixa Feita</figcaption></figure>
+<p>É a tela de quem está na máquina. Cada chapa tem miniatura, material, peças, o programa (e o do verso), quantas operações, tempo e as zonas de vácuo a abrir.</p>
+<ul>
+<li><b>Ver na Router</b> abre aquele programa para conferir.</li>
+<li><b>Pendrive</b> copia só aquele programa para o pendrive. <b>Todos os .nc para o pendrive</b> (no alto, próximo passo) copia todos.</li>
+<li><b>Marcar feita</b> registra a chapa cortada; a barra de progresso e a data ficam gravadas com o projeto, então dá para fechar e continuar no dia seguinte.</li>
+<li><b>Tela grande</b> aumenta tudo para ler de longe.</li>
+</ul>
+<h2 id="sobras-o-estoque-de-retalhos">Sobras: o estoque de retalhos</h2>
+<figure class="shot"><img class="zoom" src="img/manual/sobras.png" alt="Sobras: números do estoque, filtros de busca, a lista com material, medidas, área e situação, e o cadastro manual" loading="lazy"><figcaption>Sobras: números do estoque, filtros de busca, a lista com material, medidas, área e situação, e o cadastro manual</figcaption></figure>
+<p>As sobras entram sozinhas quando um projeto é gerado com "Cortar e guardar": a router corta o retalho, sai a etiqueta "SOBRA" e ele fica disponível. No projeto seguinte, com "Usar as sobras do estoque" marcado, o nesting encaixa nelas antes de abrir chapa inteira; a sobra usada fica reservada àquele projeto.</p>
+<ul>
+<li><b>Busca e filtros</b>: por material ou projeto de origem, só disponíveis ou só usadas, ordenação, e a pergunta "cabe uma peça de A x B?", que aceita a peça em qualquer sentido. O resumo diz quantas sobras passaram e quantos metros quadrados estão livres.</li>
+<li><b>Liberar</b> devolve ao estoque uma sobra reservada a um projeto que não foi cortado. O <b>X</b> tira do estoque (usada à mão ou descartada).</li>
+<li><b>Cadastrar uma sobra que já existe</b>: material (igual ao do CSV), lado maior e menor, "Guardar no estoque".</li>
+</ul>
+<h2 id="impressos">Impressos</h2>
+<ul>
+<li><b>Etiquetas</b>: uma por peça, com medidas, cliente, ambiente, módulo, peça, material, IDs, código, o desenho da peça com as fitas de borda (B1, B2...) e a face de alinhamento, e a legenda das fitas. No formato 100 x 60 mm (impressora de etiquetas, uma por etiqueta) ou A4 com 8 por folha. Sobra cortada ganha etiqueta própria.</li>
+<li><b>Mapa das chapas</b>: uma folha por chapa com as peças numeradas, medidas, sentido do veio e a sobra que fica. Fica ao lado da máquina.</li>
+<li><b>Ficha de produção</b>: materiais, chapas, aproveitamento, metros de fita por cor, ferragens do projeto, arquivos gerados e os avisos a conferir.</li>
+<li><b>Listas em CSV</b>: peças, fitagem por aresta e ferragens.</li>
+</ul>
+<p>Todos abrem no navegador; imprima com Ctrl+P. Na impressora de etiquetas, escolha o papel 100 x 60.</p>
+<h2 id="licença-e-atualização">Licença e atualização</h2>
+<ul>
+<li><b>Ativar</b>: tela Licença, código da máquina, WhatsApp, colar a chave, Ativar.</li>
+<li><b>Renovar</b>: com internet, a renovação chega sozinha depois que o suporte a registra. Sem internet, cole a chave nova. "Verificar agora" consulta na hora.</li>
+<li><b>Avisos</b>: faixa a 30 dias (laranja), 7 e 1 dia (vermelha), e uma janela uma vez em cada marco. Vencida, o programa abre bloqueado na tela Licença até a chave nova.</li>
+<li><b>Confirmação online</b>: a licença precisa ser confirmada pela internet pelo menos a cada 15 dias. A partir do sétimo dia sem confirmação, uma faixa avisa; no décimo quinto, bloqueia até conectar. Libere github.com e routerflow.com.br no antivírus ou firewall se a confirmação falhar com internet.</li>
+<li><b>Atualização</b>: obrigatória e automática. O RouterFlow baixa, instala e reabre. Configuração e licença ficam.</li>
+<li><b>Transferir de computador</b>: a chave é presa à máquina. Exporte a configuração (Cópia de segurança), instale no computador novo, importe e peça a chave nova ao suporte com o código do novo computador.</li>
+</ul>
+<h2 id="problemas-comuns-e-avisos">Problemas comuns e avisos</h2>
+<div class='tbl'><table class='man'><thead><tr><th>O que aparece</th><th>O que fazer</th></tr></thead><tbody><tr><td>Peças sobrepostas (vermelhas)</td><td>No editor, afaste as peças ou clique em Nesting automático, e regrave</td></tr><tr><td>Peças mais perto que a folga (laranja)</td><td>Regravar afasta sozinho. Se não couber afastar, mova à mão</td></tr><tr><td>"Não cabe na mesa" na etapa 2 ou chapa vermelha na Router</td><td>Confira a área útil em Sua router (X e Y podem estar trocados) ou o tamanho da chapa em Chapas e folgas</td></tr><tr><td>Coordenadas fora da mesa</td><td>Idem acima</td></tr><tr><td>Nenhuma ferramenta cabe nesse furo ou rasgo</td><td>Cadastre uma broca do diâmetro ou uma fresa menor em Ferramentas e gere de novo</td></tr><tr><td>Furo menor que a fresa escolhida</td><td>Cadastre a broca ou deixe a ferramenta dos furos em Automático</td></tr><tr><td>Corte entrando demais na mesa</td><td>Entrada na mesa em 0,1 a 0,3, ou confira o Z zero</td></tr><tr><td>Não deu para achar o topo da chapa (programa de outra origem)</td><td>Z zero do programa é diferente do configurado; confira</td></tr><tr><td>Rápido dentro da chapa</td><td>Programa de outra origem com altura segura baixa; confira</td></tr><tr><td>Furos ou rasgos na face errada</td><td>Configurações, Leitura do CSV, Face que fica para cima</td></tr><tr><td>Rasgos deslocados metade da largura</td><td>Configurações, Leitura do CSV, Referência do rasgo</td></tr><tr><td>Material do CSV sem chapa cadastrada</td><td>Chapas e folgas, Adicionar material, ou a chapa padrão é usada</td></tr><tr><td>Muitas voltas para cortar</td><td>Ferramentas, Passe maior que a espessura mais 0,1</td></tr><tr><td>Fresa sobe em alguns pontos do contorno</td><td>São as abas; Corte, Abas por peça = 0 se o vácuo segura</td></tr><tr><td>Programa recusado pela máquina</td><td>Pós-processador: importe o .pp do Aspire ou troque o modelo; confira numeração e fim de linha em Avançado</td></tr><tr><td>"O RouterFlow não consegue confirmar a licença"</td><td>Conecte à internet e clique em Verificar agora; libere github.com e routerflow.com.br no firewall</td></tr></tbody></table></div>
+<h2 id="atalhos-e-dicas">Atalhos e dicas</h2>
+<ul>
+<li>No editor e na Router: <b>+</b> e <b>-</b> zoom, <b>0</b> ajusta, <b>F</b> tela cheia, <b>Esc</b> volta, duplo clique no fundo ajusta.</li>
+<li>Botão <b>?</b> em cada tópico das Configurações explica o tópico.</li>
+<li>O botão maior com "PRÓXIMO PASSO" é sempre a próxima ação.</li>
+<li>Todo aviso tem um botão que leva ao lugar da correção.</li>
+<li>Gerar de novo não perde nada: os arquivos são regravados na mesma pasta e o projeto.json guarda tudo.</li>
+<li>Suporte: Consultor RouterFlow, WhatsApp (34) 99162-7276, routerflowapp@gmail.com, www.routerflow.com.br.</li>
+</ul>
+  </article>
+</main>
+<footer>
+  <img src="img/logo.png" alt="" width="24" height="24"><span>© 2026 RouterFlow. Todos os direitos reservados. <a href="index.html">www.routerflow.com.br</a></span>
+</footer>
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+  <button class="lb-close" id="lb-close" aria-label="Fechar">Fechar</button>
+  <figure><img id="lb-img" src="" alt=""><figcaption id="lb-cap"></figcaption></figure>
+</div>
+<script>
+(function () {
+  var lb = document.getElementById("lightbox"), lbImg = document.getElementById("lb-img"), lbCap = document.getElementById("lb-cap");
+  function openLb(img) { lbImg.src = img.currentSrc || img.src; lbImg.alt = img.alt; var fc = img.closest("figure") && img.closest("figure").querySelector("figcaption"); lbCap.textContent = fc ? fc.textContent : img.alt; lb.hidden = false; document.body.classList.add("lb-open"); }
+  function closeLb() { lb.hidden = true; document.body.classList.remove("lb-open"); lbImg.src = ""; }
+  Array.prototype.forEach.call(document.querySelectorAll("img.zoom"), function (img) { img.setAttribute("title", "Clique para ampliar"); img.addEventListener("click", function () { openLb(img); }); });
+  lb.addEventListener("click", function (e) { if (e.target === lb || e.target.tagName === "FIGURE") closeLb(); });
+  document.getElementById("lb-close").addEventListener("click", closeLb);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !lb.hidden) closeLb(); });
+  var mb = document.getElementById("menu-btn");
+  mb.addEventListener("click", function () { var open = document.body.classList.toggle("menu-open"); mb.setAttribute("aria-expanded", open ? "true" : "false"); });
+})();
+</script>
+</body>
+</html>
