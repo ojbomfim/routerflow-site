@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.8.3",
+  "data": "2026-09-29",
+  "titulo": "Contadores de uso e lista de novidades enxuta",
+  "itens": [
+   "O RouterFlow passa a contar, sem identificar ninguém, quantas vezes abriu, quantos projetos, chapas e programas gerou e quais telas usou. Só números e o código da máquina, uma vez por dia, para o suporte entender o que é mais usado e melhorar. Nenhum nome de cliente, arquivo ou CNPJ sai do computador.",
+   "A lista de novidades começa na 3.8.2. O que veio antes era construção."
+  ]
+ },
+ {
   "versao": "3.8.2",
   "data": "2026-09-29",
   "titulo": "Agora você fica sabendo o que mudou",
