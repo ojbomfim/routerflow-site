@@ -34,4 +34,5 @@ Idioma: português do Brasil. Público: marcenarias e fábricas de móveis plane
 
 ## Páginas
 
-- [Página inicial](https://www.routerflow.com.br/): como funciona, o que sai, recursos, preço, download e contato.
+- [Página inicial](https://www.routerflow.com.br/): como funciona, o que sai, recursos, preço, novidades de cada versão, download e contato.
+- [Novidades por versão em JSON](https://www.routerflow.com.br/novidades.json): versão, data, título e itens de cada atualização.

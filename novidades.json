@@ -1,0 +1,112 @@
+[
+ {
+  "versao": "3.8.2",
+  "data": "2026-09-29",
+  "titulo": "Agora você fica sabendo o que mudou",
+  "itens": [
+   "Esta lista de novidades. Toda vez que o RouterFlow atualizar, ele conta o que chegou de novo: um aviso na primeira abertura, um cartão no Início e o histórico completo na tela Sobre.",
+   "O site ganhou a mesma seção, para quem quer espiar antes de atualizar."
+  ]
+ },
+ {
+  "versao": "3.8.1",
+  "data": "2026-09-29",
+  "titulo": "Mudança de endereço",
+  "itens": [
+   "O RouterFlow passou a morar na conta routerflowapp. Para você não muda nada: licença, atualização e download continuam chegando sozinhos."
+  ]
+ },
+ {
+  "versao": "3.8.0",
+  "data": "2026-09-29",
+  "titulo": "Cara nova no Início, no Sobre e no site",
+  "itens": [
+   "O Início explica o caminho inteiro em sete passos: Projeto, Chapa e máquina, Gerar, Ajustar, Router, Produção e Sobras.",
+   "Botão para abrir o site direto do programa, no Início e no Sobre.",
+   "O contato do suporte é o Consultor RouterFlow, pelo WhatsApp ou pelo e-mail routerflowapp@gmail.com.",
+   "Site refeito, com o download da última versão em um clique."
+  ]
+ },
+ {
+  "versao": "3.7.1",
+  "data": "2026-09-29",
+  "titulo": "O nome do cliente em tudo",
+  "itens": [
+   "O projeto, a pasta, os DXF, os programas .nc, o mapa, a ficha e as etiquetas levam o nome do cliente e do ambiente que vêm no CSV. Chega de pasta chamada balcao_promob_DXF.",
+   "Router reenquadrada: desenho maior, painel da direita mais estreito e cada operação com um chip colorido (furo, rasgo, contorno)."
+  ]
+ },
+ {
+  "versao": "3.7.0",
+  "data": "2026-09-29",
+  "titulo": "Perfis de máquina e tela Projeto arrumada",
+  "itens": [
+   "Tem mais de uma router? Cada uma com sua mesa, vácuo, ferramentas e pós-processador. Troque pelo menu lateral, crie um perfil por cópia ou importe o .pp do Aspire.",
+   "Tela Projeto com linha do tempo, etapas 1 e 2 lado a lado, botão Gerar só quando tem arquivo e as últimas opções lembradas.",
+   "Etiquetas, mapa e ficha em destaque logo abaixo do projeto. Histórico completo do que já foi gerado.",
+   "Menu Sobras novo e Configurações com nomes claros e um \"por onde começar\"."
+  ]
+ },
+ {
+  "versao": "3.6.0",
+  "data": "2026-09-29",
+  "titulo": "A router corta a sobra e ela vai para o estoque",
+  "itens": [
+   "Marque \"Cortar a sobra\" e a router solta o retalho alinhado, sai etiqueta e ele entra no estoque sozinho. No próximo projeto o nesting usa a sobra antes de abrir chapa inteira.",
+   "Você decide por chapa: guardar, descartar ou deixar como está."
+  ]
+ },
+ {
+  "versao": "3.5.0",
+  "data": "2026-09-29",
+  "titulo": "Etiquetas do jeito da oficina",
+  "itens": [
+   "Etiqueta com cliente, ambiente, módulo, peça, material, IDs, código e o desenho da peça com as fitas de borda e a face de alinhamento. Oito por folha A4.",
+   "Furos, rasgos e contornos podem sair em programas separados, direto no painel da chapa. O verso virou opção do projeto.",
+   "Lista de programas da Router em tabela, com o que cada um faz."
+  ]
+ },
+ {
+  "versao": "3.4.0",
+  "data": "2026-09-28",
+  "titulo": "Produção, vácuo, defeitos e qualquer CSV",
+  "itens": [
+   "Tela Produção para o operador: as chapas na ordem, o programa de cada uma, pendrive e a caixa \"feita\".",
+   "Zonas de vácuo: o programa diz quais zonas abrir e a Router mostra na grade.",
+   "Área com defeito na chapa: marque no editor e o nesting desvia.",
+   "CSV de outro software? Uma janela mostra as colunas e você diz qual é qual. O RouterFlow lembra.",
+   "Arcos no contorno e corte de linha comum (esse ainda em teste, desligado por padrão)."
+  ]
+ },
+ {
+  "versao": "3.3.x",
+  "data": "2026-09-28",
+  "titulo": "Atualização sozinha e avisos que explicam",
+  "itens": [
+   "Quando sai versão nova, o RouterFlow baixa, instala e abre de novo sozinho.",
+   "Configurações em acordeão, um tópico por vez, com o resumo no título.",
+   "Sai um .nc por chapa. Os programas separados viraram opção.",
+   "Cada aviso diz o que fazer e tem um botão que leva no lugar certo.",
+   "A chave da licença leva empresa, CNPJ, e-mail e telefone, mostrados na tela Licença."
+  ]
+ },
+ {
+  "versao": "3.2.x",
+  "data": "2026-09-28",
+  "titulo": "Licença mais segura",
+  "itens": [
+   "Confirmação online de tempos em tempos, aviso com antecedência e botão Verificar agora.",
+   "Importar o pós-processador .pp do Aspire passou a funcionar de verdade."
+  ]
+ },
+ {
+  "versao": "3.1.x",
+  "data": "2026-09-28",
+  "titulo": "Interface nova e a router sem CAM",
+  "itens": [
+   "Tudo novo por dentro: tema claro e escuro, editor de chapas com arrastar, girar, desfazer, zoom e tela cheia.",
+   "O próprio RouterFlow gera os programas .nc da router, com furos, rasgos, contornos, abas e rampa.",
+   "Router passo a passo sobre a mesa, mapa das chapas, etiquetas, ficha de produção e modelos de pós-processador."
+  ]
+ }
+]

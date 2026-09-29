@@ -149,3 +149,14 @@ img.zoom { cursor: zoom-in; }
 .lb-close { position: fixed; top: 14px; right: 16px; background: #fff; color: var(--primary); border: 0; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px; cursor: pointer; box-shadow: var(--e2); }
 body.lb-open { overflow: hidden; }
 .shot img, .gallery img, .hero-shot { image-rendering: auto; }
+
+/* Novidades */
+.news-list { max-width: 860px; margin: 0 auto; }
+.news-list details { background: var(--surface-bright); border: 1px solid var(--outline-variant); border-radius: var(--r-md); padding: 4px 18px; margin-bottom: 10px; box-shadow: var(--e1); }
+.news-list summary { cursor: pointer; padding: 12px 0; list-style: none; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.news-list summary::-webkit-details-marker { display: none; }
+.news-list summary b { color: var(--primary); font-size: 17px; }
+.news-list .news-t { flex: 1; font-weight: 600; }
+.news-list .news-d { color: var(--on-surface-variant); font-size: 14px; }
+.news-list ul { color: var(--on-surface-variant); margin: 0 0 14px; padding-left: 22px; }
+.news-list li { margin: 6px 0; }
