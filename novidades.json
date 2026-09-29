@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.8.17",
+  "data": "2026-09-29",
+  "titulo": "Produção com histórico: continue de onde parou",
+  "itens": [
+   "A tela Produção agora lista os projetos gerados neste computador com o andamento de cada um: quantas chapas já foram feitas e se está concluído, em andamento ou nem começou. \"Abrir na Produção\" carrega o projeto ali mesmo, sem passar pelo Projeto.",
+   "Na tela Projeto, o histórico passou a vir antes dos avisos."
+  ]
+ },
+ {
   "versao": "3.8.16",
   "data": "2026-09-29",
   "titulo": "Tela Projeto mais limpa depois de gerar",
