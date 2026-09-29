@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.8.13",
+  "data": "2026-09-29",
+  "titulo": "Corte passante igual ao do Aspire",
+  "itens": [
+   "O corte que atravessa a chapa passou a entrar 0,1 mm na mesa, como o Aspire faz (chapa de 15 mm corta a 15,1). Antes eram 0,3 mm. Quem já ajustou \"Entrada na mesa\" em Configurações, Corte, continua com o seu valor.",
+   "Modelo novo de pós-processador \"INMES IR-30K, programa real\", copiado de um programa que rodou na máquina: sem numeração de linha. O modelo antigo, tirado do .pp do Aspire, continua disponível."
+  ]
+ },
+ {
   "versao": "3.8.12",
   "data": "2026-09-29",
   "titulo": "Encaixe mais apertado, começando no zero da máquina",
