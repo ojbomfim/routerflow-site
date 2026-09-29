@@ -20,7 +20,14 @@
 .man-wrap { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 40px; padding: 32px 6vw 56px; }
 .man-toc { position: sticky; top: 76px; align-self: start; max-height: calc(100vh - 100px); overflow: auto; font-size: 14px; }
 .man-toc ul { list-style: none; padding: 0; margin: 0; }
-.man-toc li { margin: 4px 0; } .man-toc li.l2 a { color: var(--on-surface-variant); text-decoration: none; } .man-toc li.l2 a:hover { color: var(--primary); }
+.man-toc li { margin: 2px 0; } .man-toc a { display: block; padding: 4px 10px; border-left: 3px solid transparent; border-radius: 0 8px 8px 0; color: var(--on-surface-variant); text-decoration: none; line-height: 1.35; }
+.man-toc a:hover { color: var(--primary); background: var(--surface-low); }
+.man-toc li.l2 > a { font-weight: 600; }
+.man-toc li.l2 > ul { display: none; margin: 2px 0 6px 10px; } .man-toc li.l2.open > ul { display: block; }
+.man-toc li.l3 a { font-size: 13px; padding: 3px 10px; }
+.man-toc a.active { color: var(--primary); border-left-color: var(--secondary); background: var(--surface-low); font-weight: 700; }
+.man-here { display: none; position: sticky; top: 60px; z-index: 5; margin: 0 -16px 12px; padding: 8px 16px; background: var(--surface-bright); border-bottom: 1px solid var(--outline-variant); font-size: 13px; color: var(--on-surface-variant); }
+.man-here b { color: var(--primary); }
 .man-body { max-width: 860px; }
 .man-body h1 { font-size: 34px; color: var(--primary); margin-bottom: 8px; }
 .man-body h2 { text-align: left; font-size: 26px; margin: 44px 0 12px; color: var(--primary); border-bottom: 2px solid var(--outline-variant); padding-bottom: 6px; }
@@ -36,7 +43,7 @@ code { background: var(--surface-low); padding: 1px 6px; border-radius: 6px; fon
 .man-body h2, .man-body h3 { scroll-margin-top: 84px; }
 .man-body img { max-width: 100%; height: auto; }
 .tbl { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-@media (max-width: 900px) { .man-wrap { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 20px 16px 40px; } .man-toc { position: static; max-height: none; } .man-body h1 { font-size: 26px; } .man-body h2 { font-size: 22px; } table.man { font-size: 14px; min-width: 560px; } }
+@media (max-width: 900px) { .man-wrap { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 20px 16px 40px; } .man-toc { position: static; max-height: none; } .man-here { display: block; } .man-body h1 { font-size: 26px; } .man-body h2 { font-size: 22px; } table.man { font-size: 14px; min-width: 560px; } }
 </style>
 </head>
 <body>
@@ -52,10 +59,11 @@ code { background: var(--surface-low); padding: 1px 6px; border-radius: 6px; fon
   </nav>
 </header>
 <main class="man-wrap">
-  <aside class="man-toc"><b>Neste manual</b><ul><li class="l2"><a href="#instalar-e-ativar">Instalar e ativar</a></li><li class="l2"><a href="#a-tela-início">A tela Início</a></li><li class="l2"><a href="#antes-do-primeiro-projeto-configurar-a-máquina">Antes do primeiro projeto: configurar a máquina</a></li><li class="l2"><a href="#projeto-da-lista-de-peças-às-chapas">Projeto: da lista de peças às chapas</a></li><li class="l2"><a href="#router-conferir-o-programa-antes-de-cortar">Router: conferir o programa antes de cortar</a></li><li class="l2"><a href="#produção-cortar-chapa-a-chapa">Produção: cortar chapa a chapa</a></li><li class="l2"><a href="#sobras-o-estoque-de-retalhos">Sobras: o estoque de retalhos</a></li><li class="l2"><a href="#impressos">Impressos</a></li><li class="l2"><a href="#licença-e-atualização">Licença e atualização</a></li><li class="l2"><a href="#problemas-comuns-e-avisos">Problemas comuns e avisos</a></li><li class="l2"><a href="#atalhos-e-dicas">Atalhos e dicas</a></li></ul></aside>
+  <aside class="man-toc" id="man-toc"><b>Neste manual</b><ul><li class="l2"><a href="#instalar-e-ativar">Instalar e ativar</a></li><li class="l2"><a href="#a-tela-início">A tela Início</a></li><li class="l2"><a href="#antes-do-primeiro-projeto-configurar-a-máquina">Antes do primeiro projeto: configurar a máquina</a><ul><li class="l3"><a href="#perfis-de-máquina">Perfis de máquina</a></li><li class="l3"><a href="#pós-processador">Pós-processador</a></li><li class="l3"><a href="#ferramentas">Ferramentas</a></li><li class="l3"><a href="#ferramenta-de-cada-etapa">Ferramenta de cada etapa</a></li><li class="l3"><a href="#corte-alturas-rampa-e-abas">Corte: alturas, rampa e abas</a></li><li class="l3"><a href="#sua-router-mesa-vácuo-e-códigos-m">Sua router: mesa, vácuo e códigos M</a></li><li class="l3"><a href="#chapas-e-folgas">Chapas e folgas</a></li><li class="l3"><a href="#leitura-do-arquivo-do-projeto-csv">Leitura do arquivo do projeto (CSV)</a></li><li class="l3"><a href="#avançado-como-o-programa-é-escrito">Avançado: como o programa é escrito</a></li><li class="l3"><a href="#cópia-de-segurança-da-configuração">Cópia de segurança da configuração</a></li></ul></li><li class="l2"><a href="#projeto-da-lista-de-peças-às-chapas">Projeto: da lista de peças às chapas</a><ul><li class="l3"><a href="#etapa-1-arquivos">Etapa 1: arquivos</a></li><li class="l3"><a href="#etapa-2-chapa-e-máquina">Etapa 2: chapa e máquina</a></li><li class="l3"><a href="#etapa-3-gerar-chapas">Etapa 3: gerar chapas</a></li><li class="l3"><a href="#etapa-4-ajustar-no-editor-de-chapas">Etapa 4: ajustar no editor de chapas</a></li><li class="l3"><a href="#histórico">Histórico</a></li></ul></li><li class="l2"><a href="#router-conferir-o-programa-antes-de-cortar">Router: conferir o programa antes de cortar</a></li><li class="l2"><a href="#produção-cortar-chapa-a-chapa">Produção: cortar chapa a chapa</a></li><li class="l2"><a href="#sobras-o-estoque-de-retalhos">Sobras: o estoque de retalhos</a></li><li class="l2"><a href="#impressos">Impressos</a></li><li class="l2"><a href="#licença-e-atualização">Licença e atualização</a></li><li class="l2"><a href="#problemas-comuns-e-avisos">Problemas comuns e avisos</a></li><li class="l2"><a href="#atalhos-e-dicas">Atalhos e dicas</a></li></ul></aside>
   <article class="man-body">
+  <div class="man-here" id="man-here"><a href="#man-toc" style="color:inherit;text-decoration:none">Você está em: <b id="man-here-t"></b></a></div>
 <h1 id="manual-do-routerflow-uso-e-configuração">Manual do RouterFlow: uso e configuração</h1>
-<p>Este manual mostra, tela por tela, como usar o RouterFlow desde a instalação até a chapa cortada, e explica cada campo das configurações: o que ele faz, quando mexer e qual valor usar. Ele vale para a versão 3.8.14 em diante.</p>
+<p>Este manual mostra, tela por tela, como usar o RouterFlow desde a instalação até a chapa cortada, e explica cada campo das configurações: o que ele faz, quando mexer e qual valor usar. Ele vale para a versão 3.8.15 em diante.</p>
 <p>O caminho no programa é sempre o mesmo, e o menu da esquerda segue essa ordem: <b>Projeto</b> (escolher os CSV e gerar as chapas), <b>Router</b> (conferir o programa antes de cortar), <b>Produção</b> (cortar chapa a chapa) e <b>Sobras</b> (o que ficou e volta para o estoque). Antes do primeiro projeto, vale gastar dez minutos em <b>Configurações</b> para o programa sair do jeito da sua máquina.</p>
 <p>Em cada tela, o botão da próxima etapa aparece maior, com a marca "PRÓXIMO PASSO" e a borda pulsando. Se estiver em dúvida sobre o que fazer, procure esse botão.</p>
 <h2 id="instalar-e-ativar">Instalar e ativar</h2>
@@ -185,7 +193,7 @@ code { background: var(--surface-low); padding: 1px 6px; border-radius: 6px; fon
 <h3 id="etapa-2-chapa-e-máquina">Etapa 2: chapa e máquina</h3>
 <ul>
 <li><b>Máquina</b>: a que vai cortar este projeto. "Trocar" abre a janela de máquinas.</li>
-<li><b>Peças na chapa</b>: <b>Em pé</b> (lado maior das peças no Y da máquina) ou <b>Deitadas</b> (no X). Vale para as peças sem veio; peça com veio segue o veio da chapa. O nesting só desobedece se a orientação pedida custar chapa. Logo abaixo, uma linha diz como a chapa entra na mesa (em pé ou deitada, pela área útil cadastrada) e avisa se ela não cabe.</li>
+<li><b>Peças na chapa</b>: <b>Em pé</b> (lado maior das peças no Y da máquina) ou <b>Deitadas</b> (no X). Vale para as peças sem veio; peça com veio segue o veio da chapa. O encaixe enche uma faixa ao longo do lado comprido da chapa antes de alargar, e a sobra fica uma tira inteira; uma peça sem veio gira 90 graus quando é assim que ela cabe no fim da fileira. A orientação pedida só vale enquanto não custa chapa nem espaço. Logo abaixo, uma linha diz como a chapa entra na mesa (em pé ou deitada, pela área útil cadastrada) e avisa se ela não cabe.</li>
 <li><b>Origem (zero da máquina)</b>: o canto da chapa onde fica o zero. Os quatro botões desenham o canto; o texto embaixo confirma. O encaixe começa por esse canto e os eixos aparecem no editor.</li>
 <li><b>Salvar em</b>: ao lado do CSV (padrão) ou numa pasta fixa.</li>
 </ul>
@@ -293,6 +301,34 @@ code { background: var(--surface-low); padding: 1px 6px; border-radius: 6px; fon
   lb.addEventListener("click", function (e) { if (e.target === lb || e.target.tagName === "FIGURE") closeLb(); });
   document.getElementById("lb-close").addEventListener("click", closeLb);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !lb.hidden) closeLb(); });
+  // índice que acompanha a rolagem: marca o capítulo e o tópico onde o leitor está e abre a lista do capítulo
+  var toc = document.getElementById("man-toc"), hereT = document.getElementById("man-here-t");
+  var heads = Array.prototype.slice.call(document.querySelectorAll(".man-body h2[id], .man-body h3[id]"));
+  var links = {};
+  Array.prototype.forEach.call(toc.querySelectorAll("a[href^='#']"), function (a) { links[a.getAttribute("href").slice(1)] = a; });
+  var cur = null, ticking = false;
+  function spy() {
+    ticking = false;
+    var line = 110, h = null;
+    for (var i = 0; i < heads.length; i++) { if (heads[i].getBoundingClientRect().top <= line) h = heads[i]; else break; }
+    if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) h = heads[heads.length - 1];
+    if (!h) h = heads[0];
+    if (h === cur) return;
+    cur = h;
+    var a = links[h.id]; if (!a) return;
+    Array.prototype.forEach.call(toc.querySelectorAll("a.active"), function (x) { x.classList.remove("active"); });
+    Array.prototype.forEach.call(toc.querySelectorAll("li.l2.open"), function (x) { x.classList.remove("open"); });
+    a.classList.add("active");
+    var li2 = a.closest("li.l2"); if (li2) { li2.classList.add("open"); var a2 = li2.querySelector(":scope > a"); if (a2 !== a) a2.classList.add("active"); }
+    if (window.innerWidth > 900) {
+      var r = a.getBoundingClientRect(), tr = toc.getBoundingClientRect();
+      if (r.top < tr.top + 24 || r.bottom > tr.bottom - 24) toc.scrollTop += r.top - tr.top - tr.height / 2;
+    }
+    var chap = li2 ? li2.querySelector(":scope > a").textContent : a.textContent;
+    hereT.textContent = (h.tagName === "H3") ? chap + " / " + h.textContent : chap;
+  }
+  window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(spy); } }, { passive: true });
+  spy();
   var mb = document.getElementById("menu-btn");
   mb.addEventListener("click", function () { var open = document.body.classList.toggle("menu-open"); mb.setAttribute("aria-expanded", open ? "true" : "false"); });
 })();

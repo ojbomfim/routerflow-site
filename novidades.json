@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.8.15",
+  "data": "2026-09-29",
+  "titulo": "Encaixe em faixa: a chapa rende mais e a sobra fica inteira",
+  "itens": [
+   "As peças agora enchem uma faixa ao longo do lado comprido da chapa antes de alargar: peça só vai para a fileira seguinte quando não cabe mais na atual. O que sobra é uma tira inteira, de ponta a ponta.",
+   "Peça sem veio gira 90 graus quando é assim que ela cabe no fim da fileira. A orientação Em pé ou Deitadas continua valendo, mas não custa mais espaço na chapa.",
+   "Entre as estratégias de encaixe, fica a que ocupa a faixa mais estreita. Vale para cada chapa, para o Nesting automático do editor e para \"Unir tudo numa chapa só\"."
+  ]
+ },
+ {
   "versao": "3.8.14",
   "data": "2026-09-29",
   "titulo": "Padrão de fábrica: corte de uma vez, como na máquina",
