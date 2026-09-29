@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.8.18",
+  "data": "2026-09-29",
+  "titulo": "Programa direto para a máquina pela rede",
+  "itens": [
+   "Em Configurações, Sua router, o novo bloco \"Envio dos programas para a máquina\": além do pendrive, dá para mandar o .nc para uma pasta de rede do PC da router ou para o FTP do controlador (Syntec, Weihong, Fanuc com Ethernet). Tem botão Testar conexão. Na Produção, os botões viram \"Enviar para a máquina\".",
+   "No Projeto ficou um botão só para a Router, no alto do resultado: ele regrava se você mexeu no encaixe, gera o .nc se faltar e abre a chapa que está na tela. O botão de baixo do painel saiu.",
+   "Na Router, a lista de programas do projeto vem aberta. A seta recolhe quando quiser mais espaço."
+  ]
+ },
+ {
   "versao": "3.8.17",
   "data": "2026-09-29",
   "titulo": "Produção com histórico: continue de onde parou",
