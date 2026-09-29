@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.8.16",
+  "data": "2026-09-29",
+  "titulo": "Tela Projeto mais limpa depois de gerar",
+  "itens": [
+   "Gerou as chapas? As etapas 1 e 2 se recolhem numa linha só: arquivos, máquina, orientação, origem e opções. Quer mudar algo? Clique em \"Editar e gerar de novo\" e tudo abre outra vez.",
+   "As listas de arquivos DXF e de programas .nc saíram do resultado. Uma linha diz quantos foram gravados e onde. Os programas continuam na Router (conferir) e na Produção (pendrive e chapa feita), que é onde você usa eles."
+  ]
+ },
+ {
   "versao": "3.8.15",
   "data": "2026-09-29",
   "titulo": "Encaixe em faixa: a chapa rende mais e a sobra fica inteira",
