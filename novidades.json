@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.8.5",
+  "data": "2026-09-29",
+  "titulo": "Sua configuração com cópia de segurança",
+  "itens": [
+   "Em Configurações, o tópico \"Cópia de segurança\" exporta tudo o que você ajustou (máquinas, pós-processador, ferramentas, chapas, folgas, sobras e mapeamentos de CSV) para um arquivo .json, e importa em outro computador.",
+   "O RouterFlow também guarda sozinho uma cópia por dia das últimas mudanças. E a configuração continua igual depois de cada atualização, como sempre foi.",
+   "Cada tópico das Configurações ganhou um botão de interrogação que explica, em poucas linhas, por que ele existe, o que dá para fazer, como mexer e o que aparece ali."
+  ]
+ },
+ {
   "versao": "3.8.4",
   "data": "2026-09-29",
   "titulo": "A chapa do tamanho que você quiser na tela",
