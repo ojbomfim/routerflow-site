@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.8.9",
+  "data": "2026-09-29",
+  "titulo": "A chapa deitada agora avisa se não cabe na mesa",
+  "itens": [
+   "Na etapa 2 do Projeto, logo abaixo de Em pé e Deitada, o RouterFlow diz se a chapa cabe na mesa da máquina. Se a mesa foi cadastrada ao contrário (o lado maior no Y quando na máquina ele fica no X), um botão troca X por Y na hora, e o programa para de passar da mesa.",
+   "Máquinas novas já começam com a mesa de 2750 no X e 1850 no Y, que é o comum nas routers."
+  ]
+ },
+ {
   "versao": "3.8.8",
   "data": "2026-09-29",
   "titulo": "Etiqueta 100 x 60, chapa deitada na Router e projeto sem sobra",
