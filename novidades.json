@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.8.8",
+  "data": "2026-09-29",
+  "titulo": "Etiqueta 100 x 60, chapa deitada na Router e projeto sem sobra",
+  "itens": [
+   "As etiquetas saem no tamanho da impressora de etiquetas, 100 x 60 mm, uma por etiqueta, com o texto à esquerda e o desenho da peça à direita. Quem imprime em A4 escolhe \"8 por folha\" em Configurações, Chapas e folgas.",
+   "A Router desenha a chapa como ela foi gerada, deitada ou em pé, dentro da área da máquina. Se a chapa não cabe na mesa, fica em vermelho com o aviso. O resumo do programa também mostra o tamanho e o sentido.",
+   "No bloco Sobras do Projeto, a caixa \"Mostrar a sobra de cada chapa\": desmarcada, o projeto não calcula, não desenha, não etiqueta nem corta sobra nenhuma."
+  ]
+ },
+ {
   "versao": "3.8.7",
   "data": "2026-09-29",
   "titulo": "Projeto sem sobras, se você quiser",
