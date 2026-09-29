@@ -136,7 +136,7 @@
   <div class="download">
     <div class="dl-box">
       <p class="dl-ver" id="dl-ver">Procurando a versão mais recente...</p>
-      <a class="btn go big" id="dl-btn" href="https://github.com/ojbomfim/routerflow-site/releases/latest" target="_blank" rel="noopener">Baixar o instalador (.exe)</a>
+      <a class="btn go big" id="dl-btn" href="https://github.com/routerflowapp/routerflow-site/releases/latest" target="_blank" rel="noopener">Baixar o instalador (.exe)</a>
       <p class="fine" id="dl-info">Windows 10 ou 11, 64 bits. O instalador cuida do componente WebView2 do Windows, se faltar.</p>
     </div>
     <div class="dl-steps">
@@ -169,7 +169,7 @@
 (function () {
   // Procura a versão mais recente no GitHub e aponta o botão para o instalador (.exe).
   var btn = document.getElementById("dl-btn"), ver = document.getElementById("dl-ver"), info = document.getElementById("dl-info");
-  var releases = "https://github.com/ojbomfim/routerflow-site/releases/latest";
+  var releases = "https://github.com/routerflowapp/routerflow-site/releases/latest";
   function mb(n) { return n ? " (" + (n / 1048576).toFixed(0) + " MB)" : ""; }
   function fromApi(d) {
     var a = (d.assets || []).filter(function (x) { return /\.exe$/i.test(x.name); })[0];
@@ -187,7 +187,7 @@
     btn.href = d.setup; btn.textContent = "Baixar RouterFlow " + d.versao;
     ver.textContent = "Versão " + d.versao + (d.publicada ? ", publicada em " + d.publicada.split("-").reverse().join("/") : "") + ". Só o instalador, nada mais.";
   }
-  fetch("https://api.github.com/repos/ojbomfim/routerflow-site/releases/latest", { headers: { Accept: "application/vnd.github+json" } })
+  fetch("https://api.github.com/repos/routerflowapp/routerflow-site/releases/latest", { headers: { Accept: "application/vnd.github+json" } })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(fromApi)
     .catch(function () {
       return fetch("versao.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(fromVersao);
