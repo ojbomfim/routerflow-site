@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RouterFlow, da lista de peças à router CNC</title>
-<meta name="description" content="RouterFlow transforma a lista de peças do seu projeto de móveis em chapas prontas para a router CNC: nesting, furos, rasgos, verso, etiquetas, ficha de produção e orçamento. Sem plugin pago.">
+<meta name="description" content="RouterFlow leva a lista de peças do seu software de projeto até a router CNC: nesting por material, sobras no estoque, DXF com furos, rasgos e verso, programa .nc por chapa, etiquetas, mapa das chapas e ficha de produção. Sem plugin pago.">
 <link rel="icon" href="img/logo.png">
 <link rel="stylesheet" href="site.css">
 </head>
@@ -16,6 +16,7 @@
     <a href="#saida">O que sai</a>
     <a href="#recursos">Recursos</a>
     <a href="#preco">Preço</a>
+    <a href="#baixar">Baixar</a>
     <a href="#contato" class="cta">Falar no WhatsApp</a>
   </nav>
 </header>
@@ -24,41 +25,53 @@
   <div class="hero-text">
     <p class="kicker">Para marcenarias com router CNC</p>
     <h1>Da lista de peças à router CNC, em segundos.</h1>
-    <p class="lead">Importe o CSV do seu software de projeto ou qualquer lista de peças. O RouterFlow monta as chapas com o melhor aproveitamento, mostra cada chapa como ela fica na mesa, gera o DXF com furos, rasgos e verso e o programa da router pronto, com etiquetas, mapa das chapas e ficha de produção. Sem plugin pago e sem internet na oficina.</p>
+    <p class="lead">Importe o CSV do seu software de projeto ou qualquer lista de peças. O RouterFlow monta as chapas de cada material com o melhor aproveitamento, usa antes as sobras do estoque, gera o DXF com furos, rasgos e verso e o programa da router pronto para a sua máquina, com mapa das chapas, etiquetas e ficha de produção no nome do cliente. Sem plugin pago e sem internet na hora de cortar.</p>
     <div class="actions">
       <a class="btn go" href="https://wa.me/5534991627276?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20RouterFlow" target="_blank" rel="noopener">Quero uma demonstração</a>
-      <a class="btn outline" href="#como">Ver como funciona</a>
+      <a class="btn outline" href="#baixar">Baixar a última versão</a>
     </div>
     <p class="fine">Windows 10 ou 11. Licença anual por computador. Instalação em minutos.</p>
   </div>
-  <img class="hero-shot" src="img/app-inicio.png" alt="Tela inicial do RouterFlow">
+  <img class="hero-shot" src="img/app-inicio.png" alt="Tela inicial do RouterFlow, com o passo a passo">
+</section>
+
+<section id="porque" class="block alt">
+  <h2>Por que o RouterFlow existe</h2>
+  <div class="why">
+    <p>A router CNC não lê o CSV nem a imagem que o software de projeto exporta. Para cortar, ela precisa de um DXF com o contorno, os furos e os rasgos de cada peça, e depois de um programa .nc feito num CAM. A saída oficial para isso costuma ser um plugin pago, com internet obrigatória e um segundo plugin só para a furação. Sem ele, alguém digita peça por peça no CAM, e é aí que entram os erros de medida, as chapas refeitas e o tempo perdido.</p>
+    <p>O RouterFlow resolve isso dentro da oficina. Ele lê a lista que o software de projeto já exporta de graça, com contorno, fitas de borda, furos, rasgos, cliente e ambiente, e entrega as chapas montadas, o DXF, o programa da router e os papéis do chão de fábrica. Quem usa o Aspire continua usando: o DXF sai com as layers no padrão de sempre.</p>
+  </div>
 </section>
 
 <section id="como" class="block">
-  <h2>Como funciona</h2>
-  <p class="sub">Quatro passos, do projeto à máquina. Com o CAM de sempre ou direto para a router.</p>
+  <h2>Como funciona, passo a passo</h2>
+  <p class="sub">O fluxo é o mesmo menu do programa: Projeto, Router, Produção e Sobras. Configura a máquina uma vez e esquece.</p>
   <div class="steps">
-    <div class="step"><span>1</span><h3>Exporte a lista de peças</h3><p>O mesmo CSV do plano de corte, com contorno, fitas, furos e rasgos. Ou uma lista simples do Excel, com nome, medidas, espessura, quantidade, material e veio.</p></div>
-    <div class="step"><span>2</span><h3>Diga como a chapa fica na máquina</h3><p>Em pé ou deitada, e em qual canto está o zero da máquina. O RouterFlow separa as peças por material, monta as chapas testando doze estratégias de nesting e desenha os eixos X e Y para você conferir.</p></div>
-    <div class="step"><span>3</span><h3>Ajuste se quiser</h3><p>Arraste peças, gire, troque de chapa ou junte tudo numa chapa só. Tudo é regravado: DXF por material, mapa das chapas, etiquetas e programas.</p></div>
-    <div class="step"><span>4</span><h3>Router</h3><p>Um programa .nc por chapa, com furos, rasgos e contornos na ordem certa. Veja o passo a passo operação por operação sobre a mesa antes de copiar para a máquina. Ou importe o DXF no seu CAM, como sempre.</p></div>
+    <div class="step"><span>1</span><h3>Projeto: escolha os arquivos</h3><p>O CSV exportado pelo software de projeto (o mesmo do plano de corte) ou uma lista simples do Excel. Vários de uma vez entram nas mesmas chapas. O nome do cliente vira o nome do projeto, da pasta e dos arquivos.</p></div>
+    <div class="step"><span>2</span><h3>Chapa e máquina</h3><p>Em pé ou deitada, e em qual canto está o zero da máquina. A máquina em uso aparece no menu lateral, com mesa, vácuo, ferramentas e pós-processador. Marque o verso e o corte da sobra se precisar.</p></div>
+    <div class="step"><span>3</span><h3>Gerar chapas</h3><p>Peças separadas por material e espessura, montadas entre doze estratégias de nesting, usando primeiro as sobras do estoque. Sai um DXF por material e um programa .nc por chapa.</p></div>
+    <div class="step"><span>4</span><h3>Ajustar</h3><p>Arraste peças, gire, troque de chapa, marque uma área com defeito e regrave. DXF, programas, mapa, etiquetas e ficha são regravados juntos. O projeto fica salvo para reabrir.</p></div>
+    <div class="step"><span>5</span><h3>Router</h3><p>Confira cada programa antes de cortar: passo a passo sobre a mesa, resumo, verificações de segurança e tradução linha por linha. Furos, rasgos e contornos podem sair separados.</p></div>
+    <div class="step"><span>6</span><h3>Produção</h3><p>A lista das chapas na ordem de corte, com o programa de cada uma e o botão do pendrive. Marque a chapa como feita ao terminar. Tela grande para ler de longe.</p></div>
+    <div class="step"><span>7</span><h3>Sobras</h3><p>A router corta a sobra alinhada, sai a etiqueta e ela entra no estoque. No próximo projeto o nesting usa a sobra antes de abrir chapa inteira. Você decide o que guardar.</p></div>
   </div>
-  <figure class="shot"><img src="img/app-projeto.png" alt="Editor de chapas do RouterFlow"><figcaption>Cada chapa como fica na mesa, com os eixos da máquina, os DXF e os programas da router.</figcaption></figure>
+  <figure class="shot"><img src="img/app-projeto.png" alt="Editor de chapas do RouterFlow"><figcaption>Cada chapa como fica na mesa, com os eixos da máquina, a sobra que fica, os botões de etiquetas, mapa e ficha, e o programa da router.</figcaption></figure>
 </section>
 
 <section id="saida" class="block alt">
   <h2>O que sai de cada projeto</h2>
+  <p class="sub">Tudo com o nome do cliente e do ambiente, lido do próprio CSV. Pasta, arquivos e impressos seguem o mesmo padrão.</p>
   <div class="cards">
-    <div class="card"><h3>DXF por material</h3><p>Todas as chapas do material num arquivo só, já na orientação e na origem da sua mesa. Layers com nomes fixos para quem usa o Aspire.</p></div>
-    <div class="card"><h3>Mapa das chapas</h3><p>Uma folha por chapa com as peças numeradas, medidas e sentido do veio. Fica ao lado da máquina para identificar cada peça na saída.</p></div>
-    <div class="card"><h3>Etiquetas</h3><p>ID, nome, medidas, material, chapa e os lados que levam fita. Impressas em folha A4, três por linha.</p></div>
-    <div class="card"><h3>Ficha de produção</h3><p>Materiais, chapas, aproveitamento, metros de fita por cor, ferragens do projeto e a lista de conferência antes de cortar.</p></div>
-    <div class="card"><h3>Programas da router</h3><p>Um .nc por chapa com furos, rasgos e contornos em sequência, com abas e rampa de entrada, mais os separados por operação para quem prefere rodar por etapas.</p></div>
+    <div class="card"><h3>Programas da router</h3><p>Um .nc por chapa com furos, rasgos e contornos em sequência, abas e rampa de entrada, zonas de vácuo no comentário. Verso espelhado quando a peça tem usinagem atrás. Furos, rasgos e contornos separados se você preferir rodar por etapas.</p></div>
+    <div class="card"><h3>DXF por material</h3><p>Todas as chapas do material num arquivo só, já na orientação e na origem da sua mesa. Layers com nomes fixos para quem usa o Aspire ou outro CAM.</p></div>
+    <div class="card"><h3>Etiquetas</h3><p>Cliente, ambiente, módulo, peça, material, IDs e código, medidas e o desenho da peça com as fitas de borda e a face de alinhamento. Oito por folha A4.</p></div>
+    <div class="card"><h3>Mapa das chapas</h3><p>Uma folha por chapa com as peças numeradas, medidas, sentido do veio e a sobra que fica. Fica ao lado da máquina para identificar cada peça na saída.</p></div>
+    <div class="card"><h3>Ficha de produção</h3><p>Materiais, chapas, aproveitamento, metros de fita por cor, ferragens do projeto, arquivos gerados e os avisos a conferir antes de cortar.</p></div>
     <div class="card"><h3>Listas em planilha</h3><p>Lista de peças, fitagem por aresta e ferragens em CSV, para abrir no Excel ou no seu sistema.</p></div>
   </div>
   <div class="gallery">
-    <figure><img src="img/rel-mapa_chapas.png" alt="Mapa das chapas"><figcaption>Mapa das chapas</figcaption></figure>
     <figure><img src="img/rel-etiquetas.png" alt="Etiquetas das peças"><figcaption>Etiquetas</figcaption></figure>
+    <figure><img src="img/rel-mapa_chapas.png" alt="Mapa das chapas"><figcaption>Mapa das chapas</figcaption></figure>
     <figure><img src="img/rel-ficha_producao.png" alt="Ficha de produção"><figcaption>Ficha de produção</figcaption></figure>
   </div>
 </section>
@@ -66,16 +79,21 @@
 <section id="recursos" class="block">
   <h2>Feito dentro da oficina</h2>
   <div class="features">
-    <div><h3>Nesting que aproveita a chapa</h3><p>Doze combinações de estratégia por material, fica a que gasta menos chapa e deixa a maior sobra. Respeita veio, folga e margem. Se não couber, abre a próxima chapa.</p></div>
-    <div><h3>Editor de chapas</h3><p>Origem em qualquer canto, chapa em pé ou deitada, eixos desenhados. Arraste, gire, troque peças de chapa, junte tudo numa chapa e regrave. O projeto fica salvo para reabrir e alterar.</p></div>
-    <div><h3>Furos, rasgos e verso</h3><p>Cada peça sai com contorno, furos com diâmetro e profundidade no nome da layer, rasgos e etiqueta. Usinagem atrás gera o arquivo do verso já espelhado.</p></div>
+    <div><h3>Nesting que aproveita a chapa</h3><p>Doze combinações de estratégia por material, fica a que gasta menos chapa e deixa a maior sobra. Respeita veio, folga e margem, desvia de áreas com defeito e usa as sobras do estoque antes de abrir chapa inteira.</p></div>
+    <div><h3>Editor de chapas</h3><p>Origem em qualquer canto, chapa em pé ou deitada, eixos desenhados. Arraste, gire, troque peças de chapa, marque defeitos e regrave. O projeto fica salvo para reabrir e alterar.</p></div>
+    <div><h3>Programa da router sem CAM</h3><p>Furos, rasgos e contornos com deslocamento pelo raio da fresa, passes em profundidade, rampa de entrada, abas para segurar a peça e zonas de vácuo. Modo corte no ar para o primeiro teste.</p></div>
     <div><h3>Router passo a passo</h3><p>Operação por operação sobre a mesa da máquina, tradução em português linha por linha, tempo estimado e verificações: rápido dentro da chapa, corte sem avanço, spindle desligado, fora da mesa.</p></div>
-    <div><h3>Vários projetos juntos</h3><p>Selecione vários CSV de uma vez e as peças de todos entram nas mesmas chapas, com o nome do projeto no ID.</p></div>
-    <div><h3>Sua máquina, configurada uma vez</h3><p>Ferramentas, Z zero, altura segura, abas, sentido de corte, troca de ferramenta e o pós-processador do seu controlador. Modo corte no ar para o primeiro teste.</p></div>
+    <div><h3>Perfis de máquina</h3><p>Cada router com sua mesa, vácuo, ferramentas e pós-processador. Troque de máquina pelo menu lateral, crie um perfil novo por cópia ou importe o arquivo .pp do Aspire. Modelos prontos para Inmes, Mach3, GRBL e Fanuc.</p></div>
+    <div><h3>Produção e sobras</h3><p>Modo operador com a lista de chapas, pendrive por chapa e marcação de feita. Gerenciamento de sobras: a router corta o retalho, sai etiqueta e ele entra no estoque para o próximo projeto.</p></div>
+    <div><h3>Qualquer lista de peças</h3><p>Além do CSV do software de projeto, aceita listas do Excel ou de outro programa: uma janela mostra as colunas do arquivo e você diz qual é qual. O RouterFlow lembra o mapeamento.</p></div>
+    <div><h3>Vários projetos juntos</h3><p>Selecione vários CSV de uma vez e as peças de todos entram nas mesmas chapas, com o nome do projeto no ID de cada peça.</p></div>
+    <div><h3>Atualização automática</h3><p>Cada versão nova é baixada e instalada pelo próprio programa. A licença é confirmada pela internet de vez em quando; na hora de cortar, não precisa de conexão.</p></div>
   </div>
   <div class="two">
-    <figure class="shot"><img src="img/app-router.png" alt="Router passo a passo"><figcaption>Router: a operação atual em branco, as feitas em cinza, as próximas ainda escondidas.</figcaption></figure>
-    <figure class="shot"><img src="img/app-config.png" alt="Configuração da router"><figcaption>Ferramentas, abas, rampa e pós-processador: configure uma vez e esqueça.</figcaption></figure>
+    <figure class="shot"><img src="img/app-router.png" alt="Router passo a passo"><figcaption>Router: cada operação sobre a mesa, com as zonas de vácuo a abrir e a lista de furos, rasgos e contornos.</figcaption></figure>
+    <figure class="shot"><img src="img/app-producao.png" alt="Tela Produção"><figcaption>Produção: as chapas na ordem de corte, o programa de cada uma, pendrive e a marcação de feita.</figcaption></figure>
+    <figure class="shot"><img src="img/app-sobras.png" alt="Tela Sobras"><figcaption>Sobras: o estoque de retalhos, o que está disponível e o que já foi usado em projetos.</figcaption></figure>
+    <figure class="shot"><img src="img/app-config.png" alt="Configurações"><figcaption>Configurações: a máquina em uso, por onde começar e um tópico por vez.</figcaption></figure>
   </div>
 </section>
 
@@ -84,47 +102,101 @@
   <div class="price">
     <div class="plan">
       <h3>Licença anual, 1 computador</h3>
-      <p class="value">R$ 1.000<span>/ano</span></p>
+      <p class="value">R$ 2.600<span>/ano</span></p>
       <ul>
-        <li>Uma cobrança só por ano: R$ 83 por mês, menos de R$ 3 por dia</li>
-        <li>PIX à vista com 5% de desconto: R$ 950</li>
-        <li>Cartão em até 12x, com o acréscimo da taxa da maquininha</li>
-        <li>Computador adicional da mesma empresa: R$ 500</li>
+        <li>PIX à vista com 5% de desconto: <b>R$ 2.470</b></li>
+        <li>Cartão de crédito em até 12x, com o acréscimo da taxa da maquininha</li>
+        <li>Uma cobrança só por ano: dá R$ 217 por mês, cerca de R$ 7 por dia</li>
         <li>Todas as atualizações do ano incluídas</li>
         <li>Suporte pelo WhatsApp</li>
+        <li>Computador adicional da mesma empresa: R$ 1.300</li>
       </ul>
       <a class="btn go" href="#contato">Quero contratar</a>
     </div>
     <div class="compare">
       <h3>Faça a conta</h3>
       <p>Oficina que corta 50 chapas por mês a R$ 280: cada 1% de aproveitamento a mais vale R$ 1.680 por ano. O nesting com doze estratégias e as sobras do estoque costumam render 3% sobre o encaixe manual, R$ 5.040 por ano.</p>
-      <p>Uma hora a menos de programação por projeto, em 8 projetos por mês, são R$ 3.840 por ano. Evitar metade das chapas refeitas por peça errada, mais R$ 1.920. São cerca de R$ 10.000 por ano de retorno para uma licença de R$ 1.000, que se paga em cinco semanas.</p>
+      <p>Uma hora a menos de programação por projeto, em 8 projetos por mês, são R$ 3.840 por ano. Evitar metade das chapas refeitas por peça errada, mais R$ 1.920. São cerca de R$ 10.800 por ano de retorno para uma licença de R$ 2.600, que se paga em três meses.</p>
       <table class="calc">
         <tr><td>Aproveitamento da chapa (3%)</td><td>R$ 5.040</td></tr>
         <tr><td>Tempo de programação (8 h por mês)</td><td>R$ 3.840</td></tr>
         <tr><td>Retrabalho evitado</td><td>R$ 1.920</td></tr>
         <tr class="total"><td>Retorno por ano</td><td>R$ 10.800</td></tr>
-        <tr><td>Licença por ano</td><td>R$ 1.000</td></tr>
+        <tr><td>Licença por ano</td><td>R$ 2.600</td></tr>
       </table>
       <h3>Para comparar</h3>
-      <p>O plugin oficial de exportação em DXF custa R$ 5.800 de adesão mais R$ 180 por mês, e ainda precisa de um segundo plugin para exportar a furação. São R$ 7.960 no primeiro ano e R$ 2.160 nos seguintes, com internet obrigatória a cada exportação. O RouterFlow custa 12% disso no primeiro ano e já vem com nesting, furação, etiquetas, ficha, orçamento e o programa da router.</p>
+      <p>O plugin oficial de exportação em DXF custa R$ 5.800 de adesão mais R$ 180 por mês, e ainda precisa de um segundo plugin para exportar a furação. São R$ 7.960 no primeiro ano, com internet obrigatória a cada exportação, e você continua digitando os toolpaths no CAM. O RouterFlow custa um terço disso no primeiro ano e já vem com nesting, furação, etiquetas, ficha, sobras e o programa da router pronto.</p>
     </div>
   </div>
 </section>
 
-<section id="contato" class="block">
-  <h2>Fale com quem fez</h2>
-  <p class="sub">Odair Junior, Uberlândia, MG. Marceneiro, router CNC na oficina, e o RouterFlow nasceu do dia a dia.</p>
+<section id="baixar" class="block">
+  <h2>Baixar a última versão</h2>
+  <p class="sub">O instalador é o mesmo para instalar do zero e para atualizar. Depois de instalado, o programa se atualiza sozinho.</p>
+  <div class="download">
+    <div class="dl-box">
+      <p class="dl-ver" id="dl-ver">Procurando a versão mais recente...</p>
+      <a class="btn go big" id="dl-btn" href="https://github.com/ojbomfim/routerflow-site/releases/latest" target="_blank" rel="noopener">Baixar o instalador (.exe)</a>
+      <p class="fine" id="dl-info">Windows 10 ou 11, 64 bits. O instalador cuida do componente WebView2 do Windows, se faltar.</p>
+    </div>
+    <div class="dl-steps">
+      <h3>Como instalar e ativar</h3>
+      <ol>
+        <li>Baixe e execute o instalador. Se o Windows mostrar "O Windows protegeu o computador", clique em "Mais informações" e depois em "Executar assim mesmo". O aviso aparece para qualquer programa novo que ainda não tem reputação no Windows.</li>
+        <li>Abra o RouterFlow, vá na tela Licença e copie o código da máquina.</li>
+        <li>Envie o código pelo WhatsApp com a razão social, o CNPJ, o e-mail e o telefone da empresa. O botão da própria tela já monta a mensagem.</li>
+        <li>Cole a chave recebida e clique em Ativar. Sem cadastro. Internet só de vez em quando, para confirmar a licença.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="block alt">
+  <h2>Fale com o suporte</h2>
+  <p class="sub">Consultor RouterFlow: demonstração, licença, renovação e ajuda para configurar a sua máquina.</p>
   <div class="contact">
     <a class="btn go" href="https://wa.me/5534991627276?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20RouterFlow" target="_blank" rel="noopener">WhatsApp (34) 99162-7276</a>
-    <a class="btn outline" href="mailto:ojbomfim@gmail.com?subject=RouterFlow">ojbomfim@gmail.com</a>
+    <a class="btn outline" href="mailto:routerflowapp@gmail.com?subject=RouterFlow">routerflowapp@gmail.com</a>
   </div>
-  <p class="fine">Como ativar: abra o RouterFlow, copie o código da máquina na tela Licença e envie com a razão social, o CNPJ, o e-mail e o telefone. Você recebe a chave, cola e pronto. Sem cadastro. Internet só de vez em quando, para confirmar a licença.</p>
-  <p class="fine">Na primeira execução o Windows pode mostrar "O Windows protegeu o computador": clique em "Mais informações" e depois em "Executar assim mesmo". O aviso aparece para qualquer programa novo que ainda não tem reputação no Windows.</p>
+  <p class="fine">Atendimento em horário comercial. A chave costuma sair em poucos minutos depois da confirmação do pagamento.</p>
 </section>
 
 <footer>
-  <img src="img/logo.png" alt=""><span>© 2026 Odair Junior. Todos os direitos reservados. RouterFlow é software proprietário.</span>
+  <img src="img/logo.png" alt=""><span>© 2026 RouterFlow. Todos os direitos reservados. Software proprietário. www.routerflow.com.br</span>
 </footer>
+
+<script>
+(function () {
+  // Procura a versão mais recente no GitHub e aponta o botão para o instalador (.exe).
+  var btn = document.getElementById("dl-btn"), ver = document.getElementById("dl-ver"), info = document.getElementById("dl-info");
+  var releases = "https://github.com/ojbomfim/routerflow-site/releases/latest";
+  function mb(n) { return n ? " (" + (n / 1048576).toFixed(0) + " MB)" : ""; }
+  function fromApi(d) {
+    var a = (d.assets || []).filter(function (x) { return /\.exe$/i.test(x.name); })[0];
+    if (!a) throw new Error("sem exe");
+    var v = String(d.tag_name || "").replace(/^v/, "");
+    btn.href = a.browser_download_url; btn.textContent = "Baixar RouterFlow " + v + mb(a.size);
+    var dt = d.published_at ? new Date(d.published_at) : null;
+    ver.textContent = "Versão " + v + (dt ? ", publicada em " + dt.toLocaleDateString("pt-BR") : "") + ". Só o instalador, nada mais.";
+  }
+  function fromVersao(j) {
+    // versao.json do próprio site: payload assinado em base64url com a versão e o link do Setup.
+    var p = j.payload.replace(/-/g, "+").replace(/_/g, "/");
+    var d = JSON.parse(decodeURIComponent(escape(atob(p + "===".slice((p.length + 3) % 4)))));
+    if (!d.setup) throw new Error("sem setup");
+    btn.href = d.setup; btn.textContent = "Baixar RouterFlow " + d.versao;
+    ver.textContent = "Versão " + d.versao + (d.publicada ? ", publicada em " + d.publicada.split("-").reverse().join("/") : "") + ". Só o instalador, nada mais.";
+  }
+  fetch("https://api.github.com/repos/ojbomfim/routerflow-site/releases/latest", { headers: { Accept: "application/vnd.github+json" } })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(fromApi)
+    .catch(function () {
+      return fetch("versao.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(fromVersao);
+    })
+    .catch(function () {
+      ver.textContent = "Não foi possível consultar a versão agora. O botão abre a página de downloads, onde o instalador é o arquivo .exe.";
+      btn.href = releases;
+    });
+})();
+</script>
 </body>
 </html>
