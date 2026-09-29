@@ -1,11 +1,22 @@
 [
  {
+  "versao": "3.8.4",
+  "data": "2026-09-29",
+  "titulo": "A chapa do tamanho que você quiser na tela",
+  "itens": [
+   "No Projeto e na Router, a área do desenho agora tem três tamanhos (P, M e G) e uma barra logo abaixo para esticar à vontade. O tamanho fica guardado para a próxima vez.",
+   "Na Router dá para esconder o painel da direita e abrir em tela cheia, como já era no editor de chapas. Ganhou também os botões de zoom.",
+   "Duplo clique no desenho ajusta a chapa na tela. Teclas + e - dão zoom, 0 ajusta, F abre em tela cheia e Esc volta.",
+   "Uma linha de dicas explica tudo isso embaixo do desenho. Se não precisar mais, o botão de informação esconde.",
+   "Na tela Sobras dá para buscar por material ou projeto, filtrar só as disponíveis e perguntar \"onde cabe uma peça de 600 x 400?\". A lista mostra a área de cada sobra e quantos metros quadrados estão livres."
+  ]
+ },
+ {
   "versao": "3.8.3",
   "data": "2026-09-29",
-  "titulo": "Contadores de uso e lista de novidades enxuta",
+  "titulo": "Correções e melhorias internas",
   "itens": [
-   "O RouterFlow passa a contar, sem identificar ninguém, quantas vezes abriu, quantos projetos, chapas e programas gerou e quais telas usou. Só números e o código da máquina, uma vez por dia, para o suporte entender o que é mais usado e melhorar. Nenhum nome de cliente, arquivo ou CNPJ sai do computador.",
-   "A lista de novidades começa na 3.8.2. O que veio antes era construção."
+   "Ajustes por dentro para o programa ficar mais estável. Nada muda no seu jeito de usar."
   ]
  },
  {
