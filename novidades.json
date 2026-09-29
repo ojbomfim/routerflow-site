@@ -1,5 +1,13 @@
 [
  {
+  "versao": "3.8.7",
+  "data": "2026-09-29",
+  "titulo": "Projeto sem sobras, se você quiser",
+  "itens": [
+   "Na etapa 2 do Projeto, o bloco \"Sobras neste projeto\" tem duas caixas: usar as sobras do estoque e cortar a sobra da chapa na router. Desmarque a primeira e o projeto sai só com chapa inteira, sem reservar nem guardar nada no estoque. A escolha fica lembrada para o próximo projeto."
+  ]
+ },
+ {
   "versao": "3.8.6",
   "data": "2026-09-29",
   "titulo": "Peças perto demais? O editor afasta sozinho",
