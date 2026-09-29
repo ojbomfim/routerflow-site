@@ -63,7 +63,7 @@ code { background: var(--surface-low); padding: 1px 6px; border-radius: 6px; fon
   <article class="man-body">
   <div class="man-here" id="man-here"><a href="#man-toc" style="color:inherit;text-decoration:none">Você está em: <b id="man-here-t"></b></a></div>
 <h1 id="manual-do-routerflow-uso-e-configuração">Manual do RouterFlow: uso e configuração</h1>
-<p>Este manual mostra, tela por tela, como usar o RouterFlow desde a instalação até a chapa cortada, e explica cada campo das configurações: o que ele faz, quando mexer e qual valor usar. Ele vale para a versão 3.8.18 em diante.</p>
+<p>Este manual mostra, tela por tela, como usar o RouterFlow desde a instalação até a chapa cortada, e explica cada campo das configurações: o que ele faz, quando mexer e qual valor usar. Ele vale para a versão 3.8.19 em diante.</p>
 <p>O caminho no programa é sempre o mesmo, e o menu da esquerda segue essa ordem: <b>Projeto</b> (escolher os CSV e gerar as chapas), <b>Router</b> (conferir o programa antes de cortar), <b>Produção</b> (cortar chapa a chapa) e <b>Sobras</b> (o que ficou e volta para o estoque). Antes do primeiro projeto, vale gastar dez minutos em <b>Configurações</b> para o programa sair do jeito da sua máquina.</p>
 <p>Em cada tela, o botão da próxima etapa aparece maior, com a marca "PRÓXIMO PASSO" e a borda pulsando. Se estiver em dúvida sobre o que fazer, procure esse botão.</p>
 <h2 id="instalar-e-ativar">Instalar e ativar</h2>
@@ -253,6 +253,7 @@ code { background: var(--surface-low); padding: 1px 6px; border-radius: 6px; fon
 <li><b>Pendrive</b> copia só aquele programa para o pendrive. <b>Todos os .nc para o pendrive</b> (no alto, próximo passo) copia todos.</li>
 <li><b>Envio pela rede</b>: se em Configurações, Sua router, o destino dos programas for uma pasta de rede ou o FTP do controlador, esses botões viram <b>Enviar para a máquina</b> e <b>Todos os .nc para a máquina</b>, e o programa vai direto, sem pendrive. Uma linha no alto diz para onde.</li>
 <li><b>Marcar feita</b> registra a chapa cortada; a barra de progresso e a data ficam gravadas com o projeto, então dá para fechar e continuar no dia seguinte.</li>
+<li><b>Última chapa feita</b>: o RouterFlow avisa "Projeto concluído" e pergunta se quer começar um projeto novo. Escolhendo "Novo projeto", o concluído fica no histórico da Produção (como concluído) e a tela Projeto volta ao começo, pronta para os próximos arquivos. "Ficar nesta tela" mantém tudo como está.</li>
 <li><b>Tela grande</b> aumenta tudo para ler de longe.</li>
 </ul>
 <figure class="shot"><img class="zoom" src="img/manual/producao-historico.png" alt="Produção sem projeto aberto: a lista dos projetos gerados com quantas chapas já foram feitas e o botão Abrir na Produção" loading="lazy"><figcaption>Produção sem projeto aberto: a lista dos projetos gerados com quantas chapas já foram feitas e o botão Abrir na Produção</figcaption></figure>

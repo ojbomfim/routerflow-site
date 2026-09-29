@@ -1,5 +1,13 @@
 [
  {
+  "versao": "3.8.19",
+  "data": "2026-09-29",
+  "titulo": "Marcou a última chapa? O projeto está concluído",
+  "itens": [
+   "Na Produção, ao marcar a última chapa como feita, o RouterFlow avisa que o projeto foi concluído e pergunta se você quer começar outro. O concluído fica no histórico da Produção, com os arquivos na pasta, e a tela Projeto volta ao começo para os próximos arquivos."
+  ]
+ },
+ {
   "versao": "3.8.18",
   "data": "2026-09-29",
   "titulo": "Programa direto para a máquina pela rede",
