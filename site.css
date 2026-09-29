@@ -104,3 +104,37 @@ footer img { width: 24px; height: 24px; border-radius: 6px; }
 .dl-steps li { margin: 6px 0; }
 .plan li b { color: var(--secondary); }
 @media (max-width: 900px) { .download { grid-template-columns: 1fr; } }
+
+/* Acessibilidade e menu no celular */
+.skip { position: absolute; left: -9999px; top: 8px; background: var(--primary); color: #fff; padding: 8px 14px; border-radius: 8px; z-index: 20; }
+.skip:focus { left: 8px; }
+.menu-btn { display: none; background: var(--primary); color: #fff; border: 0; border-radius: 999px; padding: 8px 16px; font-weight: 700; font-size: 15px; cursor: pointer; }
+main { display: block; }
+
+/* Para quem é */
+.who { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; max-width: 1000px; margin: 28px auto 0; }
+.who div { background: var(--surface-bright); border-radius: var(--r-lg); padding: 20px; border: 1px solid var(--outline-variant); box-shadow: var(--e1); }
+.who h3 { color: var(--primary); margin-bottom: 6px; }
+.who p { color: var(--on-surface-variant); font-size: 15px; margin: 0; }
+
+/* Passos como lista */
+ol.steps { list-style: none; padding: 0; margin: 0 0 32px; }
+
+/* Dúvidas frequentes */
+.faq { max-width: 860px; margin: 0 auto; }
+.faq details { background: var(--surface-bright); border: 1px solid var(--outline-variant); border-radius: var(--r-md); padding: 4px 18px; margin-bottom: 10px; box-shadow: var(--e1); }
+.faq summary { cursor: pointer; font-weight: 700; color: var(--primary); padding: 12px 0; font-size: 17px; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-size: 22px; color: var(--on-surface-variant); flex: none; }
+.faq details[open] summary::after { content: "\2013"; }
+.faq p { color: var(--on-surface-variant); margin: 0 0 14px; }
+footer a { color: inherit; }
+
+@media (max-width: 900px) {
+  .menu-btn { display: inline-flex; }
+  .top nav { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; gap: 0; background: var(--surface-bright); border-bottom: 1px solid var(--outline-variant); box-shadow: var(--e2); }
+  .top nav a { display: block; padding: 14px 6vw; border-top: 1px solid var(--outline-variant); }
+  .top nav a.cta { border-radius: 0; text-align: center; }
+  body.menu-open .top nav { display: flex; }
+  .who { grid-template-columns: 1fr; }
+}

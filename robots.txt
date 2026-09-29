@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /licencas/
+
+Sitemap: https://www.routerflow.com.br/sitemap.xml

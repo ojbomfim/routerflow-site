@@ -1,0 +1,37 @@
+# RouterFlow
+
+> RouterFlow é um software para Windows feito para marcenarias com router CNC. Ele lê a lista de peças exportada pelo software de projeto de móveis (CSV do plano de corte, com contorno, fitas de borda, furos e rasgos) ou uma lista simples de peças, monta as chapas de cada material com nesting, aproveita as sobras do estoque, gera o DXF por material e o programa .nc de cada chapa para a router, e imprime etiquetas, mapa das chapas e ficha de produção com o nome do cliente.
+
+Site oficial: https://www.routerflow.com.br/
+Idioma: português do Brasil. Público: marcenarias e fábricas de móveis planejados no Brasil que têm router CNC.
+
+## O que o RouterFlow faz
+
+- Importa o CSV do software de projeto (formato do plano de corte, com contorno, furos, rasgos, fitas, cliente e ambiente) ou qualquer lista de peças em CSV (Excel, Corte Certo e outros), com uma janela para mapear as colunas.
+- Nesting por material e espessura com doze estratégias, respeitando veio, folga e margem, desviando de áreas com defeito na chapa e usando as sobras do estoque antes de abrir chapa inteira.
+- Editor de chapas: arrastar, girar, trocar de chapa, unir tudo numa chapa, marcar defeito, regravar. Projeto salvo para reabrir.
+- DXF por material com layers fixas (CONTORNO, FURO_D5_P12, FURO_PASSANTE_D5, RASGO_L6_P6, TEXTO, CHAPA), já na orientação e origem da mesa, para quem usa Aspire ou outro CAM.
+- Programa da router (.nc) por chapa, sem CAM: furos, rasgos e contornos com deslocamento pelo raio da fresa, passes em profundidade, rampa de entrada, abas, zonas de vácuo, verso espelhado, corte da sobra. Programas separados por operação (furos, rasgos, contornos) opcionais. Modo corte no ar para o primeiro teste.
+- Perfis de máquina: mesa, vácuo, ferramentas e pós-processador por router. Importa o pós-processador .pp do Aspire (Vectric). Modelos para Inmes, Mach3, GRBL e Fanuc.
+- Router passo a passo: cada operação desenhada sobre a mesa, resumo, tempo estimado, verificações de segurança e tradução do G-code linha por linha em português.
+- Produção (modo operador): lista das chapas na ordem de corte, programa de cada uma, cópia para o pendrive, marcação de chapa feita, tela grande.
+- Sobras: a router corta a sobra alinhada, sai etiqueta e ela entra no estoque; o próximo projeto usa a sobra antes de abrir chapa inteira.
+- Impressos: etiquetas (cliente, ambiente, módulo, peça, material, IDs, medidas, desenho com fitas de borda e face de alinhamento, 8 por A4), mapa das chapas (uma folha por chapa com as peças numeradas e a sobra), ficha de produção (materiais, chapas, aproveitamento, metros de fita, ferragens, arquivos, avisos) e listas em CSV (peças, fitagem, ferragens).
+- Vários projetos juntos nas mesmas chapas. Nome do cliente e ambiente lidos do CSV viram o nome do projeto, da pasta e dos arquivos.
+- Atualização automática pelo próprio programa. Licença confirmada pela internet de vez em quando; não precisa de internet para cortar.
+
+## Requisitos e preço
+
+- Windows 10 ou 11, 64 bits. Instalador único (RouterFlow-Setup-<versão>.exe), que cuida do WebView2 se faltar.
+- Licença anual por computador: R$ 2.600,00 por ano. PIX à vista com 5% de desconto (R$ 2.470,00). Cartão de crédito em até 12x com o acréscimo da taxa da maquininha. Computador adicional da mesma empresa: R$ 1.300,00. Atualizações do ano e suporte pelo WhatsApp incluídos.
+- Ativação: o programa mostra um código da máquina na tela Licença; o cliente envia o código com razão social, CNPJ, e-mail e telefone; recebe a chave e cola no programa. Sem cadastro.
+
+## Contato
+
+- Consultor RouterFlow, WhatsApp (34) 99162-7276, https://wa.me/5534991627276
+- E-mail: routerflowapp@gmail.com
+- Download da última versão: https://www.routerflow.com.br/#baixar (instalador .exe em https://github.com/routerflowapp/routerflow-site/releases/latest)
+
+## Páginas
+
+- [Página inicial](https://www.routerflow.com.br/): como funciona, o que sai, recursos, preço, download e contato.

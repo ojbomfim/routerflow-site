@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.routerflow.com.br/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://www.routerflow.com.br/img/app-inicio.png</image:loc><image:title>Tela inicial do RouterFlow</image:title></image:image>
+    <image:image><image:loc>https://www.routerflow.com.br/img/app-projeto.png</image:loc><image:title>Editor de chapas com nesting</image:title></image:image>
+    <image:image><image:loc>https://www.routerflow.com.br/img/app-router.png</image:loc><image:title>Programa da router passo a passo</image:title></image:image>
+    <image:image><image:loc>https://www.routerflow.com.br/img/rel-etiquetas.png</image:loc><image:title>Etiquetas das peças</image:title></image:image>
+  </url>
+</urlset>
