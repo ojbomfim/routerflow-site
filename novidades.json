@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.8.6",
+  "data": "2026-09-29",
+  "titulo": "Peças perto demais? O editor afasta sozinho",
+  "itens": [
+   "Chega do aviso \"está a menos de X mm\". Ao soltar uma peça perto de outra, ao clicar em Aplicar e regravar ou no botão novo \"Afastar peças na folga\", o editor empurra as peças pelo menor caminho até a folga da fresa, sem sair da chapa nem entrar em área com defeito.",
+   "O aviso só continua aparecendo quando não cabe afastar. Aí é mover à mão ou usar o Nesting automático."
+  ]
+ },
+ {
   "versao": "3.8.5",
   "data": "2026-09-29",
   "titulo": "Sua configuração com cópia de segurança",
