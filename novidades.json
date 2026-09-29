@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.8.12",
+  "data": "2026-09-29",
+  "titulo": "Encaixe mais apertado, começando no zero da máquina",
+  "itens": [
+   "As peças agora são puxadas para o canto do zero da máquina e encostadas umas nas outras, mantendo a folga. Acabaram as escadinhas e os buracos entre peças: o espaço livre fica inteiro do lado oposto, pronto para virar sobra.",
+   "Entre as doze estratégias de encaixe, o RouterFlow passa a preferir a que deixa as peças mais juntas, e não só a que gasta menos chapa. Vale para cada chapa e para \"Unir tudo numa chapa só\"."
+  ]
+ },
+ {
   "versao": "3.8.11",
   "data": "2026-09-29",
   "titulo": "A chapa vai como a mesa manda; você escolhe como as peças ficam",
