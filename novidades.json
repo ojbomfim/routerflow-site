@@ -1,5 +1,17 @@
 [
  {
+  "versao": "3.13.0",
+  "data": "2026-09-30",
+  "titulo": "Módulo completo pelas medidas",
+  "itens": [
+   "Grupo Módulos no Gerador de Peças: balcão, aéreo e gaveteiro inteiros a partir da largura, da altura e da profundidade.",
+   "As peças saem casadas: minifix com o tambor na peça horizontal e o pino na lateral, cavilha, linha 32 para a prateleira, rasgo do fundo e o calço da dobradiça furado na lateral na altura de cada caneco.",
+   "Frente com portas, gavetas, gaveta em cima e portas ou basculante; caixa da gaveta e corrediça pelo vão; rodapé com pés reguláveis.",
+   "Material da frente separado do da caixa e fita só onde vai (borda da frente da caixa, as quatro bordas das portas).",
+   "A lista de ferragens do projeto soma minifix, cavilhas, dobradiças, corrediças, suportes, pés e puxadores de todos os módulos. A prévia mostra como o módulo fica montado."
+  ]
+ },
+ {
   "versao": "3.12.0",
   "data": "2026-09-30",
   "titulo": "Gerador de Peças: texto em V, relevo 3D e encaixe pela forma",
