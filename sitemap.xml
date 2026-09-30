@@ -18,4 +18,10 @@
     <image:image><image:loc>https://www.routerflow.com.br/img/manual/config-ferramentas.png</image:loc><image:title>Configuração das ferramentas no RouterFlow</image:title></image:image>
     <image:image><image:loc>https://www.routerflow.com.br/img/manual/editor.png</image:loc><image:title>Editor de chapas do RouterFlow</image:title></image:image>
   </url>
+  <url>
+    <loc>https://www.routerflow.com.br/novidades.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

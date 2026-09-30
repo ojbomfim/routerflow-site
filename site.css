@@ -160,3 +160,23 @@ body.lb-open { overflow: hidden; }
 .news-list .news-d { color: var(--on-surface-variant); font-size: 14px; }
 .news-list ul { color: var(--on-surface-variant); margin: 0 0 14px; padding-left: 22px; }
 .news-list li { margin: 6px 0; }
+
+/* topo: três resultados em lista curta */
+.hero-list { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 8px; }
+.hero-list li { position: relative; padding-left: 30px; font-size: 16.5px; color: var(--on-surface); line-height: 1.45; }
+.hero-list li::before { content: ""; position: absolute; left: 4px; top: 4px; width: 7px; height: 13px; border: solid var(--secondary); border-width: 0 3px 3px 0; transform: rotate(45deg); }
+/* hoje x com o RouterFlow */
+.ad { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; max-width: 1000px; margin: 22px auto 0; }
+.ad > div { border-radius: var(--r-lg); padding: 20px 22px; box-shadow: var(--e1); }
+.ad .antes { background: #fff5f3; border: 1px solid #f1cfc9; }
+.ad .depois { background: #f0f8f0; border: 1px solid #c3e2c5; }
+.ad h3 { margin: 0 0 10px; }
+.ad .antes h3 { color: #a83224; } .ad .depois h3 { color: var(--secondary); }
+.ad ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 9px; }
+.ad li { position: relative; padding-left: 26px; font-size: 15.5px; line-height: 1.45; color: var(--on-surface); }
+.ad .antes li::before, .ad .antes li::after { content: ""; position: absolute; left: 4px; top: 10px; width: 13px; height: 3px; background: #c0392b; border-radius: 2px; transform: rotate(45deg); }
+.ad .antes li::after { transform: rotate(-45deg); }
+.ad .depois li::before { content: ""; position: absolute; left: 6px; top: 3px; width: 6px; height: 12px; border: solid var(--secondary); border-width: 0 3px 3px 0; transform: rotate(45deg); }
+.more { text-align: center; color: var(--on-surface-variant); margin-top: 10px; }
+.news-all { text-align: center; margin-top: 12px; }
+@media (max-width: 900px) { .ad { grid-template-columns: 1fr; } }
