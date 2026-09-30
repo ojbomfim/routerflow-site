@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.9.4",
+  "data": "2026-09-30",
+  "titulo": "Programas por etapa com um clique na Router",
+  "itens": [
+   "A lista de programas da Router ficou mais simples: cada chapa tem o botão Completo e, quando tem mais de um tipo de operação, os botões + Só furos, + Só rasgos e + Só contornos.",
+   "Clicou em + Só furos, o programa só com os furos daquela chapa é gerado e já abre. Depois ele vira um botão para abrir de novo, com um x para apagar. O botão azul mostra qual programa está aberto."
+  ]
+ },
+ {
   "versao": "3.9.3",
   "data": "2026-09-30",
   "titulo": "Folha de furação de topo cabendo na página e manual mais fácil de ler",
