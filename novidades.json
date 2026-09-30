@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.9.9",
+  "data": "2026-09-30",
+  "titulo": "Girar a visão e salvar no pendrive ou pasta",
+  "itens": [
+   "Botão Girar a visão no desenho do Projeto e da Router: deita ou levanta a chapa na tela, só para caber melhor. Nada é gerado de novo, e as peças continuam arrastáveis.",
+   "Na Produção, o botão agora diz Salvar no pendrive ou pasta, e o da chapa que vem agora fica em destaque como próximo passo. No alto, Salvar todos no pendrive ou pasta."
+  ]
+ },
+ {
   "versao": "3.9.8",
   "data": "2026-09-30",
   "titulo": "Rasgo da face de trás sai no programa normal",
