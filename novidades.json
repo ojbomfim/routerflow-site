@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.9.10",
+  "data": "2026-09-30",
+  "titulo": "Produção mostra o que cada programa corta",
+  "itens": [
+   "Na Produção, cada programa tem uma miniatura do que ele corta: o completo mostra tudo, o só furos mostra só os furos, o só contornos só os contornos. Clique para ver grande.",
+   "As mensagens rápidas ficaram no canto de cima, à direita, maiores e por mais tempo. Param quando o mouse está em cima e têm um x para fechar."
+  ]
+ },
+ {
   "versao": "3.9.9",
   "data": "2026-09-30",
   "titulo": "Girar a visão e salvar no pendrive ou pasta",
