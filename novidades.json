@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.9.6",
+  "data": "2026-09-30",
+  "titulo": "Procurar atualização na hora e aviso de versão nova mais rápido",
+  "itens": [
+   "Botão Procurar atualização na tela Sobre. Também dá para clicar no número da versão no rodapé do menu. Se tiver versão nova, aparece o Atualizar agora; se não, ele avisa que você já está na mais nova.",
+   "O aviso de versão nova ao abrir o programa ficou bem mais rápido: aparece em um ou dois segundos.",
+   "O botão de dicas de uso (o i ao lado de Tela cheia) voltou a esconder e mostrar as dicas, na Router e no editor de chapas."
+  ]
+ },
+ {
   "versao": "3.9.5",
   "data": "2026-09-30",
   "titulo": "Router com o desenho no centro",
