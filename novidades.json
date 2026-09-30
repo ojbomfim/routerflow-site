@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.9.20",
+  "data": "2026-09-30",
+  "titulo": "As duas sobras da chapa são cortadas",
+  "itens": [
+   "Quando a chapa tem duas sobras, a router agora corta as duas (antes cortava só a maior), cada uma com a sua etiqueta SOBRA e o seu cadastro no estoque.",
+   "O mapa das chapas lista todas as sobras de cada chapa."
+  ]
+ },
+ {
   "versao": "3.9.19",
   "data": "2026-09-30",
   "titulo": "Corte da sobra conferido",
