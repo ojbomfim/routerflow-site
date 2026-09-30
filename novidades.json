@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.9.18",
+  "data": "2026-09-30",
+  "titulo": "A máquina inteira no simulador",
+  "itens": [
+   "Magazine de ferramentas atrás da mesa, com cada fresa e broca da sua máquina no suporte, número e diâmetro. O lugar da ferramenta que está no cabeçote fica vazio e verde.",
+   "Pórtico com as chapas laterais nos trilhos, viga com as guias do X, carro do Z, motor do spindle com aletas e luz de ligado, porca da pinça e a fresa.",
+   "Armário de comando ao lado, com a tela e o botão de emergência."
+  ]
+ },
+ {
   "versao": "3.9.17",
   "data": "2026-09-30",
   "titulo": "Caminho à frente no lugar certo",
