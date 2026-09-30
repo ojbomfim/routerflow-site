@@ -1,5 +1,17 @@
 [
  {
+  "versao": "3.11.1",
+  "data": "2026-09-30",
+  "titulo": "Estoque de sobras acompanha a Produção",
+  "itens": [
+   "Corrigido: com \"Usar as sobras do estoque\" desmarcado, as sobras novas não entravam no estoque. Agora essa caixa só decide se o projeto usa o estoque; as sobras novas entram sempre que a chapa tem \"Cortar e guardar\".",
+   "A sobra entra no estoque quando a chapa que a solta é marcada como feita na Produção, e sai quando a chapa que a usou é marcada. Desmarcar desfaz. A Produção avisa o que entrou e o que saiu.",
+   "As sobras das chapas que você já marcou como feitas entram no estoque sozinhas ao abrir esta versão.",
+   "Tela Sobras nova: situação de cada sobra (vai sair, disponível, reservada, usada, descartada), números no alto que filtram a lista, o que tem disponível por material, de onde veio e para onde vai cada sobra, Já cortei, Liberar e Sincronizar agora.",
+   "Sobra de chapa ainda não cortada não entra mais no encaixe de outro projeto."
+  ]
+ },
+ {
   "versao": "3.11.0",
   "data": "2026-09-30",
   "titulo": "Gerador de Peças: rebaixos, fresa V e encaixes",
