@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.14.1",
+  "data": "2026-09-30",
+  "titulo": "Mais sobras por chapa e caminho à frente sempre visível",
+  "itens": [
+   "O canto que fica ao lado da sobra maior também vira sobra (até três por chapa): antes ele ficava sem marcar quando o espaço livre encostava na sobra grande.",
+   "No simulador, o caminho à frente mostra sempre os próximos 3 metros de percurso, também no meio do contorno de peça com curvas, com traço mais forte."
+  ]
+ },
+ {
   "versao": "3.14.0",
   "data": "2026-09-30",
   "titulo": "Prévia 3D e cortes especiais",
