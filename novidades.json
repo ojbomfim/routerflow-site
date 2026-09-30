@@ -1,5 +1,19 @@
 [
  {
+  "versao": "3.9.13",
+  "data": "2026-09-30",
+  "titulo": "Simulador 3D, peças pequenas seguras e envio ao suporte",
+  "itens": [
+   "Simulador na Router: botão Simular. A fresa anda pelo programa, o material sai, com vista 3D (pórtico, cabeçote e chapa) ou de cima, velocidade de 1x a 100x, X, Y, Z, avanço e rotação na tela e o programa andando junto.",
+   "Veredito antes de cortar: Pode cortar, Confira ou Não corte, com a profundidade de cada ferramenta, mesa, rápidos, spindle e peças. Clique no item para ver o ponto.",
+   "Peças pequenas primeiro: os contornos vão da menor peça para a maior, enquanto a chapa ainda segura o vácuo.",
+   "Pele fina (Configurações, Corte): o contorno para 0,3 mm acima da mesa e uma volta no fim solta tudo. Dá para ligar só nas peças pequenas. Aviso no projeto quando há peça pequena sem pele nem aba.",
+   "Enviar ao suporte, na tela Projeto: o projeto vai para o Consultor RouterFlow olhar, só quando você clica.",
+   "Filtros da tela Sobras organizados e a coluna Origem no lugar de Veio de.",
+   "Correções e melhorias internas."
+  ]
+ },
+ {
   "versao": "3.9.12",
   "data": "2026-09-30",
   "titulo": "Miniaturas deitadas e textos em dia",
