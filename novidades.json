@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.9.8",
+  "data": "2026-09-30",
+  "titulo": "Rasgo da face de trás sai no programa normal",
+  "itens": [
+   "Peça com furos ou rasgos só na face de trás (como a lateral com rasgo do fundo) agora entra virada na chapa sozinha, e a usinagem sai por cima no mesmo programa. Antes, com o programa do verso desligado, o rasgo ficava de fora.",
+   "Peça com usinagem nas duas faces ainda precisa do programa do verso. Se ele estiver desligado, o projeto mostra o aviso com o botão Ligar o programa do verso.",
+   "A ficha de produção lista as peças que entraram viradas."
+  ]
+ },
+ {
   "versao": "3.9.7",
   "data": "2026-09-30",
   "titulo": "Cada programa diz o que faz, e o tempo de máquina em destaque",
