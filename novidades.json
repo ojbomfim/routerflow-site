@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.9.3",
+  "data": "2026-09-30",
+  "titulo": "Folha de furação de topo cabendo na página e manual mais fácil de ler",
+  "itens": [
+   "A folha de furação de topo não sai mais da página: desenho menor à esquerda, tabela mais curta à direita (lado, posição, de onde medir, broca e profundidade) e o centro da espessura numa linha embaixo.",
+   "No Manual, as figuras ficaram menores. Clique numa delas para ver grande.",
+   "Os capítulos do Manual agora são numerados e com nome curto, iguais no programa e no site."
+  ]
+ },
+ {
   "versao": "3.9.2",
   "data": "2026-09-30",
   "titulo": "Manual dentro do programa, Novo e Excluir projeto, programas por etapa na Router",
