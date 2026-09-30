@@ -1,5 +1,21 @@
 [
  {
+  "versao": "3.14.0",
+  "data": "2026-09-30",
+  "titulo": "Prévia 3D e cortes especiais",
+  "itens": [
+   "A prévia do Gerador de Peças abre em 3D: o móvel montado, explodido ou peça por peça, com a espessura, os recortes, os furos, os rasgos e o texto. Arraste para girar, roda do mouse para aproximar.",
+   "Painel ondulado em lâminas: lâminas em pé com a frente em onda, espinhas por trás encaixadas por meia-madeira e o número gravado em cada lâmina para montar na ordem.",
+   "Frente curva com cambotas: cambotas com o arco e o revestimento de MDF flexível ou de MDF comum com os cortes de flexão calculados pelo raio.",
+   "Encaixe mais rápido com muitas peças pequenas (uma lista de 400 peças caiu de 27 para 5 segundos) e letras que regravam na hora.",
+   "Programa da router mais seguro: a fresa não entra mais na peça em fendas na ponta (colmeia), degraus ou entalhes menores que ela; cada passada desce em rampa de onde a anterior parou; recorte fora da peça e folga menor que a fresa viram aviso; abas descem em rampa.",
+   "Verso antes da face: o programa do verso aparece primeiro na Produção e diz para que lado virar a chapa.",
+   "O Tradutor NC acusa descida em rápido dentro do material, entende o Z zero no topo da chapa e separa as cópias da mesma peça.",
+   "Correções no encaixe de peça irregular, nas áreas com defeito, nas sobras (todas entram no estoque, o veio é mantido), ao reabrir um projeto (as chapas saem iguais às salvas) e na leitura de listas com código repetido.",
+   "Correções e melhorias internas."
+  ]
+ },
+ {
   "versao": "3.13.0",
   "data": "2026-09-30",
   "titulo": "Módulo completo pelas medidas",
