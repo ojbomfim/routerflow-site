@@ -1,5 +1,16 @@
 [
  {
+  "versao": "3.9.19",
+  "data": "2026-09-30",
+  "titulo": "Corte da sobra conferido",
+  "itens": [
+   "O corte que solta a sobra nunca encosta nas peças: passa no meio da folga e, com folga pequena, entra um pouco no retalho em vez de pegar a peça.",
+   "Quando o retalho encosta na margem da chapa, o corte vai até a borda e o retalho solta de verdade (antes ficava uma ponte de material segurando).",
+   "O programa só de contornos, gerado na Router, agora leva o corte da sobra.",
+   "Com Mostrar a sobra desmarcada, Cortar a sobra aparece desmarcada e desligada; ao marcar de novo, volta como estava."
+  ]
+ },
+ {
   "versao": "3.9.18",
   "data": "2026-09-30",
   "titulo": "A máquina inteira no simulador",
