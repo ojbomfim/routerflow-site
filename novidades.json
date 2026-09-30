@@ -1,5 +1,18 @@
 [
  {
+  "versao": "3.9.14",
+  "data": "2026-09-30",
+  "titulo": "Simulador mais completo e fácil de usar",
+  "itens": [
+   "Máquina inteira em 3D, com trilhos, pórtico e cabeçote, e quatro vistas: 3D, Planta, Frente e Fresa (a câmera chega perto e vai atrás da ferramenta).",
+   "Linha do tempo colorida por operação, com as trocas de ferramenta marcadas: clique ou arraste para ir a qualquer ponto. Botões para pular de operação em operação.",
+   "Painel da controladora: situação, X, Y e Z, ferramenta, avanço, rotação, profundidade, tempo e quanto falta, percurso, peças soltas e trocas de ferramenta.",
+   "Caminho à frente em tracejado, rápidos opcionais, cor da chapa, aviso piscando se algo sair do normal e o veredito lido em voz alta.",
+   "O botão Simular vira Sair do simulador enquanto a simulação está aberta.",
+   "Atalhos: espaço, setas, Shift + setas, [ e ], 1 a 4, S, Home e End. Mais leve em programas grandes."
+  ]
+ },
+ {
   "versao": "3.9.13",
   "data": "2026-09-30",
   "titulo": "Simulador 3D, peças pequenas seguras e envio ao suporte",
