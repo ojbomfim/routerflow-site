@@ -1,5 +1,18 @@
 [
  {
+  "versao": "3.11.0",
+  "data": "2026-09-30",
+  "titulo": "Gerador de Peças: rebaixos, fresa V e encaixes",
+  "itens": [
+   "Doze modelos novos no Gerador de Peças: porta com cava 45 graus, frente com cava embutida, frente com rebaixo para gola, porta quadro com vidro, porta com fecho toque, prateleira com LED, painel acústico, muxarabi, cabeceira, placa com letreiro, estante encaixada e caixa com encaixe dentado.",
+   "A router faz rebaixos (esvazia a área do meio para a borda), chanfro de 45 graus na borda com fresa V e encaixes com dog-bone, que deixam o canto vivo para a peça entrar.",
+   "Frisos com fresa reta, fresa V ou ponta redonda. A Router e o simulador mostram o V com a largura certa.",
+   "Na tabela de ferramentas entram os tipos Fresa V (com o ângulo) e Ponta redonda.",
+   "A prévia do gerador mostra a mudança de verdade: enquanto você mexe no mesmo modelo, a peça cresce e diminui na tela, com as cotas. Peças de conjunto (gaveta, nicho) aparecem em fileiras.",
+   "Furo raso maior que duas fresas (fecho, ímã) agora limpa o fundo inteiro."
+  ]
+ },
+ {
   "versao": "3.10.0",
   "data": "2026-09-30",
   "titulo": "Gerador de Peças",
