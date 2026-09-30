@@ -1,5 +1,13 @@
 [
  {
+  "versao": "3.9.1",
+  "data": "2026-09-29",
+  "titulo": "Correções e melhorias internas",
+  "itens": [
+   "Ajustes por dentro para o programa ficar mais estável. Nada muda no seu jeito de usar."
+  ]
+ },
+ {
   "versao": "3.9.0",
   "data": "2026-09-29",
   "titulo": "Planilha do Excel, furação de topo, chapa cortada na Router e suporte mais perto",
