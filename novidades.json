@@ -1,5 +1,17 @@
 [
  {
+  "versao": "3.9.0",
+  "data": "2026-09-29",
+  "titulo": "Planilha do Excel, furação de topo, chapa cortada na Router e suporte mais perto",
+  "itens": [
+   "A lista de peças pode vir direto da planilha do Excel (.xlsx), sem converter para CSV. Escolha ou arraste como sempre; se as colunas forem diferentes, a janela Colunas pergunta qual é qual.",
+   "Furos na borda das peças (cavilha, minifix de lateral) ganharam a folha \"Furação de topo\": a peça vista de cima, o lado, a posição, a broca e a profundidade de cada furo, para a furadeira horizontal.",
+   "Na Router, o botão Material mostra a chapa como ela fica depois do corte: cada passada com a largura da fresa, escuro onde atravessa, marrom onde é rasgo ou furo. Fica mais fácil entender o programa antes de rodar.",
+   "Tempo estimado calibrado: em Configurações, Sua router, cronometre uma chapa e informe o tempo real. O RouterFlow calcula o fator e passa a estimar certo na Router, na Produção e na ficha.",
+   "Cópia da configuração no suporte: o RouterFlow manda a sua configuração (sem senhas) junto com a verificação da licença. Se o suporte preparar um ajuste para o seu computador, aparece um aviso e você decide se aplica. Dá para desligar em Configurações, Cópia de segurança."
+  ]
+ },
+ {
   "versao": "3.8.19",
   "data": "2026-09-29",
   "titulo": "Marcou a última chapa? O projeto está concluído",
