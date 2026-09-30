@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.9.7",
+  "data": "2026-09-30",
+  "titulo": "Cada programa diz o que faz, e o tempo de máquina em destaque",
+  "itens": [
+   "O nome de cada .nc termina com o que ele faz: _COMPLETO, _SO_FUROS, _SO_RASGOS ou _SO_CONTORNOS. Salvou no pendrive, abriu na máquina, dá para saber na hora. O comentário no começo do programa diz o mesmo.",
+   "Na Produção, cada chapa lista todos os seus programas com um selo colorido: COMPLETO, SÓ FUROS, SÓ RASGOS ou SÓ CONTORNOS. Os de etapa ficam logo abaixo do completo. Todos os .nc para o pendrive leva os de etapa também.",
+   "Tempo estimado em destaque: no alto da Produção, quanto tempo de máquina falta para terminar o projeto; em cada chapa e em cada programa; e no Resumo da Router, grande, com quanto é corte e quanto é movimento rápido."
+  ]
+ },
+ {
   "versao": "3.9.6",
   "data": "2026-09-30",
   "titulo": "Procurar atualização na hora e aviso de versão nova mais rápido",
