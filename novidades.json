@@ -1,5 +1,17 @@
 [
  {
+  "versao": "3.9.2",
+  "data": "2026-09-30",
+  "titulo": "Manual dentro do programa, Novo e Excluir projeto, programas por etapa na Router",
+  "itens": [
+   "Menu Manual: o manual inteiro dentro do RouterFlow, com busca. Digite passe, folga, pendrive ou etiqueta e aparecem só os tópicos que falam disso, com a palavra marcada.",
+   "Na tela Projeto, Novo projeto começa outro do zero (o atual fica no histórico) e Excluir projeto apaga o que foi gerado: a pasta vai para a Lixeira, o projeto sai do histórico e as sobras voltam como estavam. O CSV que você importou não é apagado.",
+   "Programas só de furos, só de rasgos ou só de contornos agora se escolhem na Router, chapa por chapa. Marcou, o programa sai na hora e o botão abrir aparece do lado.",
+   "Corte no ar, corte da sobra e corte de linha comum ficam todos na etapa 2 do Projeto. Configurações guarda só o que é da máquina.",
+   "Os botões do Sobre (site, WhatsApp e e-mail) voltaram a funcionar."
+  ]
+ },
+ {
   "versao": "3.9.1",
   "data": "2026-09-29",
   "titulo": "Correções e melhorias internas",
