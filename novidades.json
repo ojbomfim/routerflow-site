@@ -1,5 +1,13 @@
 [
  {
+  "versao": "3.9.5",
+  "data": "2026-09-30",
+  "titulo": "Router com o desenho no centro",
+  "itens": [
+   "Na Router, o desenho da mesa e da chapa fica sempre no centro: ao abrir um programa, no Enquadrar, no duplo clique e na tecla 0. Antes ele encostava na esquerda."
+  ]
+ },
+ {
   "versao": "3.9.4",
   "data": "2026-09-30",
   "titulo": "Programas por etapa com um clique na Router",
