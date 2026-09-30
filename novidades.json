@@ -1,5 +1,16 @@
 [
  {
+  "versao": "3.9.11",
+  "data": "2026-09-30",
+  "titulo": "Chapa deitada na tela e etapa 2 organizada",
+  "itens": [
+   "No Projeto e na Router a chapa já aparece deitada, que é como cabe melhor no monitor. O botão Ver em pé levanta o desenho, e Ver deitada volta. O programa não muda.",
+   "A etapa 2 do Projeto ficou em três grupos: Máquina e chapa, Programa da router e Sobras, cada caixa com uma linha curta dizendo para que serve.",
+   "Unir tudo numa chapa só e a pasta onde salvar foram para Mais opções, embaixo, porque quase nunca mudam.",
+   "Os recentes da etapa 1 não repetem o mesmo projeto."
+  ]
+ },
+ {
   "versao": "3.9.10",
   "data": "2026-09-30",
   "titulo": "Produção mostra o que cada programa corta",
