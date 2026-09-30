@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.9.16",
+  "data": "2026-09-30",
+  "titulo": "Fresa no lugar certo no simulador",
+  "itens": [
+   "No 3D a fresa some dentro da chapa enquanto corta e aparece entrando no corte, com o brilho no ponto de entrada.",
+   "A sombra da fresa fica embaixo dela e cresce quando ela sobe.",
+   "O painel do simulador não passa mais da borda da janela: os números encolhem e o painel rola por dentro."
+  ]
+ },
+ {
   "versao": "3.9.15",
   "data": "2026-09-30",
   "titulo": "Largura ajustável e 3D mais real",
