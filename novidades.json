@@ -1,5 +1,13 @@
 [
  {
+  "versao": "3.9.17",
+  "data": "2026-09-30",
+  "titulo": "Caminho à frente no lugar certo",
+  "itens": [
+   "No simulador 3D, o caminho que a fresa vai fazer aparece na face da chapa, bem em cima de onde o corte vai sair: tracejado azul no que vai cortar e mais claro nos movimentos rápidos, sem os traços subindo e descendo."
+  ]
+ },
+ {
   "versao": "3.9.16",
   "data": "2026-09-30",
   "titulo": "Fresa no lugar certo no simulador",
