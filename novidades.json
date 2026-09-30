@@ -1,5 +1,16 @@
 [
  {
+  "versao": "3.9.15",
+  "data": "2026-09-30",
+  "titulo": "Largura ajustável e 3D mais real",
+  "itens": [
+   "Na Router e no Projeto, a barra entre o desenho e o painel da direita muda a largura. Duplo clique volta ao normal.",
+   "Rasgos, furos e contornos aparecem no 3D como canais rebaixados na chapa, com a parede em sombra e o fundo.",
+   "Chapa com textura de MDF, luz e quina clara, mesa de sacrifício com as ranhuras, sombra da fresa e piso ao fundo.",
+   "O simulador começa em 1x, o tempo real da máquina."
+  ]
+ },
+ {
   "versao": "3.9.14",
   "data": "2026-09-30",
   "titulo": "Simulador mais completo e fácil de usar",
