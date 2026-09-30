@@ -1,5 +1,16 @@
 [
  {
+  "versao": "3.9.12",
+  "data": "2026-09-30",
+  "titulo": "Miniaturas deitadas e textos em dia",
+  "itens": [
+   "As miniaturas da Produção também mostram a chapa deitada, igual ao Projeto e à Router.",
+   "O passo a passo do Início e o Sobre contam o fluxo de hoje: peças em pé ou deitadas, sobras do estoque quando marcado, Completo ou só uma etapa na Router, pendrive, pasta ou rede na Produção.",
+   "Na tela Sobras, a data em que a sobra foi guardada aparece no formato dia, mês e ano.",
+   "Manual, guia rápido e imagens do site refeitos com as telas atuais."
+  ]
+ },
+ {
   "versao": "3.9.11",
   "data": "2026-09-30",
   "titulo": "Chapa deitada na tela e etapa 2 organizada",
