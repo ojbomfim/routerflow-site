@@ -1,5 +1,19 @@
 [
  {
+  "versao": "3.12.0",
+  "data": "2026-09-30",
+  "titulo": "Gerador de Peças: texto em V, relevo 3D e encaixe pela forma",
+  "itens": [
+   "Placa com texto em V usando as fontes do Windows (Arial, Georgia, Impact, Cooper...): a fresa V esculpe a letra com a lateral encostando na borda, como o V-carve do Aspire. Aceita acentos e minúsculas.",
+   "Placa com letras vazadas (estêncil, com ponte no miolo do O, A, B) e letras soltas: cada letra vira uma peça cortada pelo contorno da fonte.",
+   "Painel ondulado 3D com a ponta redonda: ondas retas, curvas, diagonais ou bolhas.",
+   "Porta provençal com moldura de fresa de perfil, V ou ponta redonda (reta, capela, cantos arredondados ou recortados), e o tipo Fresa de perfil na tabela de ferramentas.",
+   "Banco encaixado e mesa lateral com pés em X, montados sem parafuso.",
+   "Encaixe pela forma: tampo em L, peça com arco e letra não ocupam mais o retângulo inteiro; as peças menores entram no canto vazio. O editor desenha o contorno de verdade.",
+   "Na Router, com Material ligado, o relevo e o texto em V aparecem em tons de profundidade."
+  ]
+ },
+ {
   "versao": "3.11.1",
   "data": "2026-09-30",
   "titulo": "Estoque de sobras acompanha a Produção",
