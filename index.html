@@ -88,12 +88,12 @@
       ],
       "offers": {
         "@type": "Offer",
-        "price": "2600.00",
+        "price": "3000.00",
         "priceCurrency": "BRL",
         "priceValidUntil": "2027-12-31",
         "availability": "https://schema.org/InStock",
         "url": "https://www.routerflow.com.br/#preco",
-        "description": "Licença anual por computador. PIX à vista com 5% de desconto (R$ 2.470). Cartão em até 12x com acréscimo.",
+        "description": "Licença anual por computador. PIX à vista com 5% de desconto (R$ 2.850). Cartão em até 12x com acréscimo.",
         "seller": { "@id": "https://www.routerflow.com.br/#org" }
       },
       "publisher": { "@id": "https://www.routerflow.com.br/#org" }
@@ -121,8 +121,9 @@
         { "@type": "Question", "name": "Preciso do Aspire ou de outro CAM?", "acceptedAnswer": { "@type": "Answer", "text": "Não. O RouterFlow gera o programa .nc de cada chapa direto para a router, com furos, rasgos e contornos. Quem prefere continuar no Aspire ou em outro CAM usa o DXF por material, que sai com as layers no padrão de sempre." } },
         { "@type": "Question", "name": "Funciona na minha router?", "acceptedAnswer": { "@type": "Answer", "text": "O programa sai pelo pós-processador da sua máquina. Há modelos prontos para Inmes, Mach3, GRBL e Fanuc, e você pode importar o arquivo .pp do Aspire que já usa. O modo corte no ar serve para o primeiro teste com a fresa elevada, sem chapa." } },
         { "@type": "Question", "name": "Precisa de internet para usar?", "acceptedAnswer": { "@type": "Answer", "text": "Não para trabalhar. A licença é confirmada pela internet de vez em quando e as atualizações são baixadas pelo próprio programa, mas gerar chapas, DXF e programas funciona sem conexão." } },
-        { "@type": "Question", "name": "Quanto custa o RouterFlow?", "acceptedAnswer": { "@type": "Answer", "text": "R$ 2.600 por ano por computador, uma cobrança só por ano. No PIX à vista tem 5% de desconto, R$ 2.470. No cartão de crédito, em até 12x com o acréscimo da taxa da maquininha. Computador adicional da mesma empresa: R$ 1.300. Atualizações e suporte pelo WhatsApp incluídos." } },
+        { "@type": "Question", "name": "Quanto custa o RouterFlow?", "acceptedAnswer": { "@type": "Answer", "text": "R$ 3.000 por ano por computador, uma cobrança só por ano. No PIX à vista tem 5% de desconto, R$ 2.850. No cartão de crédito, em até 12x com o acréscimo da taxa da maquininha. Computador adicional da mesma empresa: R$ 1.500. Atualizações e suporte pelo WhatsApp incluídos." } },
         { "@type": "Question", "name": "Como ativo a licença?", "acceptedAnswer": { "@type": "Answer", "text": "Instale, abra Ajuda, Licença, e copie o código da máquina. Envie pelo WhatsApp com a razão social, o CNPJ, o e-mail e o telefone da empresa. Você recebe a chave, cola e clica em Ativar. Sem cadastro." } },
+        { "@type": "Question", "name": "Como peço ajuda?", "acceptedAnswer": { "@type": "Answer", "text": "Dentro do programa, em Ajuda: o manual com busca e a aba Suporte, com o WhatsApp do Consultor RouterFlow e o botão que manda o projeto aberto para ele olhar do mesmo jeito que você vê." } },
         { "@type": "Question", "name": "Quais os requisitos?", "acceptedAnswer": { "@type": "Answer", "text": "Windows 10 ou 11, 64 bits. O instalador cuida do componente WebView2 do Windows, se faltar. Funciona no computador do projeto e no computador da máquina." } }
       ]
     }
@@ -206,7 +207,7 @@
   <ol class="steps">
     <li class="step"><span>1</span><h3>Exporte a lista de peças</h3><p>No seu software de projeto, o mesmo CSV do plano de corte, com furos, rasgos e fitas. Ou uma planilha do Excel. Arraste para o RouterFlow.</p></li>
     <li class="step"><span>2</span><h3>As chapas saem montadas</h3><p>Separadas por material e espessura, com o melhor encaixe e as sobras do estoque. Quer mudar? Arraste a peça e pronto.</p></li>
-    <li class="step"><span>3</span><h3>Simule e mande para a router</h3><p>Aperte Simular e veja a fresa cortando a chapa em 3D, com o tempo e o veredito: pode cortar, confira ou não corte. Salve no pendrive ou mande pela rede.</p></li>
+    <li class="step"><span>3</span><h3>Confira e mande para a router</h3><p>Em Conferir e simular, veja a fresa cortando a chapa em 3D, com o tempo e o veredito: pode cortar, confira ou não corte. Na Produção, salve no pendrive ou mande pela rede.</p></li>
     <li class="step"><span>4</span><h3>Imprima e corte</h3><p>Etiquetas, mapa das chapas e ficha de produção. Na máquina, marque cada chapa feita e veja quanto falta.</p></li>
   </ol>
   <figure class="shot"><img class="zoom" src="img/app-simulador.png" alt="Simulador do RouterFlow: a chapa em 3D com o pórtico e a fresa cortando, a régua do Z, os controles de velocidade e o veredito Pode cortar ao lado" width="2560" height="2040" loading="lazy"><figcaption>Antes de cortar, o simulador mostra a fresa andando pelo programa, o material saindo e o veredito: a profundidade de cada ferramenta, a mesa, os rápidos e o spindle conferidos.</figcaption></figure>
@@ -233,21 +234,20 @@
 
 <section id="recursos" class="block" aria-labelledby="h-recursos">
   <h2 id="h-recursos">Feito dentro da oficina</h2>
+  <p class="sub">Os recursos na ordem do menu do programa: Projeto, Gerador de peças, Conferir e simular, Produção e Sobras.</p>
   <div class="features">
-    <div><h3>Nesting que aproveita a chapa</h3><p>Doze combinações de estratégia por material, fica a que gasta menos chapa e deixa a maior sobra. Respeita veio, folga e margem, desvia de áreas com defeito e usa as sobras do estoque antes de abrir chapa inteira.</p></div>
-    <div><h3>Editor de chapas</h3><p>Origem em qualquer canto, peças em pé ou deitadas, eixos desenhados, chapa deitada na tela. Arraste, gire, troque peças de chapa, marque defeitos e regrave. O projeto fica salvo para reabrir e alterar.</p></div>
-    <div><h3>Programa da router sem CAM</h3><p>Furos, rasgos e contornos com deslocamento pelo raio da fresa, passes em profundidade, rampa de entrada e zonas de vácuo. Peças pequenas cortadas primeiro e pele fina para elas não soltarem no vácuo. Modo corte no ar para o primeiro teste.</p></div>
-    <div><h3>Simulador 3D</h3><p>A fresa anda pelo programa na tela, de 1x a 100x, com o material saindo, a régua do Z e o programa andando junto. No fim, o veredito: pode cortar, confira ou não corte, com o ponto exato do problema.</p></div>
-    <div><h3>Conferir e simular</h3><p>Operação por operação sobre a mesa da máquina, tradução do G-code em português linha por linha, tempo estimado e verificações: rápido dentro da chapa, corte sem avanço, spindle desligado, fora da mesa.</p></div>
-    <div><h3>Perfis de máquina</h3><p>Cada router com sua mesa, vácuo, ferramentas e pós-processador. Troque de máquina pelo menu lateral, crie um perfil novo por cópia ou importe o arquivo .pp do Aspire. Modelos prontos para Inmes, Mach3, GRBL e Fanuc.</p></div>
-    <div><h3>Produção e sobras</h3><p>Modo operador com a lista de chapas, o tempo de máquina, a miniatura de cada programa, pendrive, pasta ou rede e marcação de feita. Estoque de sobras que acompanha a Produção: a sobra entra quando a chapa é marcada como feita, fica reservada quando um projeto vai usar e sai quando a chapa que a usou é cortada.</p></div>
+    <div><h3>Projeto: chapa bem aproveitada</h3><p>Doze combinações de estratégia por material, fica a que gasta menos chapa e deixa a maior sobra. Respeita veio, folga e margem, desvia de áreas com defeito e usa as sobras do estoque antes de abrir chapa inteira. Tampo em L, peça com arco e letra entram pela forma: as menores ocupam o canto vazio.</p></div>
+    <div><h3>Projeto: qualquer lista de peças</h3><p>O CSV do software de projeto, uma planilha do Excel ou a lista de outro programa: uma janela mostra as colunas do arquivo e você diz qual é qual, e o RouterFlow lembra. Vários arquivos de uma vez entram nas mesmas chapas.</p></div>
+    <div><h3>Editor de chapas</h3><p>Origem em qualquer canto, chapa deitada na tela, eixos desenhados. Arraste, gire, troque peças de chapa, marque defeitos e regrave tudo junto: DXF, programas, etiquetas e mapa. O projeto fica salvo para reabrir.</p></div>
+    <div><h3>Gerador de peças</h3><p>Sem lista? Escolha entre 39 modelos e digite as medidas: porta com dobradiça, provençal, cava 45, porta com vidro, gaveta pelo vão, lateral com linha 32, tampo com cuba e cooktop, painel ripado, ondulado e em lâminas, frente curva com cortes de flexão, muxarabi, texto em V com as fontes do Windows, letras vazadas e letra caixa, banco e mesa encaixados. Sai com recortes, rebaixos, relevo 3D, V-carve e encaixes com dog-bone, sem desenhar.</p></div>
     <div><h3>Módulo completo pelas medidas</h3><p>Balcão, aéreo e gaveteiro inteiros: laterais, base, travessas, fundo, prateleiras, portas e gavetas, com minifix, cavilha, linha 32 e o calço da dobradiça casando entre as peças, e a lista de ferragens pronta.</p></div>
     <div><h3>Prévia 3D das peças</h3><p>Veja o móvel montado, explodido ou peça por peça antes de cortar: espessura, recortes, furos, rasgos, a onda do painel e a frente curva dobrada. Nos cortes especiais, o 3D mostra a estrutura que segura: as espinhas do painel em lâminas e as cambotas da frente curva.</p></div>
-    <div><h3>Gerador de peças</h3><p>Sem CSV? Escolha entre 39 modelos e digite as medidas: porta com dobradiça, provençal, cava 45, porta com vidro, gaveta pelo vão, lateral com linha 32, tampo com cuba e cooktop, painel ripado, painel ondulado 3D, painel em lâminas, frente curva com cortes de flexão, muxarabi, texto em V com as fontes do Windows, letras vazadas e letra caixa, banco e mesa encaixados. Sai com recortes, rebaixos, relevo 3D, V-carve e encaixes com dog-bone, direto para a router, sem desenhar.</p></div>
-    <div><h3>Encaixe pela forma</h3><p>Tampo em L, peça com arco e letra não ocupam o retângulo inteiro: as peças menores entram no canto vazio e a chapa rende mais. O editor mostra o contorno de verdade.</p></div>
-    <div><h3>Qualquer lista de peças</h3><p>Além do CSV do software de projeto, aceita listas do Excel ou de outro programa: uma janela mostra as colunas do arquivo e você diz qual é qual. O RouterFlow lembra o mapeamento.</p></div>
-    <div><h3>Vários projetos juntos</h3><p>Selecione vários CSV de uma vez e as peças de todos entram nas mesmas chapas, com o nome do projeto no ID de cada peça.</p></div>
-    <div><h3>Atualização automática</h3><p>Cada versão nova é baixada e instalada pelo próprio programa. A licença é confirmada pela internet de vez em quando; na hora de cortar, não precisa de conexão.</p></div>
+    <div><h3>Conferir e simular</h3><p>A fresa corta a chapa em 3D na tela, de 1x a 100x, com o material saindo e o programa andando junto. No fim, o veredito: pode cortar, confira ou não corte, com o ponto exato do problema. Tem também o passo a passo sobre a mesa, a tradução do G-code em português e as verificações: rápido dentro da chapa, fundo demais na mesa, fora da área da máquina.</p></div>
+    <div><h3>Programa da router sem CAM</h3><p>Furos, rasgos e contornos com deslocamento pelo raio da fresa, passes em profundidade com rampa, verso antes da face e zonas de vácuo. Peças pequenas cortadas primeiro e pele fina para elas não soltarem. Modo corte no ar para o primeiro teste.</p></div>
+    <div><h3>Produção</h3><p>Modo operador: as chapas na ordem de corte, o tempo de máquina, a miniatura de cada programa, pendrive, pasta de rede ou FTP e a marcação de chapa feita. O Início mostra onde você parou e quantas chapas faltam.</p></div>
+    <div><h3>Sobras</h3><p>A router corta cada retalho alinhado e sai a etiqueta. A sobra entra no estoque quando a chapa é marcada como feita, fica reservada quando um projeto vai usar e sai quando a chapa que a usou é cortada.</p></div>
+    <div><h3>Perfis de máquina</h3><p>Cada router com sua mesa, vácuo, ferramentas e pós-processador. Troque de máquina pelo menu lateral, crie um perfil novo por cópia ou importe o arquivo .pp do Aspire. Modelos prontos para Inmes, Mach3, GRBL e Fanuc.</p></div>
+    <div><h3>Ajuda dentro do programa</h3><p>Manual com busca, suporte pelo WhatsApp com o envio do projeto para o consultor ver do mesmo jeito que você, e atualização automática: cada versão nova é baixada e instalada pelo próprio programa.</p></div>
   </div>
   <div class="two">
     <figure class="shot"><img class="zoom" src="img/app-router.png" alt="Tela Conferir e simular do RouterFlow: percurso da fresa desenhado sobre a mesa, zonas de vácuo e lista de furos, rasgos e contornos" width="2560" height="2040" loading="lazy"><figcaption>Conferir e simular: cada operação sobre a mesa, com as zonas de vácuo a abrir e a lista de furos, rasgos e contornos.</figcaption></figure>
@@ -264,35 +264,35 @@
   <div class="price">
     <div class="plan">
       <h3>Licença anual, 1 computador</h3>
-      <p class="value">R$ 2.600<span>/ano</span></p>
+      <p class="value">R$ 3.000<span>/ano</span></p>
       <ul>
-        <li>PIX à vista com 5% de desconto: <b>R$ 2.470</b></li>
+        <li>PIX à vista com 5% de desconto: <b>R$ 2.850</b></li>
         <li>Cartão de crédito em até 12x, com o acréscimo da taxa da maquininha</li>
-        <li>Uma cobrança só por ano: dá R$ 217 por mês, cerca de R$ 7 por dia</li>
+        <li>Uma cobrança só por ano: dá R$ 250 por mês, cerca de R$ 8 por dia</li>
         <li>Todas as atualizações do ano incluídas</li>
         <li>Suporte pelo WhatsApp</li>
-        <li>Computador adicional da mesma empresa: R$ 1.300</li>
+        <li>Computador adicional da mesma empresa: R$ 1.500</li>
       </ul>
       <a class="btn go" href="#contato">Quero contratar</a>
     </div>
     <div class="compare">
       <h3>Faça a conta</h3>
       <p>Oficina que corta 50 chapas por mês a R$ 280: cada 1% de aproveitamento a mais vale R$ 1.680 por ano. O nesting com doze estratégias e as sobras do estoque costumam render 3% sobre o encaixe manual, R$ 5.040 por ano.</p>
-      <p>Uma hora a menos de programação por projeto, em 8 projetos por mês, são R$ 3.840 por ano. Evitar metade das chapas refeitas por peça errada, mais R$ 1.920. São cerca de R$ 10.800 por ano de retorno para uma licença de R$ 2.600, que se paga em três meses. E isso sem contar o que você deixa de pagar em plugins e CAM.</p>
+      <p>Uma hora a menos de programação por projeto, em 8 projetos por mês, são R$ 3.840 por ano. Evitar metade das chapas refeitas por peça errada, mais R$ 1.920. São cerca de R$ 10.800 por ano de retorno para uma licença de R$ 3.000, que se paga em pouco mais de três meses. E isso sem contar o que você deixa de pagar em plugins e CAM.</p>
       <table class="calc">
         <tr><td>Aproveitamento da chapa (3%)</td><td>R$ 5.040</td></tr>
         <tr><td>Tempo de programação (8 h por mês)</td><td>R$ 3.840</td></tr>
         <tr><td>Retrabalho evitado</td><td>R$ 1.920</td></tr>
         <tr class="total"><td>Retorno por ano</td><td>R$ 10.800</td></tr>
-        <tr><td>Licença por ano</td><td>R$ 2.600</td></tr>
+        <tr><td>Licença por ano</td><td>R$ 3.000</td></tr>
       </table>
       <h3>Para comparar</h3>
       <p>O RouterFlow faz o trabalho de duas ferramentas. A primeira é o plugin de exportação em DXF do software de projeto: R$ 5.800 de adesão mais R$ 180 por mês, e ainda um segundo plugin para exportar a furação. A segunda é o CAM que transforma o DXF no programa da router, como o Aspire: licença à parte, treinamento, e alguém digitando os toolpaths de cada chapa.</p>
-      <p>Somando os plugins e o CAM, a adesão passa de R$ 16.000 e a mensalidade passa de R$ 500. O RouterFlow entrega os dois lados, do CSV ao .nc, por R$ 2.600 no ano, com nesting, sobras, etiquetas, mapa e ficha incluídos.</p>
+      <p>Somando os plugins e o CAM, a adesão passa de R$ 16.000 e a mensalidade passa de R$ 500. O RouterFlow entrega os dois lados, do CSV ao .nc, por R$ 3.000 no ano, com nesting, sobras, etiquetas, mapa e ficha incluídos.</p>
       <table class="calc">
         <tr><td>Plugins de DXF e furação mais o CAM (adesão)</td><td>mais de R$ 16.000</td></tr>
         <tr><td>Mensalidades dos plugins e do CAM</td><td>mais de R$ 500 por mês</td></tr>
-        <tr class="total"><td>RouterFlow, tudo incluído</td><td>R$ 2.600 por ano</td></tr>
+        <tr class="total"><td>RouterFlow, tudo incluído</td><td>R$ 3.000 por ano</td></tr>
       </table>
     </div>
   </div>
@@ -305,8 +305,9 @@
     <details><summary>Preciso do Aspire ou de outro CAM?</summary><p>Não. O RouterFlow gera o programa .nc de cada chapa direto para a router, com furos, rasgos e contornos. Quem prefere continuar no Aspire ou em outro CAM usa o DXF por material, que sai com as layers no padrão de sempre.</p></details>
     <details><summary>Funciona na minha router?</summary><p>O programa sai pelo pós-processador da sua máquina. Há modelos prontos para Inmes, Mach3, GRBL e Fanuc, e você pode importar o arquivo .pp do Aspire que já usa. O modo corte no ar serve para o primeiro teste com a fresa elevada, sem chapa.</p></details>
     <details><summary>Precisa de internet para usar?</summary><p>Não para trabalhar. A licença é confirmada pela internet de vez em quando e as atualizações são baixadas pelo próprio programa, mas gerar chapas, DXF e programas funciona sem conexão.</p></details>
-    <details><summary>Quanto custa?</summary><p>R$ 2.600 por ano por computador, uma cobrança só por ano. No PIX à vista tem 5% de desconto, R$ 2.470. No cartão de crédito, em até 12x com o acréscimo da taxa da maquininha. Computador adicional da mesma empresa: R$ 1.300. Atualizações e suporte pelo WhatsApp incluídos.</p></details>
+    <details><summary>Quanto custa?</summary><p>R$ 3.000 por ano por computador, uma cobrança só por ano. No PIX à vista tem 5% de desconto, R$ 2.850. No cartão de crédito, em até 12x com o acréscimo da taxa da maquininha. Computador adicional da mesma empresa: R$ 1.500. Atualizações e suporte pelo WhatsApp incluídos.</p></details>
     <details><summary>Como ativo a licença?</summary><p>Instale, abra Ajuda, Licença, e copie o código da máquina. Envie pelo WhatsApp com a razão social, o CNPJ, o e-mail e o telefone da empresa. Você recebe a chave, cola e clica em Ativar. Sem cadastro.</p></details>
+    <details><summary>Como peço ajuda?</summary><p>Dentro do programa, em Ajuda: o manual com busca e a aba Suporte, com o WhatsApp do Consultor RouterFlow e o botão que manda o projeto aberto para ele olhar do mesmo jeito que você vê. Cada aviso do projeto também diz o que fazer e leva ao lugar certo.</p></details>
     <details><summary>Quais os requisitos?</summary><p>Windows 10 ou 11, 64 bits. O instalador cuida do componente WebView2 do Windows, se faltar. Funciona no computador do projeto e no computador da máquina.</p></details>
   </div>
 </section>
