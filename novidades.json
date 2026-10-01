@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.17.1",
+  "data": "2026-10-01",
+  "titulo": "Peça sem margem e avisos embaixo",
+  "itens": [
+   "Gerador de peças: a opção Sem margem da chapa deixa a peça encostar na borda da chapa. As outras peças continuam com a margem de Configurações.",
+   "Os avisos aparecem no canto de baixo, à direita, sem cobrir os botões do alto da tela."
+  ]
+ },
+ {
   "versao": "3.17.0",
   "data": "2026-10-01",
   "titulo": "Cava de puxador com a fresa de cava 35",
