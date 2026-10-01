@@ -1,5 +1,20 @@
 [
  {
+  "versao": "3.16.0",
+  "data": "2026-10-01",
+  "titulo": "Gerador de peças: parafuso em tudo e colmeia com caixa",
+  "itens": [
+   "A lista de peças aparece embaixo dos modelos, com Ver a lista e Levar para o Projeto. A caixa dos modelos ficou menor e rola sozinha.",
+   "União das peças com parafuso nos módulos e no nicho: furo passante de 5 mm na lateral e furo guia no topo da outra peça.",
+   "Estante, caixa dentada, banco, divisórias e mesa podem ser montados com parafuso, minifix ou cavilha no lugar do encaixe.",
+   "Colmeia com caixa por fora: as peças do meio param na face de dentro das laterais, da base e do topo.",
+   "Painel ripado com ripas soltas presas num painel de fundo com cavilha (os furos casam na ripa e no painel) ou com parafuso por trás.",
+   "Dobradiça caneco 35 com furos de fixação, com os furos só marcados ou sem furo. A de cavilha saiu.",
+   "Balcão, aéreo e gaveteiro aceitam até 2,70 m de altura. Número acima do limite agora avisa, em vez de ser trocado calado.",
+   "O fundo pregado atrás saía 1 cm maior que a caixa. Agora sai 4 mm menor."
+  ]
+ },
+ {
   "versao": "3.15.1",
   "data": "2026-09-30",
   "titulo": "Atualização que não enche o disco",
