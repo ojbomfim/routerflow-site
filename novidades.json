@@ -1,5 +1,18 @@
 [
  {
+  "versao": "3.18.0",
+  "data": "2026-10-01",
+  "titulo": "Prévia 3D nova e onze modelos novos",
+  "itens": [
+   "Prévia 3D refeita: luz, sombra, MDF branco, madeira com veio, e o que a router faz cortado de verdade na peça, com a profundidade e o miolo do MDF à mostra.",
+   "Botões na prévia: girar sozinho, raio-X (peças transparentes, cada uma com uma cor), cotas, vistas de frente, lado e de cima, material e tela cheia.",
+   "Canto curvo: cambotas e revestimento dando a volta, com um canto, dois cantos ou meia-lua; cortes de flexão só no trecho curvo.",
+   "Pé revestido: redondo, cônico, oval, oblongo, cone elíptico, quadrado e cônico quadrado, com os anéis e o revestimento cortado plano para dobrar.",
+   "Muxarabi de ripas encaixadas (ou fitado), prateleira dupla com suporte invisível, porta com placa encaixada de 6 mm, frente vazada de ventilação e tampo orgânico.",
+   "Banco em L e banco com encosto inclinado. Cava embutida redonda e cava longa, na largura toda."
+  ]
+ },
+ {
   "versao": "3.17.2",
   "data": "2026-10-01",
   "titulo": "Porta com chanfro na borda toda e Configurações que salvam sozinhas",
