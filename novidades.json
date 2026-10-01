@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.15.1",
+  "data": "2026-09-30",
+  "titulo": "Atualização que não enche o disco",
+  "itens": [
+   "A atualização apaga os instaladores de versões anteriores e o instalador novo depois de instalar. Antes eles ficavam na pasta temporária do Windows.",
+   "Quando falta espaço no disco, o aviso diz quanto liberar, em vez do erro 28 do Windows.",
+   "Correções e melhorias internas."
+  ]
+ },
+ {
   "versao": "3.15.0",
   "data": "2026-09-30",
   "titulo": "Menu mais enxuto e um Início que mostra o próximo passo",
