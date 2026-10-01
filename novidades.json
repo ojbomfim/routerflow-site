@@ -1,5 +1,16 @@
 [
  {
+  "versao": "3.17.2",
+  "data": "2026-10-01",
+  "titulo": "Porta com chanfro na borda toda e Configurações que salvam sozinhas",
+  "itens": [
+   "Porta lisa e porta com cava cortada com chanfro de 45 graus na borda toda: a fresa reta corta a porta e abre a sobra, depois a fresa V passa na borda já cortada. A prévia 3D mostra a borda chanfrada.",
+   "Configurações sem botão Salvar: cada campo é salvo na hora e o aviso verde no alto mostra a hora. Antes, quem saía sem salvar perdia o valor, como a margem da chapa em 0 que continuava em 10.",
+   "Primeiros passos do Início escondidos ficam escondidos. O programa também passa a lembrar o tamanho do desenho, a aba e a vista escolhidas depois de fechar.",
+   "Gerador de peças: Levar para o Projeto no alto da tela, com a quantidade de itens da lista."
+  ]
+ },
+ {
   "versao": "3.17.1",
   "data": "2026-10-01",
   "titulo": "Peça sem margem e avisos embaixo",
