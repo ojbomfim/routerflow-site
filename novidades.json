@@ -1,5 +1,17 @@
 [
  {
+  "versao": "3.20.2",
+  "data": "2026-10-01",
+  "titulo": "Cava com fundo e fresa invertida, como as portas de puxador cava",
+  "itens": [
+   "Porta com cava com fundo e parede invertida: a fresa reta abre a cava e a fresa invertida passa na parede, por baixo da face. O ângulo da fresa invertida é seu (45 por padrão) e a borda da porta pode levar o chanfro de 45.",
+   "O programa usa a fresa invertida cadastrada com o ângulo mais perto do pedido e avisa se for diferente.",
+   "Cava no canto: sem recuo, a cava cortada ou com fundo vai até a lateral da porta, reta daquele lado, sem borda entre ela e o canto.",
+   "Cava com fundo pela fresa V: parede em 45 graus da face até o fundo ou só na boca.",
+   "Prévia 3D: material Laqueada, com os cortes pintados da cor da face, como a porta fica depois de pintada; a borda chanfrada aparece certa sobre o fundo da cava."
+  ]
+ },
+ {
   "versao": "3.20.1",
   "data": "2026-10-01",
   "titulo": "Cava com fundo e paredes em 45 graus, medidas até o tamanho da chapa",
