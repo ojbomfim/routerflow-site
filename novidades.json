@@ -1,5 +1,14 @@
 [
  {
+  "versao": "3.20.0",
+  "data": "2026-10-01",
+  "titulo": "Prévia 3D mantém a câmera",
+  "itens": [
+   "Gerador de peças: mudar uma medida não volta a prévia 3D para a vista padrão. Gire e aproxime para ver por dentro e siga ajustando.",
+   "Correções e melhorias internas."
+  ]
+ },
+ {
   "versao": "3.19.0",
   "data": "2026-10-01",
   "titulo": "Peça personalizada, porta com todas as cavas e canto curvo com ripas",
