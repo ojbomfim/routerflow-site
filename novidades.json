@@ -1,5 +1,16 @@
 [
  {
+  "versao": "3.19.0",
+  "data": "2026-10-01",
+  "titulo": "Peça personalizada, porta com todas as cavas e canto curvo com ripas",
+  "itens": [
+   "Peça personalizada no Gerador: comece de retângulo, círculo ou L, arraste os nós, faça lados em curva, cantos arredondados ou chanfrados, e ponha furo, rasgo, corte interno, rebaixo, dobradiça e minifix onde quiser, com as cotas até as bordas e a fita lado por lado.",
+   "Porta com cava em um modelo só: embutida retangular, redonda, oval ou longa, gola, cortada reta ou em meia-lua, com chanfro de 45, com a borda inclinada da fresa de cava, com fundo, ou o puxador na própria borda. Em qualquer borda, no centro ou deslocada.",
+   "Canto curvo com base e tampo, ripas curvas e montantes encaixados por dentro, para segurar o revestimento.",
+   "No Gerador, a lista de peças fica no alto da tela, com Levar para o Projeto sempre à vista."
+  ]
+ },
+ {
   "versao": "3.18.0",
   "data": "2026-10-01",
   "titulo": "Prévia 3D nova e onze modelos novos",
