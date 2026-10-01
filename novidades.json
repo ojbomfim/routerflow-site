@@ -1,5 +1,16 @@
 [
  {
+  "versao": "3.20.1",
+  "data": "2026-10-01",
+  "titulo": "Cava com fundo e paredes em 45 graus, medidas até o tamanho da chapa",
+  "itens": [
+   "Porta com cava: tipo novo com fundo e as paredes em 45 graus (fresa V), aberta na borda, com a borda da porta chanfrada ou não, como as portas de puxador cava.",
+   "Cava e gola abertas na borda agora são esvaziadas até a borda da porta (antes ficava uma faixa da largura do raio da fresa).",
+   "Gerador de peças: toda medida vai até o tamanho da chapa cadastrada em Configurações. O aviso só aparece se passar da chapa.",
+   "Prévia 3D: a borda chanfrada não passa por cima da cava, e a quina do chanfro sai redonda como a fresa V faz."
+  ]
+ },
+ {
   "versao": "3.20.0",
   "data": "2026-10-01",
   "titulo": "Prévia 3D mantém a câmera",
