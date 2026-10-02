@@ -1,5 +1,19 @@
 [
  {
+  "versao": "3.21.0",
+  "data": "2026-10-02",
+  "titulo": "Ferramentas explicadas e conferidas, e como a router faz cada peça",
+  "itens": [
+   "Configurações, Ferramentas: o quadro O que cada ferramenta faz mostra qual ferramenta da sua tabela o programa usa no contorno, nos rebaixos, nos furos, no chanfro 45, na parede invertida da cava e nos frisos, e o que falta, com o botão Adicionar.",
+   "A tabela é conferida enquanto você digita: número repetido ou sem número, fresa invertida cadastrada como fresa reta, contorno automático pegando uma fresa grande, ferramenta sem ângulo. O Projeto avisa antes de gerar quando a tabela tem erro.",
+   "Explicado na tela e no manual: o número T é a posição da ferramenta no magazine da router (M6 T4, G43 H4).",
+   "Ao trocar uma ferramenta para Fresa invertida, o campo Ângulo agora fica liberado (antes era apagado e o programa usava 35 graus).",
+   "Gerador de peças: o quadro Como a router faz lista as etapas da peça na ordem do programa, com a ferramenta de cada uma.",
+   "Prévia 3D: botão Nomes, com o número de cada peça e a legenda; no Explodido mostra onde vai cada peça.",
+   "Conferir e simular: a passada da fresa invertida aparece como etapa própria, Parede invertida, e o passo a passo mostra cada troca de ferramenta."
+  ]
+ },
+ {
   "versao": "3.20.2",
   "data": "2026-10-01",
   "titulo": "Cava com fundo e fresa invertida, como as portas de puxador cava",
