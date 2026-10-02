@@ -1,5 +1,16 @@
 [
  {
+  "versao": "3.21.2",
+  "data": "2026-10-02",
+  "titulo": "Tela nova logo depois de atualizar e RouterFlow fixado na barra de tarefas",
+  "itens": [
+   "Depois de atualizar, a janela às vezes continuava mostrando a tela da versão anterior. Agora a tela é sempre a da versão instalada.",
+   "RouterFlow fixado na barra de tarefas abre sempre a versão instalada, também depois de atualizar. Quem fixou numa versão antiga: desafixe e fixe de novo com o RouterFlow aberto.",
+   "O título da janela ficou só RouterFlow; a versão continua no menu lateral.",
+   "Correções e melhorias internas."
+  ]
+ },
+ {
   "versao": "3.21.1",
   "data": "2026-10-02",
   "titulo": "Ferramentas desenhadas e importar a configuração de outro computador",
