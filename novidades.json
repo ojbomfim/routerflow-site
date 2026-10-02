@@ -1,5 +1,15 @@
 [
  {
+  "versao": "3.22.2",
+  "data": "2026-10-02",
+  "titulo": "Fresa invertida segura, editor de chapas mais rico e tempo mais certo",
+  "itens": [
+   "Fresa invertida desce fora da peça e entra de lado; o encaixe deixa o espaço e cada programa é conferido antes de ir para a máquina.",
+   "Editor de chapas: usinagem e fita dentro das peças, cor por módulo, medidas ao mover, todas as chapas de uma vez e busca de peça.",
+   "Tempo estimado mais perto do real (o fator voltou para 1), sobras que mostram para quais peças servem e o botão Arquivos do projeto."
+  ]
+ },
+ {
   "versao": "3.22.1",
   "data": "2026-10-02",
   "titulo": "Nomes das peças dentro das peças no editor",
