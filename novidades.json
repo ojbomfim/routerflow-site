@@ -1,66 +1,60 @@
 [
  {
+  "versao": "3.22.0",
+  "data": "2026-10-02",
+  "titulo": "Simulador 3D de verdade, pasta organizada e vários arquivos juntos",
+  "itens": [
+   "Conferir e simular em 3D de verdade: a chapa perde material no formato de cada ferramenta e, no fim, você gira a chapa cortada.",
+   "Pasta do projeto com nome legível e as pastas Programas da router, Desenhos DXF, Para imprimir e Listas; o material não repete mais a espessura.",
+   "Adicionar arquivo soma CSV, Excel e listas do Gerador no mesmo projeto, cada material nas suas chapas."
+  ]
+ },
+ {
   "versao": "3.21.2",
   "data": "2026-10-02",
-  "titulo": "Tela nova logo depois de atualizar e RouterFlow fixado na barra de tarefas",
+  "titulo": "Tela certa depois de atualizar",
   "itens": [
-   "Depois de atualizar, a janela às vezes continuava mostrando a tela da versão anterior. Agora a tela é sempre a da versão instalada.",
-   "RouterFlow fixado na barra de tarefas abre sempre a versão instalada, também depois de atualizar. Quem fixou numa versão antiga: desafixe e fixe de novo com o RouterFlow aberto.",
-   "O título da janela ficou só RouterFlow; a versão continua no menu lateral.",
-   "Correções e melhorias internas."
+   "Depois de atualizar, a janela mostra sempre a tela da versão nova.",
+   "O RouterFlow fixado na barra de tarefas abre sempre a versão instalada. Quem fixou antes: desafixe e fixe de novo."
   ]
  },
  {
   "versao": "3.21.1",
   "data": "2026-10-02",
-  "titulo": "Ferramentas desenhadas e importar a configuração de outro computador",
+  "titulo": "Ferramentas desenhadas e ajuda que leva ao manual",
   "itens": [
-   "Configurações, Ferramentas: botão Ver as ferramentas desenhadas. Mostra cada posição do magazine com o desenho da ferramenta (fresa reta, broca, fresa V, ponta redonda, perfil, fresa invertida) nas medidas da tabela, o que o programa faz com ela e os alertas dela; posição pulada aparece como vazia.",
-   "No fim da mesma janela, os tipos de ferramenta desenhados e onde medir o diâmetro e o ângulo de cada um.",
-   "Ajuda mais perto: o ? de cada tópico das Configurações ganhou Ver no manual, com imagens, e o título de cada tela ganhou um ? que abre o manual no capítulo dela.",
-   "Configurações, Cópia de segurança: o Importar agora aceita também a configuração recebida pelo suporte e o .zip do Enviar ao suporte (antes dizia que o arquivo não era uma configuração).",
-   "Antes de aplicar, mostra de quem é o arquivo e pergunta: Testar como máquina nova (entra ao lado das suas máquinas, e você volta trocando a máquina no menu lateral) ou Substituir tudo.",
-   "Substituir tudo guarda antes a sua configuração na pasta das cópias, com o nome antes_de_importar.",
-   "Ferramentas: os tipos têm o mesmo nome no seletor, no quadro, nos alertas, nos avisos do projeto e no manual (Fresa reta, Broca, Fresa V, Ponta redonda, Fresa de perfil, Fresa invertida).",
-   "Fresa invertida cadastrada sem ângulo aparece com o campo vazio e o alerta, em vez de mostrar 35 sem você ter escolhido. A de fábrica (T8) passou a ser de 45 graus.",
-   "Correções e melhorias internas."
+   "Ferramentas: o botão Ver as ferramentas desenhadas mostra cada posição do magazine com o desenho e o que o programa faz com ela.",
+   "O ? de cada tópico e de cada tela abre o manual no lugar certo.",
+   "Importar configuração de outro computador como máquina nova, sem perder a sua."
   ]
  },
  {
   "versao": "3.21.0",
   "data": "2026-10-02",
-  "titulo": "Ferramentas explicadas e conferidas, e como a router faz cada peça",
+  "titulo": "Tabela de ferramentas conferida",
   "itens": [
-   "Configurações, Ferramentas: o quadro O que cada ferramenta faz mostra qual ferramenta da sua tabela o programa usa no contorno, nos rebaixos, nos furos, no chanfro 45, na parede invertida da cava e nos frisos, e o que falta, com o botão Adicionar.",
-   "A tabela é conferida enquanto você digita: número repetido ou sem número, fresa invertida cadastrada como fresa reta, contorno automático pegando uma fresa grande, ferramenta sem ângulo. O Projeto avisa antes de gerar quando a tabela tem erro.",
-   "Explicado na tela e no manual: o número T é a posição da ferramenta no magazine da router (M6 T4, G43 H4).",
-   "Ao trocar uma ferramenta para Fresa invertida, o campo Ângulo agora fica liberado (antes era apagado e o programa usava 35 graus).",
-   "Gerador de peças: o quadro Como a router faz lista as etapas da peça na ordem do programa, com a ferramenta de cada uma.",
-   "Prévia 3D: botão Nomes, com o número de cada peça e a legenda; no Explodido mostra onde vai cada peça.",
-   "Conferir e simular: a passada da fresa invertida aparece como etapa própria, Parede invertida, e o passo a passo mostra cada troca de ferramenta."
+   "O quadro O que cada ferramenta faz mostra qual ferramenta o programa usa em cada trabalho e avisa o que está errado.",
+   "O número T é a posição da ferramenta no magazine da router.",
+   "Gerador de peças: Como a router faz, etapa por etapa, e números das peças no 3D."
   ]
  },
  {
   "versao": "3.20.2",
   "data": "2026-10-01",
-  "titulo": "Cava com fundo e fresa invertida, como as portas de puxador cava",
+  "titulo": "Cava com fundo e fresa invertida",
   "itens": [
-   "Porta com cava com fundo e parede invertida: a fresa reta abre a cava e a fresa invertida passa na parede, por baixo da face. O ângulo da fresa invertida é seu (45 por padrão) e a borda da porta pode levar o chanfro de 45.",
-   "O programa usa a fresa invertida cadastrada com o ângulo mais perto do pedido e avisa se for diferente.",
-   "Cava no canto: sem recuo, a cava cortada ou com fundo vai até a lateral da porta, reta daquele lado, sem borda entre ela e o canto.",
-   "Cava com fundo pela fresa V: parede em 45 graus da face até o fundo ou só na boca.",
-   "Prévia 3D: material Laqueada, com os cortes pintados da cor da face, como a porta fica depois de pintada; a borda chanfrada aparece certa sobre o fundo da cava."
+   "Porta com cava: fresa reta no fundo e fresa invertida na parede, por baixo da face.",
+   "Cava no canto sai reta até a lateral da porta, sem borda.",
+   "Prévia 3D com material laqueado."
   ]
  },
  {
   "versao": "3.20.1",
   "data": "2026-10-01",
-  "titulo": "Cava com fundo e paredes em 45 graus, medidas até o tamanho da chapa",
+  "titulo": "Cava com paredes em 45 graus",
   "itens": [
-   "Porta com cava: tipo novo com fundo e as paredes em 45 graus (fresa V), aberta na borda, com a borda da porta chanfrada ou não, como as portas de puxador cava.",
-   "Cava e gola abertas na borda agora são esvaziadas até a borda da porta (antes ficava uma faixa da largura do raio da fresa).",
-   "Gerador de peças: toda medida vai até o tamanho da chapa cadastrada em Configurações. O aviso só aparece se passar da chapa.",
-   "Prévia 3D: a borda chanfrada não passa por cima da cava, e a quina do chanfro sai redonda como a fresa V faz."
+   "Porta com cava com fundo e paredes em 45 graus (fresa V).",
+   "As medidas do Gerador vão até o tamanho da chapa cadastrada."
   ]
  },
  {
@@ -68,570 +62,7 @@
   "data": "2026-10-01",
   "titulo": "Prévia 3D mantém a câmera",
   "itens": [
-   "Gerador de peças: mudar uma medida não volta a prévia 3D para a vista padrão. Gire e aproxime para ver por dentro e siga ajustando.",
-   "Correções e melhorias internas."
-  ]
- },
- {
-  "versao": "3.19.0",
-  "data": "2026-10-01",
-  "titulo": "Peça personalizada, porta com todas as cavas e canto curvo com ripas",
-  "itens": [
-   "Peça personalizada no Gerador: comece de retângulo, círculo ou L, arraste os nós, faça lados em curva, cantos arredondados ou chanfrados, e ponha furo, rasgo, corte interno, rebaixo, dobradiça e minifix onde quiser, com as cotas até as bordas e a fita lado por lado.",
-   "Porta com cava em um modelo só: embutida retangular, redonda, oval ou longa, gola, cortada reta ou em meia-lua, com chanfro de 45, com a borda inclinada da fresa de cava, com fundo, ou o puxador na própria borda. Em qualquer borda, no centro ou deslocada.",
-   "Canto curvo com base e tampo, ripas curvas e montantes encaixados por dentro, para segurar o revestimento.",
-   "No Gerador, a lista de peças fica no alto da tela, com Levar para o Projeto sempre à vista."
-  ]
- },
- {
-  "versao": "3.18.0",
-  "data": "2026-10-01",
-  "titulo": "Prévia 3D nova e onze modelos novos",
-  "itens": [
-   "Prévia 3D refeita: luz, sombra, MDF branco, madeira com veio, e o que a router faz cortado de verdade na peça, com a profundidade e o miolo do MDF à mostra.",
-   "Botões na prévia: girar sozinho, raio-X (peças transparentes, cada uma com uma cor), cotas, vistas de frente, lado e de cima, material e tela cheia.",
-   "Canto curvo: cambotas e revestimento dando a volta, com um canto, dois cantos ou meia-lua; cortes de flexão só no trecho curvo.",
-   "Pé revestido: redondo, cônico, oval, oblongo, cone elíptico, quadrado e cônico quadrado, com os anéis e o revestimento cortado plano para dobrar.",
-   "Muxarabi de ripas encaixadas (ou fitado), prateleira dupla com suporte invisível, porta com placa encaixada de 6 mm, frente vazada de ventilação e tampo orgânico.",
-   "Banco em L e banco com encosto inclinado. Cava embutida redonda e cava longa, na largura toda."
-  ]
- },
- {
-  "versao": "3.17.2",
-  "data": "2026-10-01",
-  "titulo": "Porta com chanfro na borda toda e Configurações que salvam sozinhas",
-  "itens": [
-   "Porta lisa e porta com cava cortada com chanfro de 45 graus na borda toda: a fresa reta corta a porta e abre a sobra, depois a fresa V passa na borda já cortada. A prévia 3D mostra a borda chanfrada.",
-   "Configurações sem botão Salvar: cada campo é salvo na hora e o aviso verde no alto mostra a hora. Antes, quem saía sem salvar perdia o valor, como a margem da chapa em 0 que continuava em 10.",
-   "Primeiros passos do Início escondidos ficam escondidos. O programa também passa a lembrar o tamanho do desenho, a aba e a vista escolhidas depois de fechar.",
-   "Gerador de peças: Levar para o Projeto no alto da tela, com a quantidade de itens da lista."
-  ]
- },
- {
-  "versao": "3.17.1",
-  "data": "2026-10-01",
-  "titulo": "Peça sem margem e avisos embaixo",
-  "itens": [
-   "Gerador de peças: a opção Sem margem da chapa deixa a peça encostar na borda da chapa. As outras peças continuam com a margem de Configurações.",
-   "Os avisos aparecem no canto de baixo, à direita, sem cobrir os botões do alto da tela."
-  ]
- },
- {
-  "versao": "3.17.0",
-  "data": "2026-10-01",
-  "titulo": "Cava de puxador com a fresa de cava 35",
-  "itens": [
-   "Porta com cava cortada: borda inclinada por baixo com a fresa de cava (rabo de andorinha) de 35 graus, ou cava com fundo e a parede inclinada, ou chanfro de 45 graus com a fresa V.",
-   "Fresa de cava na tabela de ferramentas: desce uma vez só até a profundidade e anda afastada da parede o quanto a inclinação pede. Os padrões trazem uma de 40 mm (T8).",
-   "Conferir e simular cabe na janela: o desenho e o painel vão até o fim da tela, sem ficar cortados embaixo. A legenda e as dicas passaram para baixo do desenho.",
-   "As abas do painel de Conferir e simular quebram a linha em vez de sumir pela direita.",
-   "Gerador de peças: a caixa dos modelos para na altura da prévia, e saiu o resumo repetido da lista de peças."
-  ]
- },
- {
-  "versao": "3.16.0",
-  "data": "2026-10-01",
-  "titulo": "Gerador de peças: parafuso em tudo e colmeia com caixa",
-  "itens": [
-   "A lista de peças aparece embaixo dos modelos, com Ver a lista e Levar para o Projeto. A caixa dos modelos ficou menor e rola sozinha.",
-   "União das peças com parafuso nos módulos e no nicho: furo passante de 5 mm na lateral e furo guia no topo da outra peça.",
-   "Estante, caixa dentada, banco, divisórias e mesa podem ser montados com parafuso, minifix ou cavilha no lugar do encaixe.",
-   "Colmeia com caixa por fora: as peças do meio param na face de dentro das laterais, da base e do topo.",
-   "Painel ripado com ripas soltas presas num painel de fundo com cavilha (os furos casam na ripa e no painel) ou com parafuso por trás.",
-   "Dobradiça caneco 35 com furos de fixação, com os furos só marcados ou sem furo. A de cavilha saiu.",
-   "Balcão, aéreo e gaveteiro aceitam até 2,70 m de altura. Número acima do limite agora avisa, em vez de ser trocado calado.",
-   "O fundo pregado atrás saía 1 cm maior que a caixa. Agora sai 4 mm menor."
-  ]
- },
- {
-  "versao": "3.15.1",
-  "data": "2026-09-30",
-  "titulo": "Atualização que não enche o disco",
-  "itens": [
-   "A atualização apaga os instaladores de versões anteriores e o instalador novo depois de instalar. Antes eles ficavam na pasta temporária do Windows.",
-   "Quando falta espaço no disco, o aviso diz quanto liberar, em vez do erro 28 do Windows.",
-   "Correções e melhorias internas."
-  ]
- },
- {
-  "versao": "3.15.0",
-  "data": "2026-09-30",
-  "titulo": "Menu mais enxuto e um Início que mostra o próximo passo",
-  "itens": [
-   "O menu ficou com o caminho do projeto em cima (Início, Projeto, Gerador de peças, Conferir e simular, Produção, Sobras) e Configurações e Ajuda embaixo.",
-   "A Ajuda junta Manual, Suporte, Licença e Sobre em abas. A aba Suporte tem WhatsApp, e-mail, o envio do projeto aberto e Procurar atualização.",
-   "Peças agora se chama Gerador de peças, e Router se chama Conferir e simular.",
-   "O Início diz o que fazer agora: começar um projeto, conferir no simulador ou continuar cortando na Produção, com quantas chapas faltam. Tem também os primeiros passos para configurar a máquina, os projetos recentes com o andamento e as novidades de cada versão desde a 3.10.0."
-  ]
- },
- {
-  "versao": "3.14.1",
-  "data": "2026-09-30",
-  "titulo": "Mais sobras por chapa e caminho à frente sempre visível",
-  "itens": [
-   "O canto que fica ao lado da sobra maior também vira sobra (até três por chapa): antes ele ficava sem marcar quando o espaço livre encostava na sobra grande.",
-   "No simulador, o caminho à frente mostra sempre os próximos 3 metros de percurso, também no meio do contorno de peça com curvas, com traço mais forte."
-  ]
- },
- {
-  "versao": "3.14.0",
-  "data": "2026-09-30",
-  "titulo": "Prévia 3D e cortes especiais",
-  "itens": [
-   "A prévia do Gerador de Peças abre em 3D: o móvel montado, explodido ou peça por peça, com a espessura, os recortes, os furos, os rasgos e o texto. Arraste para girar, roda do mouse para aproximar.",
-   "Painel ondulado em lâminas: lâminas em pé com a frente em onda, espinhas por trás encaixadas por meia-madeira e o número gravado em cada lâmina para montar na ordem.",
-   "Frente curva com cambotas: cambotas com o arco e o revestimento de MDF flexível ou de MDF comum com os cortes de flexão calculados pelo raio.",
-   "Encaixe mais rápido com muitas peças pequenas (uma lista de 400 peças caiu de 27 para 5 segundos) e letras que regravam na hora.",
-   "Programa da router mais seguro: a fresa não entra mais na peça em fendas na ponta (colmeia), degraus ou entalhes menores que ela; cada passada desce em rampa de onde a anterior parou; recorte fora da peça e folga menor que a fresa viram aviso; abas descem em rampa.",
-   "Verso antes da face: o programa do verso aparece primeiro na Produção e diz para que lado virar a chapa.",
-   "O Tradutor NC acusa descida em rápido dentro do material, entende o Z zero no topo da chapa e separa as cópias da mesma peça.",
-   "Correções no encaixe de peça irregular, nas áreas com defeito, nas sobras (todas entram no estoque, o veio é mantido), ao reabrir um projeto (as chapas saem iguais às salvas) e na leitura de listas com código repetido.",
-   "Correções e melhorias internas."
-  ]
- },
- {
-  "versao": "3.13.0",
-  "data": "2026-09-30",
-  "titulo": "Módulo completo pelas medidas",
-  "itens": [
-   "Grupo Módulos no Gerador de Peças: balcão, aéreo e gaveteiro inteiros a partir da largura, da altura e da profundidade.",
-   "As peças saem casadas: minifix com o tambor na peça horizontal e o pino na lateral, cavilha, linha 32 para a prateleira, rasgo do fundo e o calço da dobradiça furado na lateral na altura de cada caneco.",
-   "Frente com portas, gavetas, gaveta em cima e portas ou basculante; caixa da gaveta e corrediça pelo vão; rodapé com pés reguláveis.",
-   "Material da frente separado do da caixa e fita só onde vai (borda da frente da caixa, as quatro bordas das portas).",
-   "A lista de ferragens do projeto soma minifix, cavilhas, dobradiças, corrediças, suportes, pés e puxadores de todos os módulos. A prévia mostra como o módulo fica montado."
-  ]
- },
- {
-  "versao": "3.12.0",
-  "data": "2026-09-30",
-  "titulo": "Gerador de Peças: texto em V, relevo 3D e encaixe pela forma",
-  "itens": [
-   "Placa com texto em V usando as fontes do Windows (Arial, Georgia, Impact, Cooper...): a fresa V esculpe a letra com a lateral encostando na borda, como o V-carve do Aspire. Aceita acentos e minúsculas.",
-   "Placa com letras vazadas (estêncil, com ponte no miolo do O, A, B) e letras soltas: cada letra vira uma peça cortada pelo contorno da fonte.",
-   "Painel ondulado 3D com a ponta redonda: ondas retas, curvas, diagonais ou bolhas.",
-   "Porta provençal com moldura de fresa de perfil, V ou ponta redonda (reta, capela, cantos arredondados ou recortados), e o tipo Fresa de perfil na tabela de ferramentas.",
-   "Banco encaixado e mesa lateral com pés em X, montados sem parafuso.",
-   "Encaixe pela forma: tampo em L, peça com arco e letra não ocupam mais o retângulo inteiro; as peças menores entram no canto vazio. O editor desenha o contorno de verdade.",
-   "Na Router, com Material ligado, o relevo e o texto em V aparecem em tons de profundidade."
-  ]
- },
- {
-  "versao": "3.11.1",
-  "data": "2026-09-30",
-  "titulo": "Estoque de sobras acompanha a Produção",
-  "itens": [
-   "Corrigido: com \"Usar as sobras do estoque\" desmarcado, as sobras novas não entravam no estoque. Agora essa caixa só decide se o projeto usa o estoque; as sobras novas entram sempre que a chapa tem \"Cortar e guardar\".",
-   "A sobra entra no estoque quando a chapa que a solta é marcada como feita na Produção, e sai quando a chapa que a usou é marcada. Desmarcar desfaz. A Produção avisa o que entrou e o que saiu.",
-   "As sobras das chapas que você já marcou como feitas entram no estoque sozinhas ao abrir esta versão.",
-   "Tela Sobras nova: situação de cada sobra (vai sair, disponível, reservada, usada, descartada), números no alto que filtram a lista, o que tem disponível por material, de onde veio e para onde vai cada sobra, Já cortei, Liberar e Sincronizar agora.",
-   "Sobra de chapa ainda não cortada não entra mais no encaixe de outro projeto."
-  ]
- },
- {
-  "versao": "3.11.0",
-  "data": "2026-09-30",
-  "titulo": "Gerador de Peças: rebaixos, fresa V e encaixes",
-  "itens": [
-   "Doze modelos novos no Gerador de Peças: porta com cava 45 graus, frente com cava embutida, frente com rebaixo para gola, porta quadro com vidro, porta com fecho toque, prateleira com LED, painel acústico, muxarabi, cabeceira, placa com letreiro, estante encaixada e caixa com encaixe dentado.",
-   "A router faz rebaixos (esvazia a área do meio para a borda), chanfro de 45 graus na borda com fresa V e encaixes com dog-bone, que deixam o canto vivo para a peça entrar.",
-   "Frisos com fresa reta, fresa V ou ponta redonda. A Router e o simulador mostram o V com a largura certa.",
-   "Na tabela de ferramentas entram os tipos Fresa V (com o ângulo) e Ponta redonda.",
-   "A prévia do gerador mostra a mudança de verdade: enquanto você mexe no mesmo modelo, a peça cresce e diminui na tela, com as cotas. Peças de conjunto (gaveta, nicho) aparecem em fileiras.",
-   "Furo raso maior que duas fresas (fecho, ímã) agora limpa o fundo inteiro."
-  ]
- },
- {
-  "versao": "3.10.0",
-  "data": "2026-09-30",
-  "titulo": "Gerador de Peças",
-  "itens": [
-   "Tela nova Peças: escolha o modelo, digite as medidas e a peça sai pronta para a router, sem desenhar e sem Aspire. A prévia redesenha a cada número.",
-   "Quinze modelos: porta lisa com dobradiças, frente com puxador, porta com cava, porta com frisos, gaveta completa pelo vão, lateral com linha 32, prateleira com recorte, tampo com cuba, cooktop, tomada e passa-fio, tampo em L, painel ripado, ripas soltas, nicho, painel com rasgos para divisórias, colmeia de adega e gabarito de furação.",
-   "A router faz recortes internos (por dentro, antes do contorno), canais de friso e ripado, e grava o código da peça se você pedir. O simulador mostra tudo antes de cortar.",
-   "A lista de peças fica salva num arquivo que reabre depois e entra no Projeto sozinha ou junto com o CSV, nas mesmas chapas. Dá para guardar as medidas que você mais usa.",
-   "Em Configurações, Ferragens e recortes: as medidas de dobradiça, cuba, cooktop e passa-fio que os modelos usam, para você ajustar às que compra.",
-   "Faça o primeiro corte de cada modelo com corte no ar e numa sobra, e confira as medidas de ferragem no manual do fabricante."
-  ]
- },
- {
-  "versao": "3.9.20",
-  "data": "2026-09-30",
-  "titulo": "As duas sobras da chapa são cortadas",
-  "itens": [
-   "Quando a chapa tem duas sobras, a router agora corta as duas (antes cortava só a maior), cada uma com a sua etiqueta SOBRA e o seu cadastro no estoque.",
-   "O mapa das chapas lista todas as sobras de cada chapa."
-  ]
- },
- {
-  "versao": "3.9.19",
-  "data": "2026-09-30",
-  "titulo": "Corte da sobra conferido",
-  "itens": [
-   "O corte que solta a sobra nunca encosta nas peças: passa no meio da folga e, com folga pequena, entra um pouco no retalho em vez de pegar a peça.",
-   "Quando o retalho encosta na margem da chapa, o corte vai até a borda e o retalho solta de verdade (antes ficava uma ponte de material segurando).",
-   "O programa só de contornos, gerado na Router, agora leva o corte da sobra.",
-   "Com Mostrar a sobra desmarcada, Cortar a sobra aparece desmarcada e desligada; ao marcar de novo, volta como estava."
-  ]
- },
- {
-  "versao": "3.9.18",
-  "data": "2026-09-30",
-  "titulo": "A máquina inteira no simulador",
-  "itens": [
-   "Magazine de ferramentas atrás da mesa, com cada fresa e broca da sua máquina no suporte, número e diâmetro. O lugar da ferramenta que está no cabeçote fica vazio e verde.",
-   "Pórtico com as chapas laterais nos trilhos, viga com as guias do X, carro do Z, motor do spindle com aletas e luz de ligado, porca da pinça e a fresa.",
-   "Armário de comando ao lado, com a tela e o botão de emergência."
-  ]
- },
- {
-  "versao": "3.9.17",
-  "data": "2026-09-30",
-  "titulo": "Caminho à frente no lugar certo",
-  "itens": [
-   "No simulador 3D, o caminho que a fresa vai fazer aparece na face da chapa, bem em cima de onde o corte vai sair: tracejado azul no que vai cortar e mais claro nos movimentos rápidos, sem os traços subindo e descendo."
-  ]
- },
- {
-  "versao": "3.9.16",
-  "data": "2026-09-30",
-  "titulo": "Fresa no lugar certo no simulador",
-  "itens": [
-   "No 3D a fresa some dentro da chapa enquanto corta e aparece entrando no corte, com o brilho no ponto de entrada.",
-   "A sombra da fresa fica embaixo dela e cresce quando ela sobe.",
-   "O painel do simulador não passa mais da borda da janela: os números encolhem e o painel rola por dentro."
-  ]
- },
- {
-  "versao": "3.9.15",
-  "data": "2026-09-30",
-  "titulo": "Largura ajustável e 3D mais real",
-  "itens": [
-   "Na Router e no Projeto, a barra entre o desenho e o painel da direita muda a largura. Duplo clique volta ao normal.",
-   "Rasgos, furos e contornos aparecem no 3D como canais rebaixados na chapa, com a parede em sombra e o fundo.",
-   "Chapa com textura de MDF, luz e quina clara, mesa de sacrifício com as ranhuras, sombra da fresa e piso ao fundo.",
-   "O simulador começa em 1x, o tempo real da máquina."
-  ]
- },
- {
-  "versao": "3.9.14",
-  "data": "2026-09-30",
-  "titulo": "Simulador mais completo e fácil de usar",
-  "itens": [
-   "Máquina inteira em 3D, com trilhos, pórtico e cabeçote, e quatro vistas: 3D, Planta, Frente e Fresa (a câmera chega perto e vai atrás da ferramenta).",
-   "Linha do tempo colorida por operação, com as trocas de ferramenta marcadas: clique ou arraste para ir a qualquer ponto. Botões para pular de operação em operação.",
-   "Painel da controladora: situação, X, Y e Z, ferramenta, avanço, rotação, profundidade, tempo e quanto falta, percurso, peças soltas e trocas de ferramenta.",
-   "Caminho à frente em tracejado, rápidos opcionais, cor da chapa, aviso piscando se algo sair do normal e o veredito lido em voz alta.",
-   "O botão Simular vira Sair do simulador enquanto a simulação está aberta.",
-   "Atalhos: espaço, setas, Shift + setas, [ e ], 1 a 4, S, Home e End. Mais leve em programas grandes."
-  ]
- },
- {
-  "versao": "3.9.13",
-  "data": "2026-09-30",
-  "titulo": "Simulador 3D, peças pequenas seguras e envio ao suporte",
-  "itens": [
-   "Simulador na Router: botão Simular. A fresa anda pelo programa, o material sai, com vista 3D (pórtico, cabeçote e chapa) ou de cima, velocidade de 1x a 100x, X, Y, Z, avanço e rotação na tela e o programa andando junto.",
-   "Veredito antes de cortar: Pode cortar, Confira ou Não corte, com a profundidade de cada ferramenta, mesa, rápidos, spindle e peças. Clique no item para ver o ponto.",
-   "Peças pequenas primeiro: os contornos vão da menor peça para a maior, enquanto a chapa ainda segura o vácuo.",
-   "Pele fina (Configurações, Corte): o contorno para 0,3 mm acima da mesa e uma volta no fim solta tudo. Dá para ligar só nas peças pequenas. Aviso no projeto quando há peça pequena sem pele nem aba.",
-   "Enviar ao suporte, na tela Projeto: o projeto vai para o Consultor RouterFlow olhar, só quando você clica.",
-   "Filtros da tela Sobras organizados e a coluna Origem no lugar de Veio de.",
-   "Correções e melhorias internas."
-  ]
- },
- {
-  "versao": "3.9.12",
-  "data": "2026-09-30",
-  "titulo": "Miniaturas deitadas e textos em dia",
-  "itens": [
-   "As miniaturas da Produção também mostram a chapa deitada, igual ao Projeto e à Router.",
-   "O passo a passo do Início e o Sobre contam o fluxo de hoje: peças em pé ou deitadas, sobras do estoque quando marcado, Completo ou só uma etapa na Router, pendrive, pasta ou rede na Produção.",
-   "Na tela Sobras, a data em que a sobra foi guardada aparece no formato dia, mês e ano.",
-   "Manual, guia rápido e imagens do site refeitos com as telas atuais."
-  ]
- },
- {
-  "versao": "3.9.11",
-  "data": "2026-09-30",
-  "titulo": "Chapa deitada na tela e etapa 2 organizada",
-  "itens": [
-   "No Projeto e na Router a chapa já aparece deitada, que é como cabe melhor no monitor. O botão Ver em pé levanta o desenho, e Ver deitada volta. O programa não muda.",
-   "A etapa 2 do Projeto ficou em três grupos: Máquina e chapa, Programa da router e Sobras, cada caixa com uma linha curta dizendo para que serve.",
-   "Unir tudo numa chapa só e a pasta onde salvar foram para Mais opções, embaixo, porque quase nunca mudam.",
-   "Os recentes da etapa 1 não repetem o mesmo projeto."
-  ]
- },
- {
-  "versao": "3.9.10",
-  "data": "2026-09-30",
-  "titulo": "Produção mostra o que cada programa corta",
-  "itens": [
-   "Na Produção, cada programa tem uma miniatura do que ele corta: o completo mostra tudo, o só furos mostra só os furos, o só contornos só os contornos. Clique para ver grande.",
-   "As mensagens rápidas ficaram no canto de cima, à direita, maiores e por mais tempo. Param quando o mouse está em cima e têm um x para fechar."
-  ]
- },
- {
-  "versao": "3.9.9",
-  "data": "2026-09-30",
-  "titulo": "Girar a visão e salvar no pendrive ou pasta",
-  "itens": [
-   "Botão Girar a visão no desenho do Projeto e da Router: deita ou levanta a chapa na tela, só para caber melhor. Nada é gerado de novo, e as peças continuam arrastáveis.",
-   "Na Produção, o botão agora diz Salvar no pendrive ou pasta, e o da chapa que vem agora fica em destaque como próximo passo. No alto, Salvar todos no pendrive ou pasta."
-  ]
- },
- {
-  "versao": "3.9.8",
-  "data": "2026-09-30",
-  "titulo": "Rasgo da face de trás sai no programa normal",
-  "itens": [
-   "Peça com furos ou rasgos só na face de trás (como a lateral com rasgo do fundo) agora entra virada na chapa sozinha, e a usinagem sai por cima no mesmo programa. Antes, com o programa do verso desligado, o rasgo ficava de fora.",
-   "Peça com usinagem nas duas faces ainda precisa do programa do verso. Se ele estiver desligado, o projeto mostra o aviso com o botão Ligar o programa do verso.",
-   "A ficha de produção lista as peças que entraram viradas."
-  ]
- },
- {
-  "versao": "3.9.7",
-  "data": "2026-09-30",
-  "titulo": "Cada programa diz o que faz, e o tempo de máquina em destaque",
-  "itens": [
-   "O nome de cada .nc termina com o que ele faz: _COMPLETO, _SO_FUROS, _SO_RASGOS ou _SO_CONTORNOS. Salvou no pendrive, abriu na máquina, dá para saber na hora. O comentário no começo do programa diz o mesmo.",
-   "Na Produção, cada chapa lista todos os seus programas com um selo colorido: COMPLETO, SÓ FUROS, SÓ RASGOS ou SÓ CONTORNOS. Os de etapa ficam logo abaixo do completo. Todos os .nc para o pendrive leva os de etapa também.",
-   "Tempo estimado em destaque: no alto da Produção, quanto tempo de máquina falta para terminar o projeto; em cada chapa e em cada programa; e no Resumo da Router, grande, com quanto é corte e quanto é movimento rápido."
-  ]
- },
- {
-  "versao": "3.9.6",
-  "data": "2026-09-30",
-  "titulo": "Procurar atualização na hora e aviso de versão nova mais rápido",
-  "itens": [
-   "Botão Procurar atualização na tela Sobre. Também dá para clicar no número da versão no rodapé do menu. Se tiver versão nova, aparece o Atualizar agora; se não, ele avisa que você já está na mais nova.",
-   "O aviso de versão nova ao abrir o programa ficou bem mais rápido: aparece em um ou dois segundos.",
-   "O botão de dicas de uso (o i ao lado de Tela cheia) voltou a esconder e mostrar as dicas, na Router e no editor de chapas."
-  ]
- },
- {
-  "versao": "3.9.5",
-  "data": "2026-09-30",
-  "titulo": "Router com o desenho no centro",
-  "itens": [
-   "Na Router, o desenho da mesa e da chapa fica sempre no centro: ao abrir um programa, no Enquadrar, no duplo clique e na tecla 0. Antes ele encostava na esquerda."
-  ]
- },
- {
-  "versao": "3.9.4",
-  "data": "2026-09-30",
-  "titulo": "Programas por etapa com um clique na Router",
-  "itens": [
-   "A lista de programas da Router ficou mais simples: cada chapa tem o botão Completo e, quando tem mais de um tipo de operação, os botões + Só furos, + Só rasgos e + Só contornos.",
-   "Clicou em + Só furos, o programa só com os furos daquela chapa é gerado e já abre. Depois ele vira um botão para abrir de novo, com um x para apagar. O botão azul mostra qual programa está aberto."
-  ]
- },
- {
-  "versao": "3.9.3",
-  "data": "2026-09-30",
-  "titulo": "Folha de furação de topo cabendo na página e manual mais fácil de ler",
-  "itens": [
-   "A folha de furação de topo não sai mais da página: desenho menor à esquerda, tabela mais curta à direita (lado, posição, de onde medir, broca e profundidade) e o centro da espessura numa linha embaixo.",
-   "No Manual, as figuras ficaram menores. Clique numa delas para ver grande.",
-   "Os capítulos do Manual agora são numerados e com nome curto, iguais no programa e no site."
-  ]
- },
- {
-  "versao": "3.9.2",
-  "data": "2026-09-30",
-  "titulo": "Manual dentro do programa, Novo e Excluir projeto, programas por etapa na Router",
-  "itens": [
-   "Menu Manual: o manual inteiro dentro do RouterFlow, com busca. Digite passe, folga, pendrive ou etiqueta e aparecem só os tópicos que falam disso, com a palavra marcada.",
-   "Na tela Projeto, Novo projeto começa outro do zero (o atual fica no histórico) e Excluir projeto apaga o que foi gerado: a pasta vai para a Lixeira, o projeto sai do histórico e as sobras voltam como estavam. O CSV que você importou não é apagado.",
-   "Programas só de furos, só de rasgos ou só de contornos agora se escolhem na Router, chapa por chapa. Marcou, o programa sai na hora e o botão abrir aparece do lado.",
-   "Corte no ar, corte da sobra e corte de linha comum ficam todos na etapa 2 do Projeto. Configurações guarda só o que é da máquina.",
-   "Os botões do Sobre (site, WhatsApp e e-mail) voltaram a funcionar."
-  ]
- },
- {
-  "versao": "3.9.1",
-  "data": "2026-09-29",
-  "titulo": "Correções e melhorias internas",
-  "itens": [
-   "Ajustes por dentro para o programa ficar mais estável. Nada muda no seu jeito de usar."
-  ]
- },
- {
-  "versao": "3.9.0",
-  "data": "2026-09-29",
-  "titulo": "Planilha do Excel, furação de topo, chapa cortada na Router e suporte mais perto",
-  "itens": [
-   "A lista de peças pode vir direto da planilha do Excel (.xlsx), sem converter para CSV. Escolha ou arraste como sempre; se as colunas forem diferentes, a janela Colunas pergunta qual é qual.",
-   "Furos na borda das peças (cavilha, minifix de lateral) ganharam a folha \"Furação de topo\": a peça vista de cima, o lado, a posição, a broca e a profundidade de cada furo, para a furadeira horizontal.",
-   "Na Router, o botão Material mostra a chapa como ela fica depois do corte: cada passada com a largura da fresa, escuro onde atravessa, marrom onde é rasgo ou furo. Fica mais fácil entender o programa antes de rodar.",
-   "Tempo estimado calibrado: em Configurações, Sua router, cronometre uma chapa e informe o tempo real. O RouterFlow calcula o fator e passa a estimar certo na Router, na Produção e na ficha.",
-   "Cópia da configuração no suporte: o RouterFlow manda a sua configuração (sem senhas) junto com a verificação da licença. Se o suporte preparar um ajuste para o seu computador, aparece um aviso e você decide se aplica. Dá para desligar em Configurações, Cópia de segurança."
-  ]
- },
- {
-  "versao": "3.8.19",
-  "data": "2026-09-29",
-  "titulo": "Marcou a última chapa? O projeto está concluído",
-  "itens": [
-   "Na Produção, ao marcar a última chapa como feita, o RouterFlow avisa que o projeto foi concluído e pergunta se você quer começar outro. O concluído fica no histórico da Produção, com os arquivos na pasta, e a tela Projeto volta ao começo para os próximos arquivos."
-  ]
- },
- {
-  "versao": "3.8.18",
-  "data": "2026-09-29",
-  "titulo": "Programa direto para a máquina pela rede",
-  "itens": [
-   "Em Configurações, Sua router, o novo bloco \"Envio dos programas para a máquina\": além do pendrive, dá para mandar o .nc para uma pasta de rede do PC da router ou para o FTP do controlador (Syntec, Weihong, Fanuc com Ethernet). Tem botão Testar conexão. Na Produção, os botões viram \"Enviar para a máquina\".",
-   "No Projeto ficou um botão só para a Router, no alto do resultado: ele regrava se você mexeu no encaixe, gera o .nc se faltar e abre a chapa que está na tela. O botão de baixo do painel saiu.",
-   "Na Router, a lista de programas do projeto vem aberta. A seta recolhe quando quiser mais espaço."
-  ]
- },
- {
-  "versao": "3.8.17",
-  "data": "2026-09-29",
-  "titulo": "Produção com histórico: continue de onde parou",
-  "itens": [
-   "A tela Produção agora lista os projetos gerados neste computador com o andamento de cada um: quantas chapas já foram feitas e se está concluído, em andamento ou nem começou. \"Abrir na Produção\" carrega o projeto ali mesmo, sem passar pelo Projeto.",
-   "Na tela Projeto, o histórico passou a vir antes dos avisos."
-  ]
- },
- {
-  "versao": "3.8.16",
-  "data": "2026-09-29",
-  "titulo": "Tela Projeto mais limpa depois de gerar",
-  "itens": [
-   "Gerou as chapas? As etapas 1 e 2 se recolhem numa linha só: arquivos, máquina, orientação, origem e opções. Quer mudar algo? Clique em \"Editar e gerar de novo\" e tudo abre outra vez.",
-   "As listas de arquivos DXF e de programas .nc saíram do resultado. Uma linha diz quantos foram gravados e onde. Os programas continuam na Router (conferir) e na Produção (pendrive e chapa feita), que é onde você usa eles."
-  ]
- },
- {
-  "versao": "3.8.15",
-  "data": "2026-09-29",
-  "titulo": "Encaixe em faixa: a chapa rende mais e a sobra fica inteira",
-  "itens": [
-   "As peças agora enchem uma faixa ao longo do lado comprido da chapa antes de alargar: peça só vai para a fileira seguinte quando não cabe mais na atual. O que sobra é uma tira inteira, de ponta a ponta.",
-   "Peça sem veio gira 90 graus quando é assim que ela cabe no fim da fileira. A orientação Em pé ou Deitadas continua valendo, mas não custa mais espaço na chapa.",
-   "Entre as estratégias de encaixe, fica a que ocupa a faixa mais estreita. Vale para cada chapa, para o Nesting automático do editor e para \"Unir tudo numa chapa só\"."
-  ]
- },
- {
-  "versao": "3.8.14",
-  "data": "2026-09-29",
-  "titulo": "Padrão de fábrica: corte de uma vez, como na máquina",
-  "itens": [
-   "Máquina nova já nasce cortando como a router faz de verdade: uma passada só até 0,1 mm na mesa (passe 20), rampa curta de 5 mm, sem abas, altura segura 15, fresa de 6 mm a 11000 de avanço e 4000 de mergulho.",
-   "Quem já tem máquina cadastrada não muda nada sozinho: os valores de Ferramentas e Corte continuam os seus. Para adotar os novos, ajuste em Configurações ou use Restaurar padrões."
-  ]
- },
- {
-  "versao": "3.8.13",
-  "data": "2026-09-29",
-  "titulo": "Corte passante igual ao do Aspire",
-  "itens": [
-   "O corte que atravessa a chapa passou a entrar 0,1 mm na mesa, como o Aspire faz (chapa de 15 mm corta a 15,1). Antes eram 0,3 mm. Quem já ajustou \"Entrada na mesa\" em Configurações, Corte, continua com o seu valor.",
-   "Modelo novo de pós-processador \"INMES IR-30K, programa real\", copiado de um programa que rodou na máquina: sem numeração de linha. O modelo antigo, tirado do .pp do Aspire, continua disponível."
-  ]
- },
- {
-  "versao": "3.8.12",
-  "data": "2026-09-29",
-  "titulo": "Encaixe mais apertado, começando no zero da máquina",
-  "itens": [
-   "As peças agora são puxadas para o canto do zero da máquina e encostadas umas nas outras, mantendo a folga. Acabaram as escadinhas e os buracos entre peças: o espaço livre fica inteiro do lado oposto, pronto para virar sobra.",
-   "Entre as doze estratégias de encaixe, o RouterFlow passa a preferir a que deixa as peças mais juntas, e não só a que gasta menos chapa. Vale para cada chapa e para \"Unir tudo numa chapa só\"."
-  ]
- },
- {
-  "versao": "3.8.11",
-  "data": "2026-09-29",
-  "titulo": "A chapa vai como a mesa manda; você escolhe como as peças ficam",
-  "itens": [
-   "A chapa entra na mesa do jeito que a sua máquina permite: lado maior no lado maior da mesa. Acabou o programa passando da mesa por causa de Em pé ou Deitada.",
-   "A escolha Em pé ou Deitadas agora é das peças: deitadas, o lado maior das peças fica no X da máquina; em pé, no Y. Vale para as peças sem veio. Peça com veio continua seguindo o veio da chapa.",
-   "O nesting respeita a orientação pedida sem perder espaço: se obedecer custasse uma chapa a mais, ele prefere o melhor aproveitamento."
-  ]
- },
- {
-  "versao": "3.8.10",
-  "data": "2026-09-29",
-  "titulo": "Da Router direto para a Produção",
-  "itens": [
-   "Na Router, quando o programa vem de um projeto, o botão grande \"Ir para a Produção\" mostra o próximo passo: a lista das chapas na ordem de corte, o pendrive e a marcação de chapa feita."
-  ]
- },
- {
-  "versao": "3.8.9",
-  "data": "2026-09-29",
-  "titulo": "A chapa deitada agora avisa se não cabe na mesa",
-  "itens": [
-   "Na etapa 2 do Projeto, logo abaixo de Em pé e Deitada, o RouterFlow diz se a chapa cabe na mesa da máquina. Se a mesa foi cadastrada ao contrário (o lado maior no Y quando na máquina ele fica no X), um botão troca X por Y na hora, e o programa para de passar da mesa.",
-   "Máquinas novas já começam com a mesa de 2750 no X e 1850 no Y, que é o comum nas routers."
-  ]
- },
- {
-  "versao": "3.8.8",
-  "data": "2026-09-29",
-  "titulo": "Etiqueta 100 x 60, chapa deitada na Router e projeto sem sobra",
-  "itens": [
-   "As etiquetas saem no tamanho da impressora de etiquetas, 100 x 60 mm, uma por etiqueta, com o texto à esquerda e o desenho da peça à direita. Quem imprime em A4 escolhe \"8 por folha\" em Configurações, Chapas e folgas.",
-   "A Router desenha a chapa como ela foi gerada, deitada ou em pé, dentro da área da máquina. Se a chapa não cabe na mesa, fica em vermelho com o aviso. O resumo do programa também mostra o tamanho e o sentido.",
-   "No bloco Sobras do Projeto, a caixa \"Mostrar a sobra de cada chapa\": desmarcada, o projeto não calcula, não desenha, não etiqueta nem corta sobra nenhuma."
-  ]
- },
- {
-  "versao": "3.8.7",
-  "data": "2026-09-29",
-  "titulo": "Projeto sem sobras, se você quiser",
-  "itens": [
-   "Na etapa 2 do Projeto, o bloco \"Sobras neste projeto\" tem duas caixas: usar as sobras do estoque e cortar a sobra da chapa na router. Desmarque a primeira e o projeto sai só com chapa inteira, sem reservar nem guardar nada no estoque. A escolha fica lembrada para o próximo projeto."
-  ]
- },
- {
-  "versao": "3.8.6",
-  "data": "2026-09-29",
-  "titulo": "Peças perto demais? O editor afasta sozinho",
-  "itens": [
-   "Chega do aviso \"está a menos de X mm\". Ao soltar uma peça perto de outra, ao clicar em Aplicar e regravar ou no botão novo \"Afastar peças na folga\", o editor empurra as peças pelo menor caminho até a folga da fresa, sem sair da chapa nem entrar em área com defeito.",
-   "O aviso só continua aparecendo quando não cabe afastar. Aí é mover à mão ou usar o Nesting automático."
-  ]
- },
- {
-  "versao": "3.8.5",
-  "data": "2026-09-29",
-  "titulo": "Sua configuração com cópia de segurança",
-  "itens": [
-   "Em Configurações, o tópico \"Cópia de segurança\" exporta tudo o que você ajustou (máquinas, pós-processador, ferramentas, chapas, folgas, sobras e mapeamentos de CSV) para um arquivo .json, e importa em outro computador.",
-   "O RouterFlow também guarda sozinho uma cópia por dia das últimas mudanças. E a configuração continua igual depois de cada atualização, como sempre foi.",
-   "Cada tópico das Configurações ganhou um botão de interrogação que explica, em poucas linhas, por que ele existe, o que dá para fazer, como mexer e o que aparece ali."
-  ]
- },
- {
-  "versao": "3.8.4",
-  "data": "2026-09-29",
-  "titulo": "A chapa do tamanho que você quiser na tela",
-  "itens": [
-   "No Projeto e na Router, a área do desenho agora tem três tamanhos (P, M e G) e uma barra logo abaixo para esticar à vontade. O tamanho fica guardado para a próxima vez.",
-   "Na Router dá para esconder o painel da direita e abrir em tela cheia, como já era no editor de chapas. Ganhou também os botões de zoom.",
-   "Duplo clique no desenho ajusta a chapa na tela. Teclas + e - dão zoom, 0 ajusta, F abre em tela cheia e Esc volta.",
-   "Uma linha de dicas explica tudo isso embaixo do desenho. Se não precisar mais, o botão de informação esconde.",
-   "Na tela Sobras dá para buscar por material ou projeto, filtrar só as disponíveis e perguntar \"onde cabe uma peça de 600 x 400?\". A lista mostra a área de cada sobra e quantos metros quadrados estão livres."
-  ]
- },
- {
-  "versao": "3.8.3",
-  "data": "2026-09-29",
-  "titulo": "Correções e melhorias internas",
-  "itens": [
-   "Ajustes por dentro para o programa ficar mais estável. Nada muda no seu jeito de usar."
-  ]
- },
- {
-  "versao": "3.8.2",
-  "data": "2026-09-29",
-  "titulo": "Agora você fica sabendo o que mudou",
-  "itens": [
-   "Esta lista de novidades. Toda vez que o RouterFlow atualizar, ele conta o que chegou de novo: um aviso na primeira abertura, um cartão no Início e o histórico completo na tela Sobre.",
-   "O site ganhou a mesma seção, para quem quer espiar antes de atualizar."
+   "Mudar uma medida no Gerador não volta a prévia 3D para a vista padrão."
   ]
  }
 ]
