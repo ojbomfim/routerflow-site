@@ -1,5 +1,25 @@
 [
  {
+  "versao": "3.22.4",
+  "data": "2026-10-02",
+  "titulo": "Simulador sem parada misteriosa nas trocas de ferramenta",
+  "itens": [
+   "Na troca de ferramenta e na espera do spindle, um aviso no alto do desenho diz o que a máquina está fazendo e quanto leva.",
+   "A parada passa em cerca de 1 segundo na tela; o relógio continua contando o tempo real da máquina.",
+   "Na linha do tempo, as paradas aparecem listradas, e o painel da controladora mostra TROCA."
+  ]
+ },
+ {
+  "versao": "3.22.3",
+  "data": "2026-10-02",
+  "titulo": "Impressos com a marca, etiqueta sem página em branco e editor mais limpo",
+  "itens": [
+   "Etiqueta 100 x 60 sem a página em branco no começo, com a logo, medidas sem ,0, nome comprido em duas linhas e a cópia da peça (2 de 3).",
+   "Mapa, ficha e furação de topo com a logo e o nome RouterFlow; o botão de cada impresso refaz o arquivo no formato novo, até em projeto antigo.",
+   "Editor de chapas: Usinagem, Fita de borda e Medidas começam desligados, o rasgo sai reto e a fita é um traço fino por dentro da borda."
+  ]
+ },
+ {
   "versao": "3.22.2",
   "data": "2026-10-02",
   "titulo": "Fresa invertida segura, editor de chapas mais rico e tempo mais certo",
