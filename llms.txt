@@ -24,7 +24,7 @@ Idioma: português do Brasil. Público: marcenarias e fábricas de móveis plane
 ## Requisitos e preço
 
 - Windows 10 ou 11, 64 bits. Instalador único (RouterFlow-Setup-<versão>.exe), que cuida do WebView2 se faltar.
-- Licença anual: R$ 2.490,00 por ano, com 2 computadores da mesma empresa e o programa completo. PIX à vista com 10% de desconto (R$ 2.241,00). Cartão de crédito em até 12x, com o acréscimo da operadora. Computador a mais na mesma empresa: R$ 1.245,00 por ano. Sem adesão e sem mensalidade. Atualizações e suporte pelo WhatsApp incluídos. Teste de 30 dias.
+- Licença anual: R$ 2.490,00 por ano, com 2 computadores da mesma empresa e o programa completo. PIX à vista com 10% de desconto (R$ 2.241,00). Cartão de crédito em até 12x, com o acréscimo da operadora. Computador a mais na mesma empresa: R$ 1.245,00 por ano. Sem adesão e sem mensalidade. Atualizações e suporte pelo WhatsApp incluídos.
 - Ativação: o programa mostra um código da máquina em Ajuda, Licença; o cliente envia o código com razão social, CNPJ, e-mail e telefone; recebe a chave e cola no programa. Sem cadastro.
 
 ## Contato
