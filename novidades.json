@@ -1,5 +1,21 @@
 [
  {
+  "versao": "3.21.1",
+  "data": "2026-10-02",
+  "titulo": "Ferramentas desenhadas e importar a configuração de outro computador",
+  "itens": [
+   "Configurações, Ferramentas: botão Ver as ferramentas desenhadas. Mostra cada posição do magazine com o desenho da ferramenta (fresa reta, broca, fresa V, ponta redonda, perfil, fresa invertida) nas medidas da tabela, o que o programa faz com ela e os alertas dela; posição pulada aparece como vazia.",
+   "No fim da mesma janela, os tipos de ferramenta desenhados e onde medir o diâmetro e o ângulo de cada um.",
+   "Ajuda mais perto: o ? de cada tópico das Configurações ganhou Ver no manual, com imagens, e o título de cada tela ganhou um ? que abre o manual no capítulo dela.",
+   "Configurações, Cópia de segurança: o Importar agora aceita também a configuração recebida pelo suporte e o .zip do Enviar ao suporte (antes dizia que o arquivo não era uma configuração).",
+   "Antes de aplicar, mostra de quem é o arquivo e pergunta: Testar como máquina nova (entra ao lado das suas máquinas, e você volta trocando a máquina no menu lateral) ou Substituir tudo.",
+   "Substituir tudo guarda antes a sua configuração na pasta das cópias, com o nome antes_de_importar.",
+   "Ferramentas: os tipos têm o mesmo nome no seletor, no quadro, nos alertas, nos avisos do projeto e no manual (Fresa reta, Broca, Fresa V, Ponta redonda, Fresa de perfil, Fresa invertida).",
+   "Fresa invertida cadastrada sem ângulo aparece com o campo vazio e o alerta, em vez de mostrar 35 sem você ter escolhido. A de fábrica (T8) passou a ser de 45 graus.",
+   "Correções e melhorias internas."
+  ]
+ },
+ {
   "versao": "3.21.0",
   "data": "2026-10-02",
   "titulo": "Ferramentas explicadas e conferidas, e como a router faz cada peça",
