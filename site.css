@@ -71,6 +71,9 @@ figcaption { text-align: center; color: var(--on-surface-variant); font-size: 14
 .compare h3 { color: var(--primary); margin-bottom: 8px; }
 
 .contact { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 12px 0 18px; }
+.social-t { margin-top: 28px; }
+.contact.social { margin-bottom: 0; }
+.btn svg { flex: none; }
 #contato .fine { text-align: center; max-width: 640px; margin: 0 auto; }
 
 footer { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 24px 6vw; color: var(--on-surface-variant); font-size: 13px; border-top: 1px solid var(--outline-variant); }
@@ -129,6 +132,10 @@ ol.steps { list-style: none; padding: 0; margin: 0 0 32px; }
 .faq details[open] summary::after { content: "\2013"; }
 .faq p { color: var(--on-surface-variant); margin: 0 0 14px; }
 footer a { color: inherit; }
+footer { flex-wrap: wrap; }
+footer .soc { display: inline-flex; gap: 14px; margin-left: 6px; }
+footer .soc a { font-weight: 600; }
+@media (max-width: 700px) { footer { text-align: center; } footer .soc { margin-left: 0; } }
 
 @media (max-width: 900px) {
   .menu-btn { display: inline-flex; }
